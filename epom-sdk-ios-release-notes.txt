@@ -1,0 +1,51 @@
+(+) - new feature
+(-) - functional removal
+(!) - bugfix
+
+////////////////////////////////////////////////////////////////////////////////////
+
+- Epom SDK for iOS version 1.1.0
+ (+) Epom iOS SDK is MRAID v1.0 compliant now
+ (+) Smaato iOS SDK supported
+ (+) Mojiva iOS SDK integrated
+ (+) SmartMad iOS SDK supported
+ (!) Bugfixes and improvements
+
+- Epom SDK for iOS version 1.0.7
+ (-) TapJoy SDK removal
+ (!) Impressions wrong counting fix
+ 
+- Epom SDK for iOS version 1.0.6
+ (!) assert failures fix
+ (+) InnerActive iOS SDK version 1.1.4 supported and is required as minimal
+
+- Epom SDK for iOS version 1.0.5
+ (!) iAd multiple ad state notification (caused crash) fix
+ (!) "-weak_library /usr/lib/libSystem.B.dylib" linker flag is not needed now for pre iOS 4.0 firmwares
+ (+) More debug info for logging has been added
+
+- Epom SDK for iOS version 1.0.4
+ (!) Compatibility check with updated MillennialMedia SDK 4.6.0 (now its available)
+ (+) WapStart +1 integrated
+ (+) TapJoy integrated
+ (!) Major stability and memory usage improvements
+
+- Epom SDK for iOS version 1.0.3
+ (+) TapIt supported
+ (!) Bugfixes and improvements
+
+- Epom SDK for iOS version 1.0.2
+ (!) UDID is replaced with SHA1 of MAC address for internal requests
+
+- Epom SDK for iOS version 1.0.1
+ (!) iOS version 3.0 compatibility support
+
+- Epom SDK for iOS version 1.0.0
+ initial release
+ (+) Google AdMob supported
+ (+) InMobi supported
+ (+) JumpTap supported
+ (+) Inneractive  supported
+ (+) MillennialMedia supported, but is not available due to unstable behavior
+ (+) YocPerformance integrated
+ (+) iAd supported

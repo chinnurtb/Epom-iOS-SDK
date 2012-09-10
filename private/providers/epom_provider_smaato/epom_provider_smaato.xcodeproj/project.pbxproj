@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2D9D38315F79A2600CCE5FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D38215F79A2600CCE5FB /* Foundation.framework */; };
+		C2D9D38815F79A2600CCE5FB /* ESProviderSmaato.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C2D9D38715F79A2600CCE5FB /* ESProviderSmaato.h */; };
+		C2D9D38A15F79A2600CCE5FB /* ESProviderSmaato.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D9D38915F79A2600CCE5FB /* ESProviderSmaato.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C2D9D37D15F79A2600CCE5FB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				C2D9D38815F79A2600CCE5FB /* ESProviderSmaato.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C2D9D37F15F79A2600CCE5FB /* libepom_provider_smaato.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_smaato.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D9D38215F79A2600CCE5FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C2D9D38615F79A2600CCE5FB /* epom_provider_smaato-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epom_provider_smaato-Prefix.pch"; sourceTree = "<group>"; };
+		C2D9D38715F79A2600CCE5FB /* ESProviderSmaato.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderSmaato.h; sourceTree = "<group>"; };
+		C2D9D38915F79A2600CCE5FB /* ESProviderSmaato.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderSmaato.m; sourceTree = "<group>"; };
+		C2D9D39015F79ADB00CCE5FB /* iSoma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iSoma.framework; path = ../../../externals/iSoma.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2D9D37C15F79A2600CCE5FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D9D38315F79A2600CCE5FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2D9D37415F79A2600CCE5FB = {
+			isa = PBXGroup;
+			children = (
+				C2D9D38415F79A2600CCE5FB /* epom_provider_smaato */,
+				C2D9D38115F79A2600CCE5FB /* Frameworks */,
+				C2D9D38015F79A2600CCE5FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2D9D38015F79A2600CCE5FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2D9D37F15F79A2600CCE5FB /* libepom_provider_smaato.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2D9D38115F79A2600CCE5FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2D9D39015F79ADB00CCE5FB /* iSoma.framework */,
+				C2D9D38215F79A2600CCE5FB /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2D9D38415F79A2600CCE5FB /* epom_provider_smaato */ = {
+			isa = PBXGroup;
+			children = (
+				C2D9D38715F79A2600CCE5FB /* ESProviderSmaato.h */,
+				C2D9D38915F79A2600CCE5FB /* ESProviderSmaato.m */,
+				C2D9D38515F79A2600CCE5FB /* Supporting Files */,
+			);
+			path = epom_provider_smaato;
+			sourceTree = "<group>";
+		};
+		C2D9D38515F79A2600CCE5FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2D9D38615F79A2600CCE5FB /* epom_provider_smaato-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2D9D37E15F79A2600CCE5FB /* epom_provider_smaato */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D9D38D15F79A2600CCE5FB /* Build configuration list for PBXNativeTarget "epom_provider_smaato" */;
+			buildPhases = (
+				C2D9D37B15F79A2600CCE5FB /* Sources */,
+				C2D9D37C15F79A2600CCE5FB /* Frameworks */,
+				C2D9D37D15F79A2600CCE5FB /* CopyFiles */,
+				C2D9D39B15F7A81F00CCE5FB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = epom_provider_smaato;
+			productName = epom_provider_smaato;
+			productReference = C2D9D37F15F79A2600CCE5FB /* libepom_provider_smaato.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2D9D37615F79A2600CCE5FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Epom LTD";
+			};
+			buildConfigurationList = C2D9D37915F79A2600CCE5FB /* Build configuration list for PBXProject "epom_provider_smaato" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2D9D37415F79A2600CCE5FB;
+			productRefGroup = C2D9D38015F79A2600CCE5FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2D9D37E15F79A2600CCE5FB /* epom_provider_smaato */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C2D9D39B15F7A81F00CCE5FB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../../universal_lib.sh ../../../lib/";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2D9D37B15F79A2600CCE5FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D9D38A15F79A2600CCE5FB /* ESProviderSmaato.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2D9D38B15F79A2600CCE5FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../shared/,
+					../../../include/,
+					../../../externals/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Debug;
+		};
+		C2D9D38C15F79A2600CCE5FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../shared/,
+					../../../include/,
+					../../../externals/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Release;
+		};
+		C2D9D38E15F79A2600CCE5FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/epom_provider_smaato.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../externals\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epom_provider_smaato/epom_provider_smaato-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C2D9D38F15F79A2600CCE5FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/epom_provider_smaato.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../externals\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epom_provider_smaato/epom_provider_smaato-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2D9D37915F79A2600CCE5FB /* Build configuration list for PBXProject "epom_provider_smaato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D9D38B15F79A2600CCE5FB /* Debug */,
+				C2D9D38C15F79A2600CCE5FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D9D38D15F79A2600CCE5FB /* Build configuration list for PBXNativeTarget "epom_provider_smaato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D9D38E15F79A2600CCE5FB /* Debug */,
+				C2D9D38F15F79A2600CCE5FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2D9D37615F79A2600CCE5FB /* Project object */;
+}

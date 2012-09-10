@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C256B72B15767DD500132C8C /* ESProviderAdMob.m in Sources */ = {isa = PBXBuildFile; fileRef = C256B72A15767DD500132C8C /* ESProviderAdMob.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C256B72115767DD500132C8C /* libepom_provider_admob.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_admob.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C256B72815767DD500132C8C /* epom_provider_admob-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epom_provider_admob-Prefix.pch"; sourceTree = "<group>"; };
+		C256B72915767DD500132C8C /* ESProviderAdMob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderAdMob.h; sourceTree = "<group>"; };
+		C256B72A15767DD500132C8C /* ESProviderAdMob.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderAdMob.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C256B71E15767DD500132C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C256B71615767DD500132C8C = {
+			isa = PBXGroup;
+			children = (
+				C256B72615767DD500132C8C /* epom_provider_admob */,
+				C256B72315767DD500132C8C /* Frameworks */,
+				C256B72215767DD500132C8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C256B72215767DD500132C8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C256B72115767DD500132C8C /* libepom_provider_admob.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C256B72315767DD500132C8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C256B72615767DD500132C8C /* epom_provider_admob */ = {
+			isa = PBXGroup;
+			children = (
+				C256B72915767DD500132C8C /* ESProviderAdMob.h */,
+				C256B72A15767DD500132C8C /* ESProviderAdMob.m */,
+				C256B72715767DD500132C8C /* Supporting Files */,
+			);
+			path = epom_provider_admob;
+			sourceTree = "<group>";
+		};
+		C256B72715767DD500132C8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C256B72815767DD500132C8C /* epom_provider_admob-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C256B71F15767DD500132C8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C256B72015767DD500132C8C /* epom_provider_admob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C256B72E15767DD500132C8C /* Build configuration list for PBXNativeTarget "epom_provider_admob" */;
+			buildPhases = (
+				C256B71D15767DD500132C8C /* Sources */,
+				C256B71E15767DD500132C8C /* Frameworks */,
+				C256B71F15767DD500132C8C /* Headers */,
+				C21D228F157F543B00304A1A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = epom_provider_admob;
+			productName = epom_provider_admob;
+			productReference = C256B72115767DD500132C8C /* libepom_provider_admob.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C256B71815767DD500132C8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = C256B71B15767DD500132C8C /* Build configuration list for PBXProject "epom_provider_admob" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C256B71615767DD500132C8C;
+			productRefGroup = C256B72215767DD500132C8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C256B72015767DD500132C8C /* epom_provider_admob */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C21D228F157F543B00304A1A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../../universal_lib.sh ../../../lib/";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C256B71D15767DD500132C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C256B72B15767DD500132C8C /* ESProviderAdMob.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C256B72C15767DD500132C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../shared/,
+					../../../include/,
+					../../../externals/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Debug;
+		};
+		C256B72D15767DD500132C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../shared/,
+					../../../include/,
+					../../../externals/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Release;
+		};
+		C256B72F15767DD500132C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/epom_provider_admob.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epom_provider_admob/epom_provider_admob-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../externals/GoogleAdMobAds\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C256B73015767DD500132C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/epom_provider_admob.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epom_provider_admob/epom_provider_admob-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../externals/GoogleAdMobAds\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C256B71B15767DD500132C8C /* Build configuration list for PBXProject "epom_provider_admob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C256B72C15767DD500132C8C /* Debug */,
+				C256B72D15767DD500132C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C256B72E15767DD500132C8C /* Build configuration list for PBXNativeTarget "epom_provider_admob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C256B72F15767DD500132C8C /* Debug */,
+				C256B73015767DD500132C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C256B71815767DD500132C8C /* Project object */;
+}

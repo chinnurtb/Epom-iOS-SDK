@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C205C8341573A29C00DCF5E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C205C8321573A29C00DCF5E0 /* InfoPlist.strings */; };
+		C205C8361573A29C00DCF5E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C205C8351573A29C00DCF5E0 /* main.m */; };
+		C205C83A1573A29C00DCF5E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C205C8391573A29C00DCF5E0 /* AppDelegate.m */; };
+		C205C83D1573A29C00DCF5E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C205C83C1573A29C00DCF5E0 /* ViewController.m */; };
+		C205C8401573A29C00DCF5E0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C205C83E1573A29C00DCF5E0 /* ViewController.xib */; };
+		C21F118315A18F3100A18B76 /* libTapItAdMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21F118115A18F3100A18B76 /* libTapItAdMobile.a */; };
+		C21F118415A18F3100A18B76 /* ORMMA.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C21F118215A18F3100A18B76 /* ORMMA.bundle */; };
+		C253991415FCA91B0075632E /* libMMSDK_4.6.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253991315FCA91B0075632E /* libMMSDK_4.6.0.a */; };
+		C253993515FCA9E20075632E /* libepom_provider_admob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253992C15FCA9E20075632E /* libepom_provider_admob.a */; };
+		C253993615FCA9E20075632E /* libepom_provider_iad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253992D15FCA9E20075632E /* libepom_provider_iad.a */; };
+		C253993715FCA9E20075632E /* libepom_provider_inmobi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253992E15FCA9E20075632E /* libepom_provider_inmobi.a */; };
+		C253993815FCA9E20075632E /* libepom_provider_inneractive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253992F15FCA9E20075632E /* libepom_provider_inneractive.a */; };
+		C253993915FCA9E20075632E /* libepom_provider_jumptap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253993015FCA9E20075632E /* libepom_provider_jumptap.a */; };
+		C253993A15FCA9E20075632E /* libepom_provider_millennial_media.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253993115FCA9E20075632E /* libepom_provider_millennial_media.a */; };
+		C253993B15FCA9E20075632E /* libepom_provider_tapit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253993215FCA9E20075632E /* libepom_provider_tapit.a */; };
+		C253993D15FCA9E20075632E /* libepom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253993415FCA9E20075632E /* libepom.a */; };
+		C254925615E6224F00877A0E /* InneractiveAdSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C254925515E6224F00877A0E /* InneractiveAdSDK.a */; };
+		C28294E61580C172000FBDAD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294D61580C172000FBDAD /* iAd.framework */; };
+		C28294E71580C172000FBDAD /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294D71580C172000FBDAD /* EventKit.framework */; };
+		C28294E81580C172000FBDAD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294D81580C172000FBDAD /* CoreTelephony.framework */; };
+		C28294E91580C172000FBDAD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294D91580C172000FBDAD /* MobileCoreServices.framework */; };
+		C28294EA1580C172000FBDAD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294DA1580C172000FBDAD /* QuartzCore.framework */; };
+		C28294EB1580C172000FBDAD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294DB1580C172000FBDAD /* CoreGraphics.framework */; };
+		C28294EC1580C172000FBDAD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294DC1580C172000FBDAD /* AudioToolbox.framework */; };
+		C28294ED1580C172000FBDAD /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294DD1580C172000FBDAD /* MessageUI.framework */; };
+		C28294EE1580C172000FBDAD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294DE1580C172000FBDAD /* MediaPlayer.framework */; };
+		C28294EF1580C172000FBDAD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294DF1580C172000FBDAD /* Security.framework */; };
+		C28294F01580C172000FBDAD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294E01580C172000FBDAD /* AVFoundation.framework */; };
+		C28294F11580C172000FBDAD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294E11580C172000FBDAD /* CoreLocation.framework */; };
+		C28294F21580C172000FBDAD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294E21580C172000FBDAD /* SystemConfiguration.framework */; };
+		C28294F31580C172000FBDAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294E31580C172000FBDAD /* Foundation.framework */; };
+		C28294F41580C172000FBDAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294E41580C172000FBDAD /* UIKit.framework */; };
+		C28B8D6215A1DEF2003D071C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B8D5D15A1DEF2003D071C /* CoreMotion.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C28B8D6315A1DEF2003D071C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B8D5E15A1DEF2003D071C /* libsqlite3.dylib */; };
+		C28B8D6415A1DEF2003D071C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B8D5F15A1DEF2003D071C /* libz.dylib */; };
+		C28B8D6515A1DEF2003D071C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B8D6015A1DEF2003D071C /* CFNetwork.framework */; };
+		C28B8D6615A1DEF2003D071C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B8D6115A1DEF2003D071C /* CoreFoundation.framework */; };
+		C2AD598C15D11ABE0068CE92 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AD598B15D11ABE0068CE92 /* libxml2.dylib */; };
+		C2B6835215D10D6D00E5CBA1 /* libepom_provider_wapstart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B6835115D10D6D00E5CBA1 /* libepom_provider_wapstart.a */; };
+		C2D9D39E15F7C0AD00CCE5FB /* libepom_provider_smaato.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D39D15F7C0AD00CCE5FB /* libepom_provider_smaato.a */; };
+		C2D9D3A015F7C0B700CCE5FB /* iSoma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D39F15F7C0B700CCE5FB /* iSoma.framework */; };
+		C2D9D4A815F9DACA00CCE5FB /* libepom_provider_yoc_mojiva.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D4A715F9DACA00CCE5FB /* libepom_provider_yoc_mojiva.a */; };
+		C2D9D4D715FA167D00CCE5FB /* libepom_provider_smartmad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D4D615FA167D00CCE5FB /* libepom_provider_smartmad.a */; };
+		C2D9D4D915FA169200CCE5FB /* libSmartMad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D4D815FA169200CCE5FB /* libSmartMad.a */; };
+		C2F3E3071582338C0022A77C /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F3E3031582338C0022A77C /* back.png */; };
+		C2F3E3081582338C0022A77C /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F3E3041582338C0022A77C /* back@2x.png */; };
+		C2F3E3091582338C0022A77C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F3E3051582338C0022A77C /* icon.png */; };
+		C2F3E30A1582338C0022A77C /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F3E3061582338C0022A77C /* icon@2x.png */; };
+		C2F3E4031585E4390022A77C /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F3E3FF1585E4390022A77C /* libGoogleAdMobAds.a */; };
+		C2F3E4051585E4390022A77C /* jtUniversalLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F3E4011585E4390022A77C /* jtUniversalLib.a */; };
+		C2F3E40A1585E4B10022A77C /* libInMobi_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F3E4091585E4B10022A77C /* libInMobi_iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C205C8251573A29C00DCF5E0 /* test_ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_ipad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C205C8311573A29C00DCF5E0 /* test_ipad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test_ipad-Info.plist"; sourceTree = "<group>"; };
+		C205C8331573A29C00DCF5E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C205C8351573A29C00DCF5E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C205C8371573A29C00DCF5E0 /* test_ipad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test_ipad-Prefix.pch"; sourceTree = "<group>"; };
+		C205C8381573A29C00DCF5E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C205C8391573A29C00DCF5E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C205C83B1573A29C00DCF5E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C205C83C1573A29C00DCF5E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C205C83F1573A29C00DCF5E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		C21F118115A18F3100A18B76 /* libTapItAdMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTapItAdMobile.a; path = ../externals/TapIt_iPhone_SDK/SDK/libTapItAdMobile.a; sourceTree = "<group>"; };
+		C21F118215A18F3100A18B76 /* ORMMA.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ORMMA.bundle; path = ../externals/TapIt_iPhone_SDK/SDK/ORMMA.bundle; sourceTree = "<group>"; };
+		C253991315FCA91B0075632E /* libMMSDK_4.6.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMMSDK_4.6.0.a; path = ../externals/MMSDK/libMMSDK_4.6.0.a; sourceTree = "<group>"; };
+		C253992C15FCA9E20075632E /* libepom_provider_admob.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_admob.a; path = "../private/providers/epom_provider_admob/build/Release-iphoneos/libepom_provider_admob.a"; sourceTree = "<group>"; };
+		C253992D15FCA9E20075632E /* libepom_provider_iad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_iad.a; path = "../private/providers/epom_provider_iad/build/Release-iphoneos/libepom_provider_iad.a"; sourceTree = "<group>"; };
+		C253992E15FCA9E20075632E /* libepom_provider_inmobi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_inmobi.a; path = "../private/providers/epom_provider_inmobi/build/Release-iphoneos/libepom_provider_inmobi.a"; sourceTree = "<group>"; };
+		C253992F15FCA9E20075632E /* libepom_provider_inneractive.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_inneractive.a; path = "../private/providers/epom_provider_inneractive/build/Release-iphoneos/libepom_provider_inneractive.a"; sourceTree = "<group>"; };
+		C253993015FCA9E20075632E /* libepom_provider_jumptap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_jumptap.a; path = "../private/providers/epom_provider_jumptap/build/Release-iphoneos/libepom_provider_jumptap.a"; sourceTree = "<group>"; };
+		C253993115FCA9E20075632E /* libepom_provider_millennial_media.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_millennial_media.a; path = "../private/providers/epom_provider_millennial_media/build/Release-iphoneos/libepom_provider_millennial_media.a"; sourceTree = "<group>"; };
+		C253993215FCA9E20075632E /* libepom_provider_tapit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_tapit.a; path = "../private/providers/epom_provider_tapit/build/Release-iphoneos/libepom_provider_tapit.a"; sourceTree = "<group>"; };
+		C253993415FCA9E20075632E /* libepom.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom.a; path = "../private/epom/build/Release-iphoneos/libepom.a"; sourceTree = "<group>"; };
+		C254925515E6224F00877A0E /* InneractiveAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = InneractiveAdSDK.a; path = ../externals/InneractiveAd/lib/InneractiveAdSDK.a; sourceTree = "<group>"; };
+		C28294D61580C172000FBDAD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		C28294D71580C172000FBDAD /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		C28294D81580C172000FBDAD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C28294D91580C172000FBDAD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C28294DA1580C172000FBDAD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C28294DB1580C172000FBDAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C28294DC1580C172000FBDAD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C28294DD1580C172000FBDAD /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C28294DE1580C172000FBDAD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C28294DF1580C172000FBDAD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C28294E01580C172000FBDAD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C28294E11580C172000FBDAD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C28294E21580C172000FBDAD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C28294E31580C172000FBDAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C28294E41580C172000FBDAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C28294E51580C172000FBDAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C28B8D5D15A1DEF2003D071C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		C28B8D5E15A1DEF2003D071C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C28B8D5F15A1DEF2003D071C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C28B8D6015A1DEF2003D071C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C28B8D6115A1DEF2003D071C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C2AD598B15D11ABE0068CE92 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		C2B6835115D10D6D00E5CBA1 /* libepom_provider_wapstart.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_wapstart.a; path = "../private/providers/epom_provider_wapstart/build/Release-iphoneos/libepom_provider_wapstart.a"; sourceTree = "<group>"; };
+		C2D9D39D15F7C0AD00CCE5FB /* libepom_provider_smaato.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_smaato.a; path = "../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos/libepom_provider_smaato.a"; sourceTree = "<group>"; };
+		C2D9D39F15F7C0B700CCE5FB /* iSoma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iSoma.framework; path = ../externals/iSoma.framework; sourceTree = "<group>"; };
+		C2D9D4A715F9DACA00CCE5FB /* libepom_provider_yoc_mojiva.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libepom_provider_yoc_mojiva.a; path = "../private/providers/epom_provider_yoc_mojiva/build/Release-iphoneos/libepom_provider_yoc_mojiva.a"; sourceTree = "<group>"; };
+		C2D9D4D615FA167D00CCE5FB /* libepom_provider_smartmad.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libepom_provider_smartmad.a; path = "../private/providers/epom_provider_smartmad/build/Release-iphoneos/libepom_provider_smartmad.a"; sourceTree = "<group>"; };
+		C2D9D4D815FA169200CCE5FB /* libSmartMad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSmartMad.a; path = ../externals/SmartMad/libSmartMad.a; sourceTree = "<group>"; };
+		C2F3E3031582338C0022A77C /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		C2F3E3041582338C0022A77C /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		C2F3E3051582338C0022A77C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		C2F3E3061582338C0022A77C /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		C2F3E3FF1585E4390022A77C /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAdMobAds.a; path = ../externals/GoogleAdMobAds/libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		C2F3E4011585E4390022A77C /* jtUniversalLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = jtUniversalLib.a; path = ../externals/JTIPHONE/jtUniversalLib.a; sourceTree = "<group>"; };
+		C2F3E4091585E4B10022A77C /* libInMobi_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libInMobi_iOS.a; path = ../externals/InMobi/libInMobi_iOS.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C205C8221573A29C00DCF5E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D9D4D915FA169200CCE5FB /* libSmartMad.a in Frameworks */,
+				C2D9D4D715FA167D00CCE5FB /* libepom_provider_smartmad.a in Frameworks */,
+				C2D9D4A815F9DACA00CCE5FB /* libepom_provider_yoc_mojiva.a in Frameworks */,
+				C2D9D3A015F7C0B700CCE5FB /* iSoma.framework in Frameworks */,
+				C2D9D39E15F7C0AD00CCE5FB /* libepom_provider_smaato.a in Frameworks */,
+				C2AD598C15D11ABE0068CE92 /* libxml2.dylib in Frameworks */,
+				C2B6835215D10D6D00E5CBA1 /* libepom_provider_wapstart.a in Frameworks */,
+				C253993515FCA9E20075632E /* libepom_provider_admob.a in Frameworks */,
+				C253993615FCA9E20075632E /* libepom_provider_iad.a in Frameworks */,
+				C253993715FCA9E20075632E /* libepom_provider_inmobi.a in Frameworks */,
+				C253993815FCA9E20075632E /* libepom_provider_inneractive.a in Frameworks */,
+				C253993915FCA9E20075632E /* libepom_provider_jumptap.a in Frameworks */,
+				C253993A15FCA9E20075632E /* libepom_provider_millennial_media.a in Frameworks */,
+				C253993B15FCA9E20075632E /* libepom_provider_tapit.a in Frameworks */,
+				C253993D15FCA9E20075632E /* libepom.a in Frameworks */,
+				C28294E61580C172000FBDAD /* iAd.framework in Frameworks */,
+				C28294E71580C172000FBDAD /* EventKit.framework in Frameworks */,
+				C28294E81580C172000FBDAD /* CoreTelephony.framework in Frameworks */,
+				C28294E91580C172000FBDAD /* MobileCoreServices.framework in Frameworks */,
+				C28294EA1580C172000FBDAD /* QuartzCore.framework in Frameworks */,
+				C28294EB1580C172000FBDAD /* CoreGraphics.framework in Frameworks */,
+				C28294EC1580C172000FBDAD /* AudioToolbox.framework in Frameworks */,
+				C28294ED1580C172000FBDAD /* MessageUI.framework in Frameworks */,
+				C28294EE1580C172000FBDAD /* MediaPlayer.framework in Frameworks */,
+				C28294EF1580C172000FBDAD /* Security.framework in Frameworks */,
+				C28294F01580C172000FBDAD /* AVFoundation.framework in Frameworks */,
+				C28294F11580C172000FBDAD /* CoreLocation.framework in Frameworks */,
+				C28294F21580C172000FBDAD /* SystemConfiguration.framework in Frameworks */,
+				C28294F31580C172000FBDAD /* Foundation.framework in Frameworks */,
+				C28294F41580C172000FBDAD /* UIKit.framework in Frameworks */,
+				C2F3E4031585E4390022A77C /* libGoogleAdMobAds.a in Frameworks */,
+				C2F3E4051585E4390022A77C /* jtUniversalLib.a in Frameworks */,
+				C2F3E40A1585E4B10022A77C /* libInMobi_iOS.a in Frameworks */,
+				C21F118315A18F3100A18B76 /* libTapItAdMobile.a in Frameworks */,
+				C28B8D6215A1DEF2003D071C /* CoreMotion.framework in Frameworks */,
+				C28B8D6315A1DEF2003D071C /* libsqlite3.dylib in Frameworks */,
+				C28B8D6415A1DEF2003D071C /* libz.dylib in Frameworks */,
+				C28B8D6515A1DEF2003D071C /* CFNetwork.framework in Frameworks */,
+				C28B8D6615A1DEF2003D071C /* CoreFoundation.framework in Frameworks */,
+				C253991415FCA91B0075632E /* libMMSDK_4.6.0.a in Frameworks */,
+				C254925615E6224F00877A0E /* InneractiveAdSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C205C81A1573A29C00DCF5E0 = {
+			isa = PBXGroup;
+			children = (
+				C253992B15FCA9E20075632E /* Providers */,
+				C2864F151573CDEA00886CCC /* resources */,
+				C205C82F1573A29C00DCF5E0 /* test_ipad */,
+				C205C8281573A29C00DCF5E0 /* Frameworks */,
+				C205C8261573A29C00DCF5E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C205C8261573A29C00DCF5E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C205C8251573A29C00DCF5E0 /* test_ipad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C205C8281573A29C00DCF5E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2AD598B15D11ABE0068CE92 /* libxml2.dylib */,
+				C28B8D5E15A1DEF2003D071C /* libsqlite3.dylib */,
+				C28B8D5F15A1DEF2003D071C /* libz.dylib */,
+				C28B8D5D15A1DEF2003D071C /* CoreMotion.framework */,
+				C28B8D6015A1DEF2003D071C /* CFNetwork.framework */,
+				C28B8D6115A1DEF2003D071C /* CoreFoundation.framework */,
+				C28294D61580C172000FBDAD /* iAd.framework */,
+				C28294D71580C172000FBDAD /* EventKit.framework */,
+				C28294D81580C172000FBDAD /* CoreTelephony.framework */,
+				C28294D91580C172000FBDAD /* MobileCoreServices.framework */,
+				C28294DA1580C172000FBDAD /* QuartzCore.framework */,
+				C28294DB1580C172000FBDAD /* CoreGraphics.framework */,
+				C28294DC1580C172000FBDAD /* AudioToolbox.framework */,
+				C28294DD1580C172000FBDAD /* MessageUI.framework */,
+				C28294DE1580C172000FBDAD /* MediaPlayer.framework */,
+				C28294DF1580C172000FBDAD /* Security.framework */,
+				C28294E01580C172000FBDAD /* AVFoundation.framework */,
+				C28294E11580C172000FBDAD /* CoreLocation.framework */,
+				C28294E21580C172000FBDAD /* SystemConfiguration.framework */,
+				C28294E31580C172000FBDAD /* Foundation.framework */,
+				C28294E41580C172000FBDAD /* UIKit.framework */,
+				C28294E51580C172000FBDAD /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C205C82F1573A29C00DCF5E0 /* test_ipad */ = {
+			isa = PBXGroup;
+			children = (
+				C205C8381573A29C00DCF5E0 /* AppDelegate.h */,
+				C205C8391573A29C00DCF5E0 /* AppDelegate.m */,
+				C205C83B1573A29C00DCF5E0 /* ViewController.h */,
+				C205C83C1573A29C00DCF5E0 /* ViewController.m */,
+				C205C83E1573A29C00DCF5E0 /* ViewController.xib */,
+				C205C8301573A29C00DCF5E0 /* Supporting Files */,
+			);
+			path = test_ipad;
+			sourceTree = "<group>";
+		};
+		C205C8301573A29C00DCF5E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C205C8311573A29C00DCF5E0 /* test_ipad-Info.plist */,
+				C205C8321573A29C00DCF5E0 /* InfoPlist.strings */,
+				C205C8351573A29C00DCF5E0 /* main.m */,
+				C205C8371573A29C00DCF5E0 /* test_ipad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C253992B15FCA9E20075632E /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				C2D9D4D615FA167D00CCE5FB /* libepom_provider_smartmad.a */,
+				C2D9D4A715F9DACA00CCE5FB /* libepom_provider_yoc_mojiva.a */,
+				C2D9D39D15F7C0AD00CCE5FB /* libepom_provider_smaato.a */,
+				C2B6835115D10D6D00E5CBA1 /* libepom_provider_wapstart.a */,
+				C253992C15FCA9E20075632E /* libepom_provider_admob.a */,
+				C253992D15FCA9E20075632E /* libepom_provider_iad.a */,
+				C253992E15FCA9E20075632E /* libepom_provider_inmobi.a */,
+				C253992F15FCA9E20075632E /* libepom_provider_inneractive.a */,
+				C253993015FCA9E20075632E /* libepom_provider_jumptap.a */,
+				C253993115FCA9E20075632E /* libepom_provider_millennial_media.a */,
+				C253993215FCA9E20075632E /* libepom_provider_tapit.a */,
+				C253993415FCA9E20075632E /* libepom.a */,
+				C2D9D4D815FA169200CCE5FB /* libSmartMad.a */,
+				C2D9D39F15F7C0B700CCE5FB /* iSoma.framework */,
+				C21F118115A18F3100A18B76 /* libTapItAdMobile.a */,
+				C21F118215A18F3100A18B76 /* ORMMA.bundle */,
+				C2F3E4091585E4B10022A77C /* libInMobi_iOS.a */,
+				C254925515E6224F00877A0E /* InneractiveAdSDK.a */,
+				C2F3E3FF1585E4390022A77C /* libGoogleAdMobAds.a */,
+				C2F3E4011585E4390022A77C /* jtUniversalLib.a */,
+				C253991315FCA91B0075632E /* libMMSDK_4.6.0.a */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		C2864F151573CDEA00886CCC /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				C2F3E3031582338C0022A77C /* back.png */,
+				C2F3E3041582338C0022A77C /* back@2x.png */,
+				C2F3E3051582338C0022A77C /* icon.png */,
+				C2F3E3061582338C0022A77C /* icon@2x.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C205C8241573A29C00DCF5E0 /* test_ipad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C205C8431573A29C00DCF5E0 /* Build configuration list for PBXNativeTarget "test_ipad" */;
+			buildPhases = (
+				C205C8211573A29C00DCF5E0 /* Sources */,
+				C205C8221573A29C00DCF5E0 /* Frameworks */,
+				C205C8231573A29C00DCF5E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test_ipad;
+			productName = test_ipad;
+			productReference = C205C8251573A29C00DCF5E0 /* test_ipad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C205C81C1573A29C00DCF5E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = C205C81F1573A29C00DCF5E0 /* Build configuration list for PBXProject "test_ipad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C205C81A1573A29C00DCF5E0;
+			productRefGroup = C205C8261573A29C00DCF5E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C205C8241573A29C00DCF5E0 /* test_ipad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C205C8231573A29C00DCF5E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C205C8341573A29C00DCF5E0 /* InfoPlist.strings in Resources */,
+				C205C8401573A29C00DCF5E0 /* ViewController.xib in Resources */,
+				C2F3E3071582338C0022A77C /* back.png in Resources */,
+				C2F3E3081582338C0022A77C /* back@2x.png in Resources */,
+				C2F3E3091582338C0022A77C /* icon.png in Resources */,
+				C2F3E30A1582338C0022A77C /* icon@2x.png in Resources */,
+				C21F118415A18F3100A18B76 /* ORMMA.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C205C8211573A29C00DCF5E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C205C8361573A29C00DCF5E0 /* main.m in Sources */,
+				C205C83A1573A29C00DCF5E0 /* AppDelegate.m in Sources */,
+				C205C83D1573A29C00DCF5E0 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C205C8321573A29C00DCF5E0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C205C8331573A29C00DCF5E0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C205C83E1573A29C00DCF5E0 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C205C83F1573A29C00DCF5E0 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C205C8411573A29C00DCF5E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../include/;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Debug;
+		};
+		C205C8421573A29C00DCF5E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../include/;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Release;
+		};
+		C205C8441573A29C00DCF5E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../externals\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "test_ipad/test_ipad-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "test_ipad/test_ipad-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../externals/GoogleAdMobAds\"",
+					"\"$(SRCROOT)/../externals/InneractiveAd/lib\"",
+					"\"$(SRCROOT)/../externals/JTIPHONE\"",
+					"\"$(SRCROOT)/../externals/MMSDK\"",
+					"\"$(SRCROOT)/../externals/InMobi\"",
+					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK/SDK\"",
+					"\"$(SRCROOT)/../externals/SmartMad\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C205C8451573A29C00DCF5E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../externals\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "test_ipad/test_ipad-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "test_ipad/test_ipad-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../externals/GoogleAdMobAds\"",
+					"\"$(SRCROOT)/../externals/InneractiveAd/lib\"",
+					"\"$(SRCROOT)/../externals/JTIPHONE\"",
+					"\"$(SRCROOT)/../externals/MMSDK\"",
+					"\"$(SRCROOT)/../externals/InMobi\"",
+					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK/SDK\"",
+					"\"$(SRCROOT)/../externals/SmartMad\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C205C81F1573A29C00DCF5E0 /* Build configuration list for PBXProject "test_ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C205C8411573A29C00DCF5E0 /* Debug */,
+				C205C8421573A29C00DCF5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C205C8431573A29C00DCF5E0 /* Build configuration list for PBXNativeTarget "test_ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C205C8441573A29C00DCF5E0 /* Debug */,
+				C205C8451573A29C00DCF5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C205C81C1573A29C00DCF5E0 /* Project object */;
+}

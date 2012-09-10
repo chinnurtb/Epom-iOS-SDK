@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2D8F520157E0A05003076D9 /* ESProviderJumpTap.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D8F51F157E0A05003076D9 /* ESProviderJumpTap.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C2D8F516157E0A05003076D9 /* libepom_provider_jumptap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_jumptap.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D8F51D157E0A05003076D9 /* epom_provider_jumptap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epom_provider_jumptap-Prefix.pch"; sourceTree = "<group>"; };
+		C2D8F51E157E0A05003076D9 /* ESProviderJumpTap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderJumpTap.h; sourceTree = "<group>"; };
+		C2D8F51F157E0A05003076D9 /* ESProviderJumpTap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderJumpTap.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2D8F513157E0A05003076D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2D8F50B157E0A05003076D9 = {
+			isa = PBXGroup;
+			children = (
+				C2D8F51B157E0A05003076D9 /* epom_provider_jumptap */,
+				C2D8F518157E0A05003076D9 /* Frameworks */,
+				C2D8F517157E0A05003076D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2D8F517157E0A05003076D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2D8F516157E0A05003076D9 /* libepom_provider_jumptap.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2D8F518157E0A05003076D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2D8F51B157E0A05003076D9 /* epom_provider_jumptap */ = {
+			isa = PBXGroup;
+			children = (
+				C2D8F51E157E0A05003076D9 /* ESProviderJumpTap.h */,
+				C2D8F51F157E0A05003076D9 /* ESProviderJumpTap.m */,
+				C2D8F51C157E0A05003076D9 /* Supporting Files */,
+			);
+			path = epom_provider_jumptap;
+			sourceTree = "<group>";
+		};
+		C2D8F51C157E0A05003076D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2D8F51D157E0A05003076D9 /* epom_provider_jumptap-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2D8F514157E0A05003076D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C2D8F515157E0A05003076D9 /* epom_provider_jumptap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D8F523157E0A05003076D9 /* Build configuration list for PBXNativeTarget "epom_provider_jumptap" */;
+			buildPhases = (
+				C2D8F512157E0A05003076D9 /* Sources */,
+				C2D8F513157E0A05003076D9 /* Frameworks */,
+				C2D8F514157E0A05003076D9 /* Headers */,
+				C21D2291157F548900304A1A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = epom_provider_jumptap;
+			productName = epom_provider_jumptap;
+			productReference = C2D8F516157E0A05003076D9 /* libepom_provider_jumptap.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2D8F50D157E0A05003076D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = C2D8F510157E0A05003076D9 /* Build configuration list for PBXProject "epom_provider_jumptap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2D8F50B157E0A05003076D9;
+			productRefGroup = C2D8F517157E0A05003076D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2D8F515157E0A05003076D9 /* epom_provider_jumptap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C21D2291157F548900304A1A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../../universal_lib.sh ../../../lib/";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2D8F512157E0A05003076D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D8F520157E0A05003076D9 /* ESProviderJumpTap.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2D8F521157E0A05003076D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../shared/,
+					../../../include/,
+					../../../externals/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Debug;
+		};
+		C2D8F522157E0A05003076D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../shared/,
+					../../../include/,
+					../../../externals/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Release;
+		};
+		C2D8F524157E0A05003076D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/epom_provider_jumptap.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epom_provider_jumptap/epom_provider_jumptap-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C2D8F525157E0A05003076D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/epom_provider_jumptap.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epom_provider_jumptap/epom_provider_jumptap-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2D8F510157E0A05003076D9 /* Build configuration list for PBXProject "epom_provider_jumptap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D8F521157E0A05003076D9 /* Debug */,
+				C2D8F522157E0A05003076D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D8F523157E0A05003076D9 /* Build configuration list for PBXNativeTarget "epom_provider_jumptap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D8F524157E0A05003076D9 /* Debug */,
+				C2D8F525157E0A05003076D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2D8F50D157E0A05003076D9 /* Project object */;
+}

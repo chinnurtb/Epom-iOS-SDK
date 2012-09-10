@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'epom_provider_wapstart' target in the 'epom_provider_wapstart' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+	#import <CoreData/CoreData.h>
+#endif
+
+#define ARRAY_SIZE(x) (sizeof(x) / sizeof(*x))

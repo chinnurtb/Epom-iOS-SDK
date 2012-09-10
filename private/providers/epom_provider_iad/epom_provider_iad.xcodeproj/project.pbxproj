@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C27D51731580A7FA00F7C5A4 /* ESProviderIAd.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D51721580A7FA00F7C5A4 /* ESProviderIAd.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C27D51691580A7FA00F7C5A4 /* libepom_provider_iad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_iad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27D51701580A7FA00F7C5A4 /* epom_provider_iad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epom_provider_iad-Prefix.pch"; sourceTree = "<group>"; };
+		C27D51711580A7FA00F7C5A4 /* ESProviderIAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderIAd.h; sourceTree = "<group>"; };
+		C27D51721580A7FA00F7C5A4 /* ESProviderIAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderIAd.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C27D51661580A7FA00F7C5A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C27D515E1580A7FA00F7C5A4 = {
+			isa = PBXGroup;
+			children = (
+				C27D516E1580A7FA00F7C5A4 /* epom_provider_iad */,
+				C27D516B1580A7FA00F7C5A4 /* Frameworks */,
+				C27D516A1580A7FA00F7C5A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C27D516A1580A7FA00F7C5A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C27D51691580A7FA00F7C5A4 /* libepom_provider_iad.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C27D516B1580A7FA00F7C5A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C27D516E1580A7FA00F7C5A4 /* epom_provider_iad */ = {
+			isa = PBXGroup;
+			children = (
+				C27D51711580A7FA00F7C5A4 /* ESProviderIAd.h */,
+				C27D51721580A7FA00F7C5A4 /* ESProviderIAd.m */,
+				C27D516F1580A7FA00F7C5A4 /* Supporting Files */,
+			);
+			path = epom_provider_iad;
+			sourceTree = "<group>";
+		};
+		C27D516F1580A7FA00F7C5A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C27D51701580A7FA00F7C5A4 /* epom_provider_iad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C27D51671580A7FA00F7C5A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C27D51681580A7FA00F7C5A4 /* epom_provider_iad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C27D51761580A7FA00F7C5A4 /* Build configuration list for PBXNativeTarget "epom_provider_iad" */;
+			buildPhases = (
+				C27D51651580A7FA00F7C5A4 /* Sources */,
+				C27D51661580A7FA00F7C5A4 /* Frameworks */,
+				C27D51671580A7FA00F7C5A4 /* Headers */,
+				C27D51791580A85300F7C5A4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = epom_provider_iad;
+			productName = epom_provider_iad;
+			productReference = C27D51691580A7FA00F7C5A4 /* libepom_provider_iad.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C27D51601580A7FA00F7C5A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = C27D51631580A7FA00F7C5A4 /* Build configuration list for PBXProject "epom_provider_iad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C27D515E1580A7FA00F7C5A4;
+			productRefGroup = C27D516A1580A7FA00F7C5A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C27D51681580A7FA00F7C5A4 /* epom_provider_iad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C27D51791580A85300F7C5A4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../../universal_lib.sh ../../../lib/";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C27D51651580A7FA00F7C5A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27D51731580A7FA00F7C5A4 /* ESProviderIAd.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C27D51741580A7FA00F7C5A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../shared/,
+					../../../include/,
+					../../../externals/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Debug;
+		};
+		C27D51751580A7FA00F7C5A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../shared/,
+					../../../include/,
+					../../../externals/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Release;
+		};
+		C27D51771580A7FA00F7C5A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/epom_provider_iad.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epom_provider_iad/epom_provider_iad-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C27D51781580A7FA00F7C5A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/epom_provider_iad.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epom_provider_iad/epom_provider_iad-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C27D51631580A7FA00F7C5A4 /* Build configuration list for PBXProject "epom_provider_iad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27D51741580A7FA00F7C5A4 /* Debug */,
+				C27D51751580A7FA00F7C5A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C27D51761580A7FA00F7C5A4 /* Build configuration list for PBXNativeTarget "epom_provider_iad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27D51771580A7FA00F7C5A4 /* Debug */,
+				C27D51781580A7FA00F7C5A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C27D51601580A7FA00F7C5A4 /* Project object */;
+}

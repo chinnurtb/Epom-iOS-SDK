@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'epom_provider_inneractive' target in the 'epom_provider_inneractive' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+#endif

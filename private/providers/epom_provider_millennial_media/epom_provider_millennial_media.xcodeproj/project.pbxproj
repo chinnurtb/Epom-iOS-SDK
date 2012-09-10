@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C28F7A49157F84C6003C7B21 /* ESProviderMillennialMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = C28F7A48157F84C6003C7B21 /* ESProviderMillennialMedia.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C28F7A3F157F84C6003C7B21 /* libepom_provider_millennial_media.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_millennial_media.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28F7A46157F84C6003C7B21 /* epom_provider_millennial_media-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epom_provider_millennial_media-Prefix.pch"; sourceTree = "<group>"; };
+		C28F7A47157F84C6003C7B21 /* ESProviderMillennialMedia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderMillennialMedia.h; sourceTree = "<group>"; };
+		C28F7A48157F84C6003C7B21 /* ESProviderMillennialMedia.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderMillennialMedia.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C28F7A3C157F84C6003C7B21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C28F7A34157F84C6003C7B21 = {
+			isa = PBXGroup;
+			children = (
+				C28F7A44157F84C6003C7B21 /* epom_provider_millennial_media */,
+				C28F7A41157F84C6003C7B21 /* Frameworks */,
+				C28F7A40157F84C6003C7B21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C28F7A40157F84C6003C7B21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C28F7A3F157F84C6003C7B21 /* libepom_provider_millennial_media.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C28F7A41157F84C6003C7B21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C28F7A44157F84C6003C7B21 /* epom_provider_millennial_media */ = {
+			isa = PBXGroup;
+			children = (
+				C28F7A47157F84C6003C7B21 /* ESProviderMillennialMedia.h */,
+				C28F7A48157F84C6003C7B21 /* ESProviderMillennialMedia.m */,
+				C28F7A45157F84C6003C7B21 /* Supporting Files */,
+			);
+			name = epom_provider_millennial_media;
+			path = epom_provider_millenial_media;
+			sourceTree = "<group>";
+		};
+		C28F7A45157F84C6003C7B21 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C28F7A46157F84C6003C7B21 /* epom_provider_millennial_media-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C28F7A3D157F84C6003C7B21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C28F7A3E157F84C6003C7B21 /* epom_provider_millennial_media */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28F7A4C157F84C6003C7B21 /* Build configuration list for PBXNativeTarget "epom_provider_millennial_media" */;
+			buildPhases = (
+				C28F7A3B157F84C6003C7B21 /* Sources */,
+				C28F7A3C157F84C6003C7B21 /* Frameworks */,
+				C28F7A3D157F84C6003C7B21 /* Headers */,
+				C2BDC6F2157FA4EB001A3F23 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = epom_provider_millennial_media;
+			productName = epom_provider_millenial_media;
+			productReference = C28F7A3F157F84C6003C7B21 /* libepom_provider_millennial_media.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C28F7A36157F84C6003C7B21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = C28F7A39157F84C6003C7B21 /* Build configuration list for PBXProject "epom_provider_millennial_media" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C28F7A34157F84C6003C7B21;
+			productRefGroup = C28F7A40157F84C6003C7B21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C28F7A3E157F84C6003C7B21 /* epom_provider_millennial_media */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C2BDC6F2157FA4EB001A3F23 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../../universal_lib.sh ../../../lib/";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C28F7A3B157F84C6003C7B21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28F7A49157F84C6003C7B21 /* ESProviderMillennialMedia.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C28F7A4A157F84C6003C7B21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../shared/,
+					../../../include/,
+					../../../externals/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Debug;
+		};
+		C28F7A4B157F84C6003C7B21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../shared/,
+					../../../include/,
+					../../../externals/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Release;
+		};
+		C28F7A4D157F84C6003C7B21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/epom_provider_millenial_media.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epom_provider_millenial_media/epom_provider_millennial_media-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = epom_provider_millennial_media;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C28F7A4E157F84C6003C7B21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/epom_provider_millenial_media.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epom_provider_millenial_media/epom_provider_millennial_media-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = epom_provider_millennial_media;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C28F7A39157F84C6003C7B21 /* Build configuration list for PBXProject "epom_provider_millennial_media" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28F7A4A157F84C6003C7B21 /* Debug */,
+				C28F7A4B157F84C6003C7B21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C28F7A4C157F84C6003C7B21 /* Build configuration list for PBXNativeTarget "epom_provider_millennial_media" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28F7A4D157F84C6003C7B21 /* Debug */,
+				C28F7A4E157F84C6003C7B21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C28F7A36157F84C6003C7B21 /* Project object */;
+}

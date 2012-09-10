@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "EPOM SDK">
+      <FileRef
+         location = "group:epom-sdk-ios-release-notes.txt">
+      </FileRef>
+      <Group
+         location = "group:private/epom"
+         name = "public">
+         <Group
+            location = "group:private/epom"
+            name = "epom">
+            <FileRef
+               location = "group:private/epom/epom/../../../include/epom/ESVersion.h">
+            </FileRef>
+            <FileRef
+               location = "group:private/epom/epom/../../../include/epom/ESViewDelegateProtocol.h">
+            </FileRef>
+            <FileRef
+               location = "group:private/epom/epom/../../../include/epom/ESEnumerations.h">
+            </FileRef>
+            <FileRef
+               location = "group:private/epom/epom/../../../include/epom/ESView.h">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:private/epom"
+         name = "shared">
+         <FileRef
+            location = "group:../shared/EpomSettings.h">
+         </FileRef>
+         <FileRef
+            location = "group:../shared/EpomProvidersList.h">
+         </FileRef>
+         <FileRef
+            location = "group:../shared/ESProvider.h">
+         </FileRef>
+         <FileRef
+            location = "group:../shared/ESProviderDelegateProtocol.h">
+         </FileRef>
+         <FileRef
+            location = "group:../shared/ESLogger.h">
+         </FileRef>
+         <FileRef
+            location = "group:../shared/ESContentWebViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:../shared/EpomUtils.h">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "providers">
+         <FileRef
+            location = "group:private/providers/epom_provider_admob/epom_provider_admob.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:private/providers/epom_provider_inmobi/epom_provider_inmobi.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:private/providers/epom_provider_jumptap/epom_provider_jumptap.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:private/providers/epom_provider_inneractive/epom_provider_inneractive.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:private/providers/epom_provider_millennial_media/epom_provider_millennial_media.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:private/providers/epom_provider_iad/epom_provider_iad.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:private/providers/epom_provider_tapit/epom_provider_tapit.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:private/providers/epom_provider_yoc_mojiva/epom_provider_yoc_mojiva.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:private/providers/epom_provider_wapstart/epom_provider_wapstart.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:private/providers/epom_provider_smaato/epom_provider_smaato.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:private/providers/epom_provider_smartmad/epom_provider_smartmad.xcodeproj">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:private/epom/epom.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:test_iphone/test_iphone.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:test_ipad/test_ipad.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C21F116D15A18B7F00A18B76 /* ESProviderTapIt.m in Sources */ = {isa = PBXBuildFile; fileRef = C21F116C15A18B7F00A18B76 /* ESProviderTapIt.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C21F116315A18B7F00A18B76 /* libepom_provider_tapit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_tapit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C21F116A15A18B7F00A18B76 /* epom_provider_tapit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epom_provider_tapit-Prefix.pch"; sourceTree = "<group>"; };
+		C21F116B15A18B7F00A18B76 /* ESProviderTapIt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderTapIt.h; sourceTree = "<group>"; };
+		C21F116C15A18B7F00A18B76 /* ESProviderTapIt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderTapIt.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C21F116015A18B7F00A18B76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C21F115815A18B7F00A18B76 = {
+			isa = PBXGroup;
+			children = (
+				C21F116815A18B7F00A18B76 /* epom_provider_tapit */,
+				C21F116515A18B7F00A18B76 /* Frameworks */,
+				C21F116415A18B7F00A18B76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C21F116415A18B7F00A18B76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C21F116315A18B7F00A18B76 /* libepom_provider_tapit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C21F116515A18B7F00A18B76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C21F116815A18B7F00A18B76 /* epom_provider_tapit */ = {
+			isa = PBXGroup;
+			children = (
+				C21F116B15A18B7F00A18B76 /* ESProviderTapIt.h */,
+				C21F116C15A18B7F00A18B76 /* ESProviderTapIt.m */,
+				C21F116915A18B7F00A18B76 /* Supporting Files */,
+			);
+			path = epom_provider_tapit;
+			sourceTree = "<group>";
+		};
+		C21F116915A18B7F00A18B76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C21F116A15A18B7F00A18B76 /* epom_provider_tapit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C21F116115A18B7F00A18B76 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C21F116215A18B7F00A18B76 /* epom_provider_tapit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C21F117015A18B7F00A18B76 /* Build configuration list for PBXNativeTarget "epom_provider_tapit" */;
+			buildPhases = (
+				C21F115F15A18B7F00A18B76 /* Sources */,
+				C21F116015A18B7F00A18B76 /* Frameworks */,
+				C21F116115A18B7F00A18B76 /* Headers */,
+				C21F117715A18D7800A18B76 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = epom_provider_tapit;
+			productName = epom_provider_tapit;
+			productReference = C21F116315A18B7F00A18B76 /* libepom_provider_tapit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C21F115A15A18B7F00A18B76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = C21F115D15A18B7F00A18B76 /* Build configuration list for PBXProject "epom_provider_tapit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C21F115815A18B7F00A18B76;
+			productRefGroup = C21F116415A18B7F00A18B76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C21F116215A18B7F00A18B76 /* epom_provider_tapit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C21F117715A18D7800A18B76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../../universal_lib.sh ../../../lib/\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C21F115F15A18B7F00A18B76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21F116D15A18B7F00A18B76 /* ESProviderTapIt.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C21F116E15A18B7F00A18B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../shared/,
+					../../../include/,
+					../../../externals/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Debug;
+		};
+		C21F116F15A18B7F00A18B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../shared/,
+					../../../include/,
+					../../../externals/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Release;
+		};
+		C21F117115A18B7F00A18B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/epom_provider_tapit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epom_provider_tapit/epom_provider_tapit-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C21F117215A18B7F00A18B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/epom_provider_tapit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epom_provider_tapit/epom_provider_tapit-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C21F115D15A18B7F00A18B76 /* Build configuration list for PBXProject "epom_provider_tapit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21F116E15A18B7F00A18B76 /* Debug */,
+				C21F116F15A18B7F00A18B76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C21F117015A18B7F00A18B76 /* Build configuration list for PBXNativeTarget "epom_provider_tapit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21F117115A18B7F00A18B76 /* Debug */,
+				C21F117215A18B7F00A18B76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C21F115A15A18B7F00A18B76 /* Project object */;
+}
