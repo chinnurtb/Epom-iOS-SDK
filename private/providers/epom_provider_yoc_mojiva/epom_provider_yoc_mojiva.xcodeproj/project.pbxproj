@@ -25,6 +25,13 @@
 			remoteGlobalIDString = CFE1ED4112FA979400600579;
 			remoteInfo = AdMobileSDK;
 		};
+		C2BF16571625714E007C48CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2BDC848157FA8C0001A3F23 /* AdMobileSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CF6CAF8713D4632500158662;
+			remoteInfo = DocGeneration;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				C2BDC851157FA8C1001A3F23 /* libAdMobileSDK.a */,
+				C2BF16581625714E007C48CE /* libAdMobileSDK doc generation.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +188,13 @@
 			remoteRef = C2BDC850157FA8C1001A3F23 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		C2BF16581625714E007C48CE /* libAdMobileSDK doc generation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libAdMobileSDK doc generation.a";
+			remoteRef = C2BF16571625714E007C48CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -217,10 +232,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -240,9 +252,9 @@
 					../../../include/,
 					../../../externals/,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
-				VALID_ARCHS = "armv6 armv7 i386";
+				VALID_ARCHS = "armv7 armv7s i386";
 			};
 			name = Debug;
 		};
@@ -250,10 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_THUMB_SUPPORT = NO;
@@ -266,10 +275,10 @@
 					../../../include/,
 					../../../externals/,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "armv6 armv7 i386";
+				VALID_ARCHS = "armv7 armv7s i386";
 			};
 			name = Release;
 		};

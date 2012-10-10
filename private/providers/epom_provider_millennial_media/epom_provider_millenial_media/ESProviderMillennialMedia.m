@@ -21,7 +21,7 @@
 
 + (BOOL)initializeSystem
 {
-	[MMAdView setLogLevel: LOG_LEVEL_OFF];
+	[MMAdView setLogLevel: MMLOG_LEVEL_OFF];
 
 	return YES;
 }

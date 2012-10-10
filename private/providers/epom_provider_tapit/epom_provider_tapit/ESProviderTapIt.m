@@ -36,24 +36,36 @@
 		return nil;
 	}
 	
-	self.tapItView = [[[TapItAdMobileView alloc] initWithFrame:epom_view_size(size) zone:[params valueForKey:ZONE_ID_KEY]] autorelease];
-	self.tapItView.delegate = self;
-	self.tapItView.logMode = NO;//([ESLogger shared].verboseType != ESVerboseNone);
-	self.tapItView.updateTimeInterval = 0.f;
-	CLLocation *location = [self.delegate currentLocation];
-	if (location != nil) 
+	// create request
+	// if not passing in any params:
+	TapItRequest *request = nil;
+	
+	if ([self.delegate inTestMode])
 	{
-		self.tapItView.longitude = [NSString stringWithFormat:@"%3.6f", location.coordinate.longitude];
-		self.tapItView.latitude = [NSString stringWithFormat:@"%3.6f", location.coordinate.latitude];
+		NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:@"test", @"mode", nil];
+		request = [TapItRequest requestWithAdZone:[params valueForKey:ZONE_ID_KEY] andCustomParameters:params];
+	}
+	else
+	{
+		request = [TapItRequest requestWithAdZone:[params valueForKey:ZONE_ID_KEY]];
 	}
 	
-	[self.tapItView update];
+	self.tapItView = [[[TapItBannerAdView alloc] initWithFrame:epom_view_size(size)] autorelease];
+	self.tapItView.delegate = self;
+	
+	self.tapItView.animated = NO;
+	self.tapItView.shouldReloadAfterTap = NO;
+	self.tapItView.presentingController = [self.delegate screenPresentController];
+
+	[self.tapItView updateLocation:[self.delegate currentLocation]];
+	[self.tapItView startServingAdsForRequest:request];
 	
 	return self;
 }
 
 - (void)dealloc
 {
+	[self.tapItView cancelAds];
 	self.tapItView.delegate = nil;
 	self.tapItView = nil;
 	[super dealloc];
@@ -68,41 +80,47 @@
 
 #pragma mark -- delegate methods
 
-- (void)willReceiveAd:(id)sender
+- (void)tapitBannerAdViewWillLoadAd:(TapItBannerAdView *)bannerView
 {
 	
 }
 
-- (void)didReceiveAd:(id)sender
+- (void)tapitBannerAdViewDidLoadAd:(TapItBannerAdView *)bannerView
 {
+	[self.tapItView cancelAds];
 	[self.delegate providerDidRecieveAd:self];	
 }
 
-- (void)didFailToReceiveAd:(id)sender withError:(NSError*)error
+- (void)tapitBannerAdView:(TapItBannerAdView *)bannerView didFailToReceiveAdWithError:(NSError *)error
 {
+	[self.tapItView cancelAds];
+	
 	ES_LOG_ERROR(@"TapIt ad request failed: %@", error);
 	[self.delegate providerFailedToRecieveAd:self];
+
 }
 
-- (void)adWillStartFullScreen:(id)sender
+- (BOOL)tapitBannerAdViewActionShouldBegin:(TapItBannerAdView *)bannerView willLeaveApplication:(BOOL)willLeave
 {
 	[self.delegate providerViewHasBeenClicked:self];
-	
 	[self.delegate providerViewWillEnterModalMode:self];
-}
-
-- (void)adDidEndFullScreen:(id)sender
-{
-	[self.delegate providerViewDidLeaveModalMode:self];
-}
-
-- (BOOL)adShouldOpen:(id)sender withUrl:(NSURL*)url
-{
-	[self.delegate providerViewHasBeenClicked:self];
 	
-	[self.delegate providerViewWillLeaveApplication:self];
+	if (willLeave)
+	{
+		[self.delegate providerViewWillLeaveApplication:self];
+	}
 	
 	return YES;
+}
+
+- (void)tapitBannerAdViewActionWillFinish:(TapItBannerAdView *)bannerView
+{
+	
+}
+
+- (void)tapitBannerAdViewActionDidFinish:(TapItBannerAdView *)bannerView
+{
+	[self.delegate providerViewDidLeaveModalMode:self];
 }
 
 @end

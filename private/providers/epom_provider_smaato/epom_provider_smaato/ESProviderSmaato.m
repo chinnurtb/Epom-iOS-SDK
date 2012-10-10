@@ -15,19 +15,13 @@
 #define SPACE_ID_KEY @"ADSPASE_ID"
 #define PUBLISHER_ID_KEY @"PUBLISHER_ID"
 
-#define REQUIRED_IOS_VERSION @"5.0"
-
 @implementation ESProviderSmaato
 
 @synthesize bannerView;
 
 + (BOOL)initializeSystem
 {
-	NSString *reqSysVer = REQUIRED_IOS_VERSION;
-	NSString *currSysVer = [[UIDevice currentDevice] systemVersion];
-	BOOL result = [currSysVer compare:reqSysVer options:NSNumericSearch] != NSOrderedAscending;
-	
-	return result;
+	return YES;
 }
 
 #pragma mark -- overriden methods

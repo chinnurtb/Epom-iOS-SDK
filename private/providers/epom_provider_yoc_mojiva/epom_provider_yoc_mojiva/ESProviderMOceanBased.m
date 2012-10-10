@@ -68,7 +68,6 @@
 	}
 	
 	self.mastView.testMode = [self.delegate inTestMode];
-	self.mastView.contentAlignment = YES;
 	self.mastView.type = AdTypeRichmediaAndImages;
 	self.mastView.internalOpenMode = YES;
 	self.mastView.logMode = AdLogModeNone;

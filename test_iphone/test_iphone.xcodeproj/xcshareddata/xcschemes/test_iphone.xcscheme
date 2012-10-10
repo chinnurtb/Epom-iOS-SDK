@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0440"
+   LastUpgradeVersion = "0450"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -38,10 +38,178 @@
                ReferencedContainer = "container:test_iphone.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C2FF9E1B157527AA00526FE4"
+               BuildableName = "libepom.a"
+               BlueprintName = "epom"
+               ReferencedContainer = "container:../private/epom/epom.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C256B72015767DD500132C8C"
+               BuildableName = "libepom_provider_admob.a"
+               BlueprintName = "epom_provider_admob"
+               ReferencedContainer = "container:../private/providers/epom_provider_admob/epom_provider_admob.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C27D51681580A7FA00F7C5A4"
+               BuildableName = "libepom_provider_iad.a"
+               BlueprintName = "epom_provider_iad"
+               ReferencedContainer = "container:../private/providers/epom_provider_iad/epom_provider_iad.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C25AA2931578C087007FA92D"
+               BuildableName = "libepom_provider_inmobi.a"
+               BlueprintName = "epom_provider_inmobi"
+               ReferencedContainer = "container:../private/providers/epom_provider_inmobi/epom_provider_inmobi.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C2D8F537157E1346003076D9"
+               BuildableName = "libepom_provider_inneractive.a"
+               BlueprintName = "epom_provider_inneractive"
+               ReferencedContainer = "container:../private/providers/epom_provider_inneractive/epom_provider_inneractive.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C2D8F515157E0A05003076D9"
+               BuildableName = "libepom_provider_jumptap.a"
+               BlueprintName = "epom_provider_jumptap"
+               ReferencedContainer = "container:../private/providers/epom_provider_jumptap/epom_provider_jumptap.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C28F7A3E157F84C6003C7B21"
+               BuildableName = "libepom_provider_millennial_media.a"
+               BlueprintName = "epom_provider_millennial_media"
+               ReferencedContainer = "container:../private/providers/epom_provider_millennial_media/epom_provider_millennial_media.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C2D9D37E15F79A2600CCE5FB"
+               BuildableName = "libepom_provider_smaato.a"
+               BlueprintName = "epom_provider_smaato"
+               ReferencedContainer = "container:../private/providers/epom_provider_smaato/epom_provider_smaato.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C2D9D4BF15F9F81600CCE5FB"
+               BuildableName = "libepom_provider_smartmad.a"
+               BlueprintName = "epom_provider_smartmad"
+               ReferencedContainer = "container:../private/providers/epom_provider_smartmad/epom_provider_smartmad.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C21F116215A18B7F00A18B76"
+               BuildableName = "libepom_provider_tapit.a"
+               BlueprintName = "epom_provider_tapit"
+               ReferencedContainer = "container:../private/providers/epom_provider_tapit/epom_provider_tapit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C21B748015D10B610027C1F2"
+               BuildableName = "libepom_provider_wapstart.a"
+               BlueprintName = "epom_provider_wapstart"
+               ReferencedContainer = "container:../private/providers/epom_provider_wapstart/epom_provider_wapstart.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C2BDC6FD157FA524001A3F23"
+               BuildableName = "libepom_provider_yoc_mojiva.a"
+               BlueprintName = "epom_provider_yoc_mojiva"
+               ReferencedContainer = "container:../private/providers/epom_provider_yoc_mojiva/epom_provider_yoc_mojiva.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
@@ -65,7 +233,6 @@
       buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
-      enableOpenGLFrameCaptureMode = "0"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable>
          <BuildableReference

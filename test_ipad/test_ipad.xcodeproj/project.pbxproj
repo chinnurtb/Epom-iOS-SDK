@@ -12,18 +12,19 @@
 		C205C83A1573A29C00DCF5E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C205C8391573A29C00DCF5E0 /* AppDelegate.m */; };
 		C205C83D1573A29C00DCF5E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C205C83C1573A29C00DCF5E0 /* ViewController.m */; };
 		C205C8401573A29C00DCF5E0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C205C83E1573A29C00DCF5E0 /* ViewController.xib */; };
-		C21F118315A18F3100A18B76 /* libTapItAdMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21F118115A18F3100A18B76 /* libTapItAdMobile.a */; };
-		C21F118415A18F3100A18B76 /* ORMMA.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C21F118215A18F3100A18B76 /* ORMMA.bundle */; };
-		C253991415FCA91B0075632E /* libMMSDK_4.6.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253991315FCA91B0075632E /* libMMSDK_4.6.0.a */; };
+		C21A176C16241B8C00F8D593 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21A176B16241B8C00F8D593 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C21A17701624277C00F8D593 /* libTapIt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21A176F1624277C00F8D593 /* libTapIt.a */; };
+		C21A177716242B9C00F8D593 /* libInMobiAdNetwork-3.6.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21A177516242B9C00F8D593 /* libInMobiAdNetwork-3.6.0.a */; };
+		C21A177816242B9C00F8D593 /* libInMobiCommons-3.6.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21A177616242B9C00F8D593 /* libInMobiCommons-3.6.0.a */; };
+		C21A177C16242F1C00F8D593 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21A177B16242F1C00F8D593 /* PassKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C21A17841624346600F8D593 /* TapIt.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C21A17831624346600F8D593 /* TapIt.bundle */; };
 		C253993515FCA9E20075632E /* libepom_provider_admob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253992C15FCA9E20075632E /* libepom_provider_admob.a */; };
 		C253993615FCA9E20075632E /* libepom_provider_iad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253992D15FCA9E20075632E /* libepom_provider_iad.a */; };
 		C253993715FCA9E20075632E /* libepom_provider_inmobi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253992E15FCA9E20075632E /* libepom_provider_inmobi.a */; };
-		C253993815FCA9E20075632E /* libepom_provider_inneractive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253992F15FCA9E20075632E /* libepom_provider_inneractive.a */; };
 		C253993915FCA9E20075632E /* libepom_provider_jumptap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253993015FCA9E20075632E /* libepom_provider_jumptap.a */; };
 		C253993A15FCA9E20075632E /* libepom_provider_millennial_media.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253993115FCA9E20075632E /* libepom_provider_millennial_media.a */; };
 		C253993B15FCA9E20075632E /* libepom_provider_tapit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253993215FCA9E20075632E /* libepom_provider_tapit.a */; };
 		C253993D15FCA9E20075632E /* libepom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253993415FCA9E20075632E /* libepom.a */; };
-		C254925615E6224F00877A0E /* InneractiveAdSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C254925515E6224F00877A0E /* InneractiveAdSDK.a */; };
 		C28294E61580C172000FBDAD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294D61580C172000FBDAD /* iAd.framework */; };
 		C28294E71580C172000FBDAD /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294D71580C172000FBDAD /* EventKit.framework */; };
 		C28294E81580C172000FBDAD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28294D81580C172000FBDAD /* CoreTelephony.framework */; };
@@ -46,8 +47,29 @@
 		C28B8D6615A1DEF2003D071C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B8D6115A1DEF2003D071C /* CoreFoundation.framework */; };
 		C2AD598C15D11ABE0068CE92 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AD598B15D11ABE0068CE92 /* libxml2.dylib */; };
 		C2B6835215D10D6D00E5CBA1 /* libepom_provider_wapstart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B6835115D10D6D00E5CBA1 /* libepom_provider_wapstart.a */; };
-		C2D9D39E15F7C0AD00CCE5FB /* libepom_provider_smaato.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D39D15F7C0AD00CCE5FB /* libepom_provider_smaato.a */; };
-		C2D9D3A015F7C0B700CCE5FB /* iSoma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D39F15F7C0B700CCE5FB /* iSoma.framework */; };
+		C2BF15C0162462B4007C48CE /* libMMSDK_4.6.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BF15BF162462B4007C48CE /* libMMSDK_4.6.1.a */; };
+		C2BF16FC16257940007C48CE /* wp_banner_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BF16D116257940007C48CE /* wp_banner_background.png */; };
+		C2BF16FD16257940007C48CE /* wp_banner_close.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BF16D216257940007C48CE /* wp_banner_close.png */; };
+		C2BF16FE16257940007C48CE /* wp_banner_shild.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BF16D316257940007C48CE /* wp_banner_shild.png */; };
+		C2BF16FF16257940007C48CE /* MPAdBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16D616257940007C48CE /* MPAdBrowserController.m */; };
+		C2BF170016257940007C48CE /* MPAdBrowserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2BF16D716257940007C48CE /* MPAdBrowserController.xib */; };
+		C2BF170116257940007C48CE /* MPTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16D916257940007C48CE /* MPTimer.m */; };
+		C2BF170216257940007C48CE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C2BF16DB16257940007C48CE /* LICENSE */; };
+		C2BF170316257940007C48CE /* MRAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16DE16257940007C48CE /* MRAdView.m */; };
+		C2BF170416257940007C48CE /* MRAdViewBrowsingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16E016257940007C48CE /* MRAdViewBrowsingController.m */; };
+		C2BF170516257940007C48CE /* MRAdViewDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16E216257940007C48CE /* MRAdViewDisplayController.m */; };
+		C2BF170616257940007C48CE /* MRCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16E416257940007C48CE /* MRCommand.m */; };
+		C2BF170716257940007C48CE /* MRDimmingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16E616257940007C48CE /* MRDimmingView.m */; };
+		C2BF170816257940007C48CE /* MRProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16E816257940007C48CE /* MRProperty.m */; };
+		C2BF170916257940007C48CE /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C2BF16E916257940007C48CE /* MRAID.bundle */; };
+		C2BF170A16257940007C48CE /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16EB16257940007C48CE /* NSString+MD5Addition.m */; };
+		C2BF170B16257940007C48CE /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16ED16257940007C48CE /* UIDevice+IdentifierAddition.m */; };
+		C2BF170C16257940007C48CE /* WPAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16EF16257940007C48CE /* WPAdView.m */; };
+		C2BF170D16257940007C48CE /* WPBannerInfoLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16F116257940007C48CE /* WPBannerInfoLoader.m */; };
+		C2BF170E16257940007C48CE /* WPBannerRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16F316257940007C48CE /* WPBannerRequestInfo.m */; };
+		C2BF170F16257940007C48CE /* WPBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16F516257940007C48CE /* WPBannerView.m */; };
+		C2BF171016257940007C48CE /* WPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16F716257940007C48CE /* WPLocationManager.m */; };
+		C2BF171116257940007C48CE /* WPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF16FB16257940007C48CE /* WPUtils.m */; };
 		C2D9D4A815F9DACA00CCE5FB /* libepom_provider_yoc_mojiva.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D4A715F9DACA00CCE5FB /* libepom_provider_yoc_mojiva.a */; };
 		C2D9D4D715FA167D00CCE5FB /* libepom_provider_smartmad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D4D615FA167D00CCE5FB /* libepom_provider_smartmad.a */; };
 		C2D9D4D915FA169200CCE5FB /* libSmartMad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D4D815FA169200CCE5FB /* libSmartMad.a */; };
@@ -57,7 +79,6 @@
 		C2F3E30A1582338C0022A77C /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F3E3061582338C0022A77C /* icon@2x.png */; };
 		C2F3E4031585E4390022A77C /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F3E3FF1585E4390022A77C /* libGoogleAdMobAds.a */; };
 		C2F3E4051585E4390022A77C /* jtUniversalLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F3E4011585E4390022A77C /* jtUniversalLib.a */; };
-		C2F3E40A1585E4B10022A77C /* libInMobi_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F3E4091585E4B10022A77C /* libInMobi_iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,9 +92,13 @@
 		C205C83B1573A29C00DCF5E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C205C83C1573A29C00DCF5E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C205C83F1573A29C00DCF5E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		C21F118115A18F3100A18B76 /* libTapItAdMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTapItAdMobile.a; path = ../externals/TapIt_iPhone_SDK/SDK/libTapItAdMobile.a; sourceTree = "<group>"; };
-		C21F118215A18F3100A18B76 /* ORMMA.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ORMMA.bundle; path = ../externals/TapIt_iPhone_SDK/SDK/ORMMA.bundle; sourceTree = "<group>"; };
-		C253991315FCA91B0075632E /* libMMSDK_4.6.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMMSDK_4.6.0.a; path = ../externals/MMSDK/libMMSDK_4.6.0.a; sourceTree = "<group>"; };
+		C21A176B16241B8C00F8D593 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C21A176F1624277C00F8D593 /* libTapIt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTapIt.a; path = ../externals/TapIt_iPhone_SDK/libTapIt.a; sourceTree = "<group>"; };
+		C21A177516242B9C00F8D593 /* libInMobiAdNetwork-3.6.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libInMobiAdNetwork-3.6.0.a"; path = "../externals/InMobi/libInMobiAdNetwork-3.6.0.a"; sourceTree = "<group>"; };
+		C21A177616242B9C00F8D593 /* libInMobiCommons-3.6.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libInMobiCommons-3.6.0.a"; path = "../externals/InMobi/libInMobiCommons-3.6.0.a"; sourceTree = "<group>"; };
+		C21A177B16242F1C00F8D593 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		C21A177F1624307800F8D593 /* InneractiveAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = InneractiveAdSDK.a; path = "/Users/orange/Documents/Projects/epom-ios-sdk/test_iphone/../externals/InneractiveAd/InneractiveAdSDK.a"; sourceTree = "<absolute>"; };
+		C21A17831624346600F8D593 /* TapIt.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TapIt.bundle; path = "/Users/orange/Documents/Projects/epom-ios-sdk/test_iphone/../externals/TapIt_iPhone_SDK/TapIt.bundle"; sourceTree = "<absolute>"; };
 		C253992C15FCA9E20075632E /* libepom_provider_admob.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_admob.a; path = "../private/providers/epom_provider_admob/build/Release-iphoneos/libepom_provider_admob.a"; sourceTree = "<group>"; };
 		C253992D15FCA9E20075632E /* libepom_provider_iad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_iad.a; path = "../private/providers/epom_provider_iad/build/Release-iphoneos/libepom_provider_iad.a"; sourceTree = "<group>"; };
 		C253992E15FCA9E20075632E /* libepom_provider_inmobi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_inmobi.a; path = "../private/providers/epom_provider_inmobi/build/Release-iphoneos/libepom_provider_inmobi.a"; sourceTree = "<group>"; };
@@ -82,7 +107,6 @@
 		C253993115FCA9E20075632E /* libepom_provider_millennial_media.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_millennial_media.a; path = "../private/providers/epom_provider_millennial_media/build/Release-iphoneos/libepom_provider_millennial_media.a"; sourceTree = "<group>"; };
 		C253993215FCA9E20075632E /* libepom_provider_tapit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_tapit.a; path = "../private/providers/epom_provider_tapit/build/Release-iphoneos/libepom_provider_tapit.a"; sourceTree = "<group>"; };
 		C253993415FCA9E20075632E /* libepom.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom.a; path = "../private/epom/build/Release-iphoneos/libepom.a"; sourceTree = "<group>"; };
-		C254925515E6224F00877A0E /* InneractiveAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = InneractiveAdSDK.a; path = ../externals/InneractiveAd/lib/InneractiveAdSDK.a; sourceTree = "<group>"; };
 		C28294D61580C172000FBDAD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		C28294D71580C172000FBDAD /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		C28294D81580C172000FBDAD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -106,10 +130,52 @@
 		C28B8D6115A1DEF2003D071C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		C2AD598B15D11ABE0068CE92 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		C2B6835115D10D6D00E5CBA1 /* libepom_provider_wapstart.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_wapstart.a; path = "../private/providers/epom_provider_wapstart/build/Release-iphoneos/libepom_provider_wapstart.a"; sourceTree = "<group>"; };
+		C2BF15BF162462B4007C48CE /* libMMSDK_4.6.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMMSDK_4.6.1.a; path = "/Users/orange/Documents/Projects/epom-ios-sdk/test_iphone/../externals/MMSDK/libMMSDK_4.6.1.a"; sourceTree = "<absolute>"; };
+		C2BF16D116257940007C48CE /* wp_banner_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wp_banner_background.png; sourceTree = "<group>"; };
+		C2BF16D216257940007C48CE /* wp_banner_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wp_banner_close.png; sourceTree = "<group>"; };
+		C2BF16D316257940007C48CE /* wp_banner_shild.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wp_banner_shild.png; sourceTree = "<group>"; };
+		C2BF16D516257940007C48CE /* MPAdBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdBrowserController.h; sourceTree = "<group>"; };
+		C2BF16D616257940007C48CE /* MPAdBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAdBrowserController.m; sourceTree = "<group>"; };
+		C2BF16D716257940007C48CE /* MPAdBrowserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPAdBrowserController.xib; sourceTree = "<group>"; };
+		C2BF16D816257940007C48CE /* MPTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTimer.h; sourceTree = "<group>"; };
+		C2BF16D916257940007C48CE /* MPTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTimer.m; sourceTree = "<group>"; };
+		C2BF16DB16257940007C48CE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C2BF16DC16257940007C48CE /* MRAdView+Controllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRAdView+Controllers.h"; sourceTree = "<group>"; };
+		C2BF16DD16257940007C48CE /* MRAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAdView.h; sourceTree = "<group>"; };
+		C2BF16DE16257940007C48CE /* MRAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAdView.m; sourceTree = "<group>"; };
+		C2BF16DF16257940007C48CE /* MRAdViewBrowsingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAdViewBrowsingController.h; sourceTree = "<group>"; };
+		C2BF16E016257940007C48CE /* MRAdViewBrowsingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAdViewBrowsingController.m; sourceTree = "<group>"; };
+		C2BF16E116257940007C48CE /* MRAdViewDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAdViewDisplayController.h; sourceTree = "<group>"; };
+		C2BF16E216257940007C48CE /* MRAdViewDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAdViewDisplayController.m; sourceTree = "<group>"; };
+		C2BF16E316257940007C48CE /* MRCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCommand.h; sourceTree = "<group>"; };
+		C2BF16E416257940007C48CE /* MRCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCommand.m; sourceTree = "<group>"; };
+		C2BF16E516257940007C48CE /* MRDimmingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDimmingView.h; sourceTree = "<group>"; };
+		C2BF16E616257940007C48CE /* MRDimmingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDimmingView.m; sourceTree = "<group>"; };
+		C2BF16E716257940007C48CE /* MRProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProperty.h; sourceTree = "<group>"; };
+		C2BF16E816257940007C48CE /* MRProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRProperty.m; sourceTree = "<group>"; };
+		C2BF16E916257940007C48CE /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
+		C2BF16EA16257940007C48CE /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		C2BF16EB16257940007C48CE /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		C2BF16EC16257940007C48CE /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		C2BF16ED16257940007C48CE /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		C2BF16EE16257940007C48CE /* WPAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAdView.h; sourceTree = "<group>"; };
+		C2BF16EF16257940007C48CE /* WPAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAdView.m; sourceTree = "<group>"; };
+		C2BF16F016257940007C48CE /* WPBannerInfoLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBannerInfoLoader.h; sourceTree = "<group>"; };
+		C2BF16F116257940007C48CE /* WPBannerInfoLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBannerInfoLoader.m; sourceTree = "<group>"; };
+		C2BF16F216257940007C48CE /* WPBannerRequestInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBannerRequestInfo.h; sourceTree = "<group>"; };
+		C2BF16F316257940007C48CE /* WPBannerRequestInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBannerRequestInfo.m; sourceTree = "<group>"; };
+		C2BF16F416257940007C48CE /* WPBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBannerView.h; sourceTree = "<group>"; };
+		C2BF16F516257940007C48CE /* WPBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBannerView.m; sourceTree = "<group>"; };
+		C2BF16F616257940007C48CE /* WPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPLocationManager.h; sourceTree = "<group>"; };
+		C2BF16F716257940007C48CE /* WPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPLocationManager.m; sourceTree = "<group>"; };
+		C2BF16F816257940007C48CE /* WPLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPLogging.h; sourceTree = "<group>"; };
+		C2BF16F916257940007C48CE /* WPTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTypes.h; sourceTree = "<group>"; };
+		C2BF16FA16257940007C48CE /* WPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPUtils.h; sourceTree = "<group>"; };
+		C2BF16FB16257940007C48CE /* WPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPUtils.m; sourceTree = "<group>"; };
 		C2D9D39D15F7C0AD00CCE5FB /* libepom_provider_smaato.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_smaato.a; path = "../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos/libepom_provider_smaato.a"; sourceTree = "<group>"; };
 		C2D9D39F15F7C0B700CCE5FB /* iSoma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iSoma.framework; path = ../externals/iSoma.framework; sourceTree = "<group>"; };
-		C2D9D4A715F9DACA00CCE5FB /* libepom_provider_yoc_mojiva.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libepom_provider_yoc_mojiva.a; path = "../private/providers/epom_provider_yoc_mojiva/build/Release-iphoneos/libepom_provider_yoc_mojiva.a"; sourceTree = "<group>"; };
-		C2D9D4D615FA167D00CCE5FB /* libepom_provider_smartmad.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libepom_provider_smartmad.a; path = "../private/providers/epom_provider_smartmad/build/Release-iphoneos/libepom_provider_smartmad.a"; sourceTree = "<group>"; };
+		C2D9D4A715F9DACA00CCE5FB /* libepom_provider_yoc_mojiva.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_yoc_mojiva.a; path = "../private/providers/epom_provider_yoc_mojiva/build/Release-iphoneos/libepom_provider_yoc_mojiva.a"; sourceTree = "<group>"; };
+		C2D9D4D615FA167D00CCE5FB /* libepom_provider_smartmad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_smartmad.a; path = "../private/providers/epom_provider_smartmad/build/Release-iphoneos/libepom_provider_smartmad.a"; sourceTree = "<group>"; };
 		C2D9D4D815FA169200CCE5FB /* libSmartMad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSmartMad.a; path = ../externals/SmartMad/libSmartMad.a; sourceTree = "<group>"; };
 		C2F3E3031582338C0022A77C /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		C2F3E3041582338C0022A77C /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
@@ -117,7 +183,6 @@
 		C2F3E3061582338C0022A77C /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		C2F3E3FF1585E4390022A77C /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAdMobAds.a; path = ../externals/GoogleAdMobAds/libGoogleAdMobAds.a; sourceTree = "<group>"; };
 		C2F3E4011585E4390022A77C /* jtUniversalLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = jtUniversalLib.a; path = ../externals/JTIPHONE/jtUniversalLib.a; sourceTree = "<group>"; };
-		C2F3E4091585E4B10022A77C /* libInMobi_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libInMobi_iOS.a; path = ../externals/InMobi/libInMobi_iOS.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,17 +190,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C21A177C16242F1C00F8D593 /* PassKit.framework in Frameworks */,
+				C21A177716242B9C00F8D593 /* libInMobiAdNetwork-3.6.0.a in Frameworks */,
+				C21A177816242B9C00F8D593 /* libInMobiCommons-3.6.0.a in Frameworks */,
+				C21A17701624277C00F8D593 /* libTapIt.a in Frameworks */,
+				C21A176C16241B8C00F8D593 /* AdSupport.framework in Frameworks */,
 				C2D9D4D915FA169200CCE5FB /* libSmartMad.a in Frameworks */,
 				C2D9D4D715FA167D00CCE5FB /* libepom_provider_smartmad.a in Frameworks */,
 				C2D9D4A815F9DACA00CCE5FB /* libepom_provider_yoc_mojiva.a in Frameworks */,
-				C2D9D3A015F7C0B700CCE5FB /* iSoma.framework in Frameworks */,
-				C2D9D39E15F7C0AD00CCE5FB /* libepom_provider_smaato.a in Frameworks */,
 				C2AD598C15D11ABE0068CE92 /* libxml2.dylib in Frameworks */,
 				C2B6835215D10D6D00E5CBA1 /* libepom_provider_wapstart.a in Frameworks */,
 				C253993515FCA9E20075632E /* libepom_provider_admob.a in Frameworks */,
 				C253993615FCA9E20075632E /* libepom_provider_iad.a in Frameworks */,
 				C253993715FCA9E20075632E /* libepom_provider_inmobi.a in Frameworks */,
-				C253993815FCA9E20075632E /* libepom_provider_inneractive.a in Frameworks */,
 				C253993915FCA9E20075632E /* libepom_provider_jumptap.a in Frameworks */,
 				C253993A15FCA9E20075632E /* libepom_provider_millennial_media.a in Frameworks */,
 				C253993B15FCA9E20075632E /* libepom_provider_tapit.a in Frameworks */,
@@ -157,15 +224,12 @@
 				C28294F41580C172000FBDAD /* UIKit.framework in Frameworks */,
 				C2F3E4031585E4390022A77C /* libGoogleAdMobAds.a in Frameworks */,
 				C2F3E4051585E4390022A77C /* jtUniversalLib.a in Frameworks */,
-				C2F3E40A1585E4B10022A77C /* libInMobi_iOS.a in Frameworks */,
-				C21F118315A18F3100A18B76 /* libTapItAdMobile.a in Frameworks */,
 				C28B8D6215A1DEF2003D071C /* CoreMotion.framework in Frameworks */,
 				C28B8D6315A1DEF2003D071C /* libsqlite3.dylib in Frameworks */,
 				C28B8D6415A1DEF2003D071C /* libz.dylib in Frameworks */,
 				C28B8D6515A1DEF2003D071C /* CFNetwork.framework in Frameworks */,
 				C28B8D6615A1DEF2003D071C /* CoreFoundation.framework in Frameworks */,
-				C253991415FCA91B0075632E /* libMMSDK_4.6.0.a in Frameworks */,
-				C254925615E6224F00877A0E /* InneractiveAdSDK.a in Frameworks */,
+				C2BF15C0162462B4007C48CE /* libMMSDK_4.6.1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +239,7 @@
 		C205C81A1573A29C00DCF5E0 = {
 			isa = PBXGroup;
 			children = (
+				C2BF16A6162578CE007C48CE /* WapStart */,
 				C253992B15FCA9E20075632E /* Providers */,
 				C2864F151573CDEA00886CCC /* resources */,
 				C205C82F1573A29C00DCF5E0 /* test_ipad */,
@@ -194,6 +259,8 @@
 		C205C8281573A29C00DCF5E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C21A177B16242F1C00F8D593 /* PassKit.framework */,
+				C21A176B16241B8C00F8D593 /* AdSupport.framework */,
 				C2AD598B15D11ABE0068CE92 /* libxml2.dylib */,
 				C28B8D5E15A1DEF2003D071C /* libsqlite3.dylib */,
 				C28B8D5F15A1DEF2003D071C /* libz.dylib */,
@@ -259,15 +326,16 @@
 				C253993115FCA9E20075632E /* libepom_provider_millennial_media.a */,
 				C253993215FCA9E20075632E /* libepom_provider_tapit.a */,
 				C253993415FCA9E20075632E /* libepom.a */,
+				C21A177F1624307800F8D593 /* InneractiveAdSDK.a */,
+				C2BF15BF162462B4007C48CE /* libMMSDK_4.6.1.a */,
+				C21A177516242B9C00F8D593 /* libInMobiAdNetwork-3.6.0.a */,
+				C21A177616242B9C00F8D593 /* libInMobiCommons-3.6.0.a */,
+				C21A176F1624277C00F8D593 /* libTapIt.a */,
+				C21A17831624346600F8D593 /* TapIt.bundle */,
 				C2D9D4D815FA169200CCE5FB /* libSmartMad.a */,
 				C2D9D39F15F7C0B700CCE5FB /* iSoma.framework */,
-				C21F118115A18F3100A18B76 /* libTapItAdMobile.a */,
-				C21F118215A18F3100A18B76 /* ORMMA.bundle */,
-				C2F3E4091585E4B10022A77C /* libInMobi_iOS.a */,
-				C254925515E6224F00877A0E /* InneractiveAdSDK.a */,
 				C2F3E3FF1585E4390022A77C /* libGoogleAdMobAds.a */,
 				C2F3E4011585E4390022A77C /* jtUniversalLib.a */,
-				C253991315FCA91B0075632E /* libMMSDK_4.6.0.a */,
 			);
 			name = Providers;
 			sourceTree = "<group>";
@@ -281,6 +349,81 @@
 				C2F3E3061582338C0022A77C /* icon@2x.png */,
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		C2BF16A6162578CE007C48CE /* WapStart */ = {
+			isa = PBXGroup;
+			children = (
+				C2BF16D016257940007C48CE /* resources */,
+				C2BF16D416257940007C48CE /* src */,
+			);
+			name = WapStart;
+			path = ../test_iphone;
+			sourceTree = "<group>";
+		};
+		C2BF16D016257940007C48CE /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				C2BF16D116257940007C48CE /* wp_banner_background.png */,
+				C2BF16D216257940007C48CE /* wp_banner_close.png */,
+				C2BF16D316257940007C48CE /* wp_banner_shild.png */,
+			);
+			name = resources;
+			path = ../externals/WapStart/resources;
+			sourceTree = "<group>";
+		};
+		C2BF16D416257940007C48CE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C2BF16D516257940007C48CE /* MPAdBrowserController.h */,
+				C2BF16D616257940007C48CE /* MPAdBrowserController.m */,
+				C2BF16D716257940007C48CE /* MPAdBrowserController.xib */,
+				C2BF16D816257940007C48CE /* MPTimer.h */,
+				C2BF16D916257940007C48CE /* MPTimer.m */,
+				C2BF16DA16257940007C48CE /* MRAID */,
+				C2BF16E916257940007C48CE /* MRAID.bundle */,
+				C2BF16EA16257940007C48CE /* NSString+MD5Addition.h */,
+				C2BF16EB16257940007C48CE /* NSString+MD5Addition.m */,
+				C2BF16EC16257940007C48CE /* UIDevice+IdentifierAddition.h */,
+				C2BF16ED16257940007C48CE /* UIDevice+IdentifierAddition.m */,
+				C2BF16EE16257940007C48CE /* WPAdView.h */,
+				C2BF16EF16257940007C48CE /* WPAdView.m */,
+				C2BF16F016257940007C48CE /* WPBannerInfoLoader.h */,
+				C2BF16F116257940007C48CE /* WPBannerInfoLoader.m */,
+				C2BF16F216257940007C48CE /* WPBannerRequestInfo.h */,
+				C2BF16F316257940007C48CE /* WPBannerRequestInfo.m */,
+				C2BF16F416257940007C48CE /* WPBannerView.h */,
+				C2BF16F516257940007C48CE /* WPBannerView.m */,
+				C2BF16F616257940007C48CE /* WPLocationManager.h */,
+				C2BF16F716257940007C48CE /* WPLocationManager.m */,
+				C2BF16F816257940007C48CE /* WPLogging.h */,
+				C2BF16F916257940007C48CE /* WPTypes.h */,
+				C2BF16FA16257940007C48CE /* WPUtils.h */,
+				C2BF16FB16257940007C48CE /* WPUtils.m */,
+			);
+			name = src;
+			path = ../externals/WapStart/src;
+			sourceTree = "<group>";
+		};
+		C2BF16DA16257940007C48CE /* MRAID */ = {
+			isa = PBXGroup;
+			children = (
+				C2BF16DB16257940007C48CE /* LICENSE */,
+				C2BF16DC16257940007C48CE /* MRAdView+Controllers.h */,
+				C2BF16DD16257940007C48CE /* MRAdView.h */,
+				C2BF16DE16257940007C48CE /* MRAdView.m */,
+				C2BF16DF16257940007C48CE /* MRAdViewBrowsingController.h */,
+				C2BF16E016257940007C48CE /* MRAdViewBrowsingController.m */,
+				C2BF16E116257940007C48CE /* MRAdViewDisplayController.h */,
+				C2BF16E216257940007C48CE /* MRAdViewDisplayController.m */,
+				C2BF16E316257940007C48CE /* MRCommand.h */,
+				C2BF16E416257940007C48CE /* MRCommand.m */,
+				C2BF16E516257940007C48CE /* MRDimmingView.h */,
+				C2BF16E616257940007C48CE /* MRDimmingView.m */,
+				C2BF16E716257940007C48CE /* MRProperty.h */,
+				C2BF16E816257940007C48CE /* MRProperty.m */,
+			);
+			path = MRAID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,7 +482,13 @@
 				C2F3E3081582338C0022A77C /* back@2x.png in Resources */,
 				C2F3E3091582338C0022A77C /* icon.png in Resources */,
 				C2F3E30A1582338C0022A77C /* icon@2x.png in Resources */,
-				C21F118415A18F3100A18B76 /* ORMMA.bundle in Resources */,
+				C21A17841624346600F8D593 /* TapIt.bundle in Resources */,
+				C2BF16FC16257940007C48CE /* wp_banner_background.png in Resources */,
+				C2BF16FD16257940007C48CE /* wp_banner_close.png in Resources */,
+				C2BF16FE16257940007C48CE /* wp_banner_shild.png in Resources */,
+				C2BF170016257940007C48CE /* MPAdBrowserController.xib in Resources */,
+				C2BF170216257940007C48CE /* LICENSE in Resources */,
+				C2BF170916257940007C48CE /* MRAID.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +502,22 @@
 				C205C8361573A29C00DCF5E0 /* main.m in Sources */,
 				C205C83A1573A29C00DCF5E0 /* AppDelegate.m in Sources */,
 				C205C83D1573A29C00DCF5E0 /* ViewController.m in Sources */,
+				C2BF16FF16257940007C48CE /* MPAdBrowserController.m in Sources */,
+				C2BF170116257940007C48CE /* MPTimer.m in Sources */,
+				C2BF170316257940007C48CE /* MRAdView.m in Sources */,
+				C2BF170416257940007C48CE /* MRAdViewBrowsingController.m in Sources */,
+				C2BF170516257940007C48CE /* MRAdViewDisplayController.m in Sources */,
+				C2BF170616257940007C48CE /* MRCommand.m in Sources */,
+				C2BF170716257940007C48CE /* MRDimmingView.m in Sources */,
+				C2BF170816257940007C48CE /* MRProperty.m in Sources */,
+				C2BF170A16257940007C48CE /* NSString+MD5Addition.m in Sources */,
+				C2BF170B16257940007C48CE /* UIDevice+IdentifierAddition.m in Sources */,
+				C2BF170C16257940007C48CE /* WPAdView.m in Sources */,
+				C2BF170D16257940007C48CE /* WPBannerInfoLoader.m in Sources */,
+				C2BF170E16257940007C48CE /* WPBannerRequestInfo.m in Sources */,
+				C2BF170F16257940007C48CE /* WPBannerView.m in Sources */,
+				C2BF171016257940007C48CE /* WPLocationManager.m in Sources */,
+				C2BF171116257940007C48CE /* WPUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,10 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -403,11 +565,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../include/;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = "armv7 armv7s i386";
 			};
 			name = Debug;
 		};
@@ -415,10 +577,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -429,13 +588,13 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../include/;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = "armv7 armv7s i386";
 			};
 			name = Release;
 		};
@@ -454,19 +613,14 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos\"",
 					"\"$(SRCROOT)/../externals/GoogleAdMobAds\"",
-					"\"$(SRCROOT)/../externals/InneractiveAd/lib\"",
 					"\"$(SRCROOT)/../externals/JTIPHONE\"",
 					"\"$(SRCROOT)/../externals/MMSDK\"",
 					"\"$(SRCROOT)/../externals/InMobi\"",
-					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK/SDK\"",
 					"\"$(SRCROOT)/../externals/SmartMad\"",
+					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK\"",
+					"\"$(SRCROOT)/../externals/InneractiveAd\"",
 				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-					"-weak_library",
-					/usr/lib/libSystem.B.dylib,
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -487,19 +641,14 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos\"",
 					"\"$(SRCROOT)/../externals/GoogleAdMobAds\"",
-					"\"$(SRCROOT)/../externals/InneractiveAd/lib\"",
 					"\"$(SRCROOT)/../externals/JTIPHONE\"",
 					"\"$(SRCROOT)/../externals/MMSDK\"",
 					"\"$(SRCROOT)/../externals/InMobi\"",
-					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK/SDK\"",
 					"\"$(SRCROOT)/../externals/SmartMad\"",
+					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK\"",
+					"\"$(SRCROOT)/../externals/InneractiveAd\"",
 				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-					"-weak_library",
-					/usr/lib/libSystem.B.dylib,
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

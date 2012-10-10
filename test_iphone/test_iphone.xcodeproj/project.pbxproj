@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C21A176A16241B6D00F8D593 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21A176916241B6D00F8D593 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C21A176E1624274500F8D593 /* libTapIt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21A176D1624274500F8D593 /* libTapIt.a */; };
+		C21A177316242B8600F8D593 /* libInMobiAdNetwork-3.6.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21A177116242B8600F8D593 /* libInMobiAdNetwork-3.6.0.a */; };
+		C21A177416242B8600F8D593 /* libInMobiCommons-3.6.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21A177216242B8600F8D593 /* libInMobiCommons-3.6.0.a */; };
+		C21A177A16242EFC00F8D593 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21A177916242EFC00F8D593 /* PassKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C21A17821624345A00F8D593 /* TapIt.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C21A17811624345A00F8D593 /* TapIt.bundle */; };
 		C21D2286157F4F5E00304A1A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21D227D157F4F5E00304A1A /* CoreGraphics.framework */; };
 		C21D2287157F4F5E00304A1A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21D227E157F4F5E00304A1A /* AudioToolbox.framework */; };
 		C21D2288157F4F5E00304A1A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21D227F157F4F5E00304A1A /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -15,21 +21,14 @@
 		C21D228B157F4F5E00304A1A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21D2282157F4F5E00304A1A /* AVFoundation.framework */; };
 		C21D228C157F4F5E00304A1A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21D2283157F4F5E00304A1A /* CoreLocation.framework */; };
 		C21D228D157F4F5E00304A1A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21D2284157F4F5E00304A1A /* SystemConfiguration.framework */; };
-		C254925415E6223800877A0E /* InneractiveAdSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C254925315E6223800877A0E /* InneractiveAdSDK.a */; };
-		C26C9C0B15D91DA30073D69E /* ORMMA.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C21F117E15A18F2100A18B76 /* ORMMA.bundle */; };
 		C26C9C0E15D921250073D69E /* libepom_provider_wapstart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B6834E15D10D4F00E5CBA1 /* libepom_provider_wapstart.a */; };
 		C26C9C0F15D921270073D69E /* libepom_provider_admob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253991A15FCA9E20075632E /* libepom_provider_admob.a */; };
 		C26C9C1015D921290073D69E /* libepom_provider_iad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253991B15FCA9E20075632E /* libepom_provider_iad.a */; };
 		C26C9C1115D9212B0073D69E /* libepom_provider_inmobi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253991C15FCA9E20075632E /* libepom_provider_inmobi.a */; };
-		C26C9C1215D9212E0073D69E /* libepom_provider_inneractive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253991D15FCA9E20075632E /* libepom_provider_inneractive.a */; };
 		C26C9C1315D921310073D69E /* libepom_provider_jumptap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253991E15FCA9E20075632E /* libepom_provider_jumptap.a */; };
-		C26C9C1415D921330073D69E /* libepom_provider_millennial_media.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253991F15FCA9E20075632E /* libepom_provider_millennial_media.a */; };
 		C26C9C1515D921360073D69E /* libepom_provider_tapit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253992015FCA9E20075632E /* libepom_provider_tapit.a */; };
-		C26C9C1715D9213B0073D69E /* libTapItAdMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21F117D15A18F2100A18B76 /* libTapItAdMobile.a */; };
 		C26C9C1815D921A80073D69E /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F54C101593108E004FE54A /* libGoogleAdMobAds.a */; };
-		C26C9C1915D921AB0073D69E /* libInMobi_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F54C111593108E004FE54A /* libInMobi_iOS.a */; };
 		C26C9C1A15D921AD0073D69E /* jtUniversalLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F54C131593108E004FE54A /* jtUniversalLib.a */; };
-		C26C9C1B15D921B00073D69E /* libMMSDK_4.6.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253991115FCA9110075632E /* libMMSDK_4.6.0.a */; };
 		C26C9C1D15D921B80073D69E /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AD598815D11A8A0068CE92 /* libxml2.dylib */; };
 		C275FF3F158A1BB100620A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2923CBF1573AE180040583F /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C27D517E1580A8D900F7C5A4 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D517D1580A8D900F7C5A4 /* iAd.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -49,11 +48,33 @@
 		C2BDC857157FA90F001A3F23 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BDC856157FA90F001A3F23 /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C2BDC863157FA95F001A3F23 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BDC862157FA95F001A3F23 /* EventKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C2BDC891157FBAE5001A3F23 /* libepom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BDC889157FBAE5001A3F23 /* libepom.a */; };
-		C2D9D39715F7A78E00CCE5FB /* libepom_provider_smaato.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D39615F7A78E00CCE5FB /* libepom_provider_smaato.a */; };
-		C2D9D39A15F7A79A00CCE5FB /* iSoma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D39915F7A79A00CCE5FB /* iSoma.framework */; };
+		C2BF15BA162461CE007C48CE /* libepom_provider_millennial_media.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253991F15FCA9E20075632E /* libepom_provider_millennial_media.a */; };
+		C2BF15BE162462A5007C48CE /* libMMSDK_4.6.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BF15BD162462A5007C48CE /* libMMSDK_4.6.1.a */; };
+		C2BF15C6162465A6007C48CE /* libepom_provider_smartmad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BF15C5162465A6007C48CE /* libepom_provider_smartmad.a */; };
+		C2BF15CC162465CC007C48CE /* libSmartMad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BF15CA162465CC007C48CE /* libSmartMad.a */; };
+		C2BF15FD16247103007C48CE /* wp_banner_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BF15D216247103007C48CE /* wp_banner_background.png */; };
+		C2BF15FE16247103007C48CE /* wp_banner_close.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BF15D316247103007C48CE /* wp_banner_close.png */; };
+		C2BF15FF16247103007C48CE /* wp_banner_shild.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BF15D416247103007C48CE /* wp_banner_shild.png */; };
+		C2BF160016247103007C48CE /* MPAdBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15D716247103007C48CE /* MPAdBrowserController.m */; };
+		C2BF160116247103007C48CE /* MPAdBrowserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2BF15D816247103007C48CE /* MPAdBrowserController.xib */; };
+		C2BF160216247103007C48CE /* MPTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15DA16247103007C48CE /* MPTimer.m */; };
+		C2BF160316247103007C48CE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C2BF15DC16247103007C48CE /* LICENSE */; };
+		C2BF160416247103007C48CE /* MRAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15DF16247103007C48CE /* MRAdView.m */; };
+		C2BF160516247103007C48CE /* MRAdViewBrowsingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15E116247103007C48CE /* MRAdViewBrowsingController.m */; };
+		C2BF160616247103007C48CE /* MRAdViewDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15E316247103007C48CE /* MRAdViewDisplayController.m */; };
+		C2BF160716247103007C48CE /* MRCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15E516247103007C48CE /* MRCommand.m */; };
+		C2BF160816247103007C48CE /* MRDimmingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15E716247103007C48CE /* MRDimmingView.m */; };
+		C2BF160916247103007C48CE /* MRProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15E916247103007C48CE /* MRProperty.m */; };
+		C2BF160A16247103007C48CE /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C2BF15EA16247103007C48CE /* MRAID.bundle */; };
+		C2BF160B16247103007C48CE /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15EC16247103007C48CE /* NSString+MD5Addition.m */; };
+		C2BF160C16247103007C48CE /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15EE16247103007C48CE /* UIDevice+IdentifierAddition.m */; };
+		C2BF160D16247103007C48CE /* WPAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15F016247103007C48CE /* WPAdView.m */; };
+		C2BF160E16247103007C48CE /* WPBannerInfoLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15F216247103007C48CE /* WPBannerInfoLoader.m */; };
+		C2BF160F16247103007C48CE /* WPBannerRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15F416247103007C48CE /* WPBannerRequestInfo.m */; };
+		C2BF161016247103007C48CE /* WPBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15F616247103007C48CE /* WPBannerView.m */; };
+		C2BF161116247103007C48CE /* WPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15F816247103007C48CE /* WPLocationManager.m */; };
+		C2BF161216247103007C48CE /* WPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15FC16247103007C48CE /* WPUtils.m */; };
 		C2D9D4A515F9DAAD00CCE5FB /* libepom_provider_yoc_mojiva.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D4A415F9DAAD00CCE5FB /* libepom_provider_yoc_mojiva.a */; };
-		C2D9D4D315F9FDE400CCE5FB /* libepom_provider_smartmad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D4D215F9FDE400CCE5FB /* libepom_provider_smartmad.a */; };
-		C2D9D4D515F9FE0600CCE5FB /* libSmartMad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D4D415F9FE0600CCE5FB /* libSmartMad.a */; };
 		C2F3E30F1582339B0022A77C /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F3E30B1582339B0022A77C /* back.png */; };
 		C2F3E3101582339B0022A77C /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F3E30C1582339B0022A77C /* back@2x.png */; };
 		C2F3E31D158238B10022A77C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F3E31B158238B10022A77C /* icon.png */; };
@@ -61,6 +82,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C21A176916241B6D00F8D593 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C21A176D1624274500F8D593 /* libTapIt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTapIt.a; path = ../externals/TapIt_iPhone_SDK/libTapIt.a; sourceTree = "<group>"; };
+		C21A177116242B8600F8D593 /* libInMobiAdNetwork-3.6.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libInMobiAdNetwork-3.6.0.a"; path = "../externals/InMobi/libInMobiAdNetwork-3.6.0.a"; sourceTree = "<group>"; };
+		C21A177216242B8600F8D593 /* libInMobiCommons-3.6.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libInMobiCommons-3.6.0.a"; path = "../externals/InMobi/libInMobiCommons-3.6.0.a"; sourceTree = "<group>"; };
+		C21A177916242EFC00F8D593 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		C21A177D1624306300F8D593 /* InneractiveAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = InneractiveAdSDK.a; path = ../externals/InneractiveAd/InneractiveAdSDK.a; sourceTree = "<group>"; };
+		C21A17811624345A00F8D593 /* TapIt.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TapIt.bundle; path = ../externals/TapIt_iPhone_SDK/TapIt.bundle; sourceTree = "<group>"; };
 		C21D227D157F4F5E00304A1A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C21D227E157F4F5E00304A1A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C21D227F157F4F5E00304A1A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -69,9 +97,6 @@
 		C21D2282157F4F5E00304A1A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C21D2283157F4F5E00304A1A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C21D2284157F4F5E00304A1A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		C21F117D15A18F2100A18B76 /* libTapItAdMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTapItAdMobile.a; path = ../externals/TapIt_iPhone_SDK/SDK/libTapItAdMobile.a; sourceTree = "<group>"; };
-		C21F117E15A18F2100A18B76 /* ORMMA.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ORMMA.bundle; path = ../externals/TapIt_iPhone_SDK/SDK/ORMMA.bundle; sourceTree = "<group>"; };
-		C253991115FCA9110075632E /* libMMSDK_4.6.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMMSDK_4.6.0.a; path = ../externals/MMSDK/libMMSDK_4.6.0.a; sourceTree = "<group>"; };
 		C253991A15FCA9E20075632E /* libepom_provider_admob.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_admob.a; path = "../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Release-iphoneos/libepom_provider_admob.a"; sourceTree = "<group>"; };
 		C253991B15FCA9E20075632E /* libepom_provider_iad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_iad.a; path = "../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Release-iphoneos/libepom_provider_iad.a"; sourceTree = "<group>"; };
 		C253991C15FCA9E20075632E /* libepom_provider_inmobi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_inmobi.a; path = "../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Release-iphoneos/libepom_provider_inmobi.a"; sourceTree = "<group>"; };
@@ -79,7 +104,6 @@
 		C253991E15FCA9E20075632E /* libepom_provider_jumptap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_jumptap.a; path = "../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Release-iphoneos/libepom_provider_jumptap.a"; sourceTree = "<group>"; };
 		C253991F15FCA9E20075632E /* libepom_provider_millennial_media.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_millennial_media.a; path = "../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Release-iphoneos/libepom_provider_millennial_media.a"; sourceTree = "<group>"; };
 		C253992015FCA9E20075632E /* libepom_provider_tapit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_tapit.a; path = "../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Release-iphoneos/libepom_provider_tapit.a"; sourceTree = "<group>"; };
-		C254925315E6223800877A0E /* InneractiveAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = InneractiveAdSDK.a; path = ../externals/InneractiveAd/lib/InneractiveAdSDK.a; sourceTree = "<group>"; };
 		C27D517D1580A8D900F7C5A4 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		C28B8D5215A1A4AB003D071C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		C28B8D5515A1A4D2003D071C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -105,17 +129,58 @@
 		C2BDC856157FA90F001A3F23 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		C2BDC862157FA95F001A3F23 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		C2BDC889157FBAE5001A3F23 /* libepom.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom.a; path = "../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos/libepom.a"; sourceTree = "<group>"; };
-		C2D9D39615F7A78E00CCE5FB /* libepom_provider_smaato.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_smaato.a; path = "../private/providers/epom_provider_smaato/build/Release-iphoneos/libepom_provider_smaato.a"; sourceTree = "<group>"; };
-		C2D9D39915F7A79A00CCE5FB /* iSoma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iSoma.framework; path = ../externals/iSoma.framework; sourceTree = "<group>"; };
+		C2BF15BD162462A5007C48CE /* libMMSDK_4.6.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMMSDK_4.6.1.a; path = ../externals/MMSDK/libMMSDK_4.6.1.a; sourceTree = "<group>"; };
+		C2BF15C5162465A6007C48CE /* libepom_provider_smartmad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_smartmad.a; path = "../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos/libepom_provider_smartmad.a"; sourceTree = "<group>"; };
+		C2BF15C7162465B5007C48CE /* libepom_provider_smaato.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_smaato.a; path = "../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos/libepom_provider_smaato.a"; sourceTree = "<group>"; };
+		C2BF15C9162465CC007C48CE /* iSoma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iSoma.framework; path = ../externals/iSoma.framework; sourceTree = "<group>"; };
+		C2BF15CA162465CC007C48CE /* libSmartMad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSmartMad.a; path = ../externals/SmartMad/libSmartMad.a; sourceTree = "<group>"; };
+		C2BF15D216247103007C48CE /* wp_banner_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wp_banner_background.png; sourceTree = "<group>"; };
+		C2BF15D316247103007C48CE /* wp_banner_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wp_banner_close.png; sourceTree = "<group>"; };
+		C2BF15D416247103007C48CE /* wp_banner_shild.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wp_banner_shild.png; sourceTree = "<group>"; };
+		C2BF15D616247103007C48CE /* MPAdBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdBrowserController.h; sourceTree = "<group>"; };
+		C2BF15D716247103007C48CE /* MPAdBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAdBrowserController.m; sourceTree = "<group>"; };
+		C2BF15D816247103007C48CE /* MPAdBrowserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPAdBrowserController.xib; sourceTree = "<group>"; };
+		C2BF15D916247103007C48CE /* MPTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTimer.h; sourceTree = "<group>"; };
+		C2BF15DA16247103007C48CE /* MPTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTimer.m; sourceTree = "<group>"; };
+		C2BF15DC16247103007C48CE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C2BF15DD16247103007C48CE /* MRAdView+Controllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRAdView+Controllers.h"; sourceTree = "<group>"; };
+		C2BF15DE16247103007C48CE /* MRAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAdView.h; sourceTree = "<group>"; };
+		C2BF15DF16247103007C48CE /* MRAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAdView.m; sourceTree = "<group>"; };
+		C2BF15E016247103007C48CE /* MRAdViewBrowsingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAdViewBrowsingController.h; sourceTree = "<group>"; };
+		C2BF15E116247103007C48CE /* MRAdViewBrowsingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAdViewBrowsingController.m; sourceTree = "<group>"; };
+		C2BF15E216247103007C48CE /* MRAdViewDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAdViewDisplayController.h; sourceTree = "<group>"; };
+		C2BF15E316247103007C48CE /* MRAdViewDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAdViewDisplayController.m; sourceTree = "<group>"; };
+		C2BF15E416247103007C48CE /* MRCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCommand.h; sourceTree = "<group>"; };
+		C2BF15E516247103007C48CE /* MRCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCommand.m; sourceTree = "<group>"; };
+		C2BF15E616247103007C48CE /* MRDimmingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDimmingView.h; sourceTree = "<group>"; };
+		C2BF15E716247103007C48CE /* MRDimmingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDimmingView.m; sourceTree = "<group>"; };
+		C2BF15E816247103007C48CE /* MRProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProperty.h; sourceTree = "<group>"; };
+		C2BF15E916247103007C48CE /* MRProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRProperty.m; sourceTree = "<group>"; };
+		C2BF15EA16247103007C48CE /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
+		C2BF15EB16247103007C48CE /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		C2BF15EC16247103007C48CE /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		C2BF15ED16247103007C48CE /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		C2BF15EE16247103007C48CE /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		C2BF15EF16247103007C48CE /* WPAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAdView.h; sourceTree = "<group>"; };
+		C2BF15F016247103007C48CE /* WPAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAdView.m; sourceTree = "<group>"; };
+		C2BF15F116247103007C48CE /* WPBannerInfoLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBannerInfoLoader.h; sourceTree = "<group>"; };
+		C2BF15F216247103007C48CE /* WPBannerInfoLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBannerInfoLoader.m; sourceTree = "<group>"; };
+		C2BF15F316247103007C48CE /* WPBannerRequestInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBannerRequestInfo.h; sourceTree = "<group>"; };
+		C2BF15F416247103007C48CE /* WPBannerRequestInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBannerRequestInfo.m; sourceTree = "<group>"; };
+		C2BF15F516247103007C48CE /* WPBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBannerView.h; sourceTree = "<group>"; };
+		C2BF15F616247103007C48CE /* WPBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBannerView.m; sourceTree = "<group>"; };
+		C2BF15F716247103007C48CE /* WPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPLocationManager.h; sourceTree = "<group>"; };
+		C2BF15F816247103007C48CE /* WPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPLocationManager.m; sourceTree = "<group>"; };
+		C2BF15F916247103007C48CE /* WPLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPLogging.h; sourceTree = "<group>"; };
+		C2BF15FA16247103007C48CE /* WPTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTypes.h; sourceTree = "<group>"; };
+		C2BF15FB16247103007C48CE /* WPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPUtils.h; sourceTree = "<group>"; };
+		C2BF15FC16247103007C48CE /* WPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPUtils.m; sourceTree = "<group>"; };
 		C2D9D4A415F9DAAD00CCE5FB /* libepom_provider_yoc_mojiva.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_yoc_mojiva.a; path = "../private/providers/epom_provider_yoc_mojiva/build/Release-iphoneos/libepom_provider_yoc_mojiva.a"; sourceTree = "<group>"; };
-		C2D9D4D215F9FDE400CCE5FB /* libepom_provider_smartmad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_smartmad.a; path = "../private/providers/epom_provider_smartmad/build/Release-iphoneos/libepom_provider_smartmad.a"; sourceTree = "<group>"; };
-		C2D9D4D415F9FE0600CCE5FB /* libSmartMad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSmartMad.a; path = ../externals/SmartMad/libSmartMad.a; sourceTree = "<group>"; };
 		C2F3E30B1582339B0022A77C /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		C2F3E30C1582339B0022A77C /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		C2F3E31B158238B10022A77C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		C2F3E31C158238B10022A77C /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		C2F54C101593108E004FE54A /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAdMobAds.a; path = ../externals/GoogleAdMobAds/libGoogleAdMobAds.a; sourceTree = "<group>"; };
-		C2F54C111593108E004FE54A /* libInMobi_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libInMobi_iOS.a; path = ../externals/InMobi/libInMobi_iOS.a; sourceTree = "<group>"; };
 		C2F54C131593108E004FE54A /* jtUniversalLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = jtUniversalLib.a; path = ../externals/JTIPHONE/jtUniversalLib.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,11 +189,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D9D4D515F9FE0600CCE5FB /* libSmartMad.a in Frameworks */,
-				C2D9D4D315F9FDE400CCE5FB /* libepom_provider_smartmad.a in Frameworks */,
+				C2BF15CC162465CC007C48CE /* libSmartMad.a in Frameworks */,
+				C2BF15C6162465A6007C48CE /* libepom_provider_smartmad.a in Frameworks */,
+				C21A177A16242EFC00F8D593 /* PassKit.framework in Frameworks */,
+				C21A177316242B8600F8D593 /* libInMobiAdNetwork-3.6.0.a in Frameworks */,
+				C21A177416242B8600F8D593 /* libInMobiCommons-3.6.0.a in Frameworks */,
+				C21A176E1624274500F8D593 /* libTapIt.a in Frameworks */,
+				C21A176A16241B6D00F8D593 /* AdSupport.framework in Frameworks */,
 				C2D9D4A515F9DAAD00CCE5FB /* libepom_provider_yoc_mojiva.a in Frameworks */,
-				C2D9D39A15F7A79A00CCE5FB /* iSoma.framework in Frameworks */,
-				C2D9D39715F7A78E00CCE5FB /* libepom_provider_smaato.a in Frameworks */,
 				C28B8D5C15A1A534003D071C /* CoreMotion.framework in Frameworks */,
 				C28B8D5A15A1A4F8003D071C /* libsqlite3.dylib in Frameworks */,
 				C28B8D5815A1A4E0003D071C /* libz.dylib in Frameworks */,
@@ -154,17 +222,13 @@
 				C26C9C0F15D921270073D69E /* libepom_provider_admob.a in Frameworks */,
 				C26C9C1015D921290073D69E /* libepom_provider_iad.a in Frameworks */,
 				C26C9C1115D9212B0073D69E /* libepom_provider_inmobi.a in Frameworks */,
-				C26C9C1215D9212E0073D69E /* libepom_provider_inneractive.a in Frameworks */,
 				C26C9C1315D921310073D69E /* libepom_provider_jumptap.a in Frameworks */,
-				C26C9C1415D921330073D69E /* libepom_provider_millennial_media.a in Frameworks */,
 				C26C9C1515D921360073D69E /* libepom_provider_tapit.a in Frameworks */,
-				C26C9C1715D9213B0073D69E /* libTapItAdMobile.a in Frameworks */,
 				C26C9C1815D921A80073D69E /* libGoogleAdMobAds.a in Frameworks */,
-				C26C9C1915D921AB0073D69E /* libInMobi_iOS.a in Frameworks */,
 				C26C9C1A15D921AD0073D69E /* jtUniversalLib.a in Frameworks */,
-				C26C9C1B15D921B00073D69E /* libMMSDK_4.6.0.a in Frameworks */,
 				C26C9C1D15D921B80073D69E /* libxml2.dylib in Frameworks */,
-				C254925415E6223800877A0E /* InneractiveAdSDK.a in Frameworks */,
+				C2BF15BA162461CE007C48CE /* libepom_provider_millennial_media.a in Frameworks */,
+				C2BF15BE162462A5007C48CE /* libMMSDK_4.6.1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,9 +238,9 @@
 		C253992A15FCA9E20075632E /* Providers */ = {
 			isa = PBXGroup;
 			children = (
-				C2D9D4D215F9FDE400CCE5FB /* libepom_provider_smartmad.a */,
+				C2BF15C7162465B5007C48CE /* libepom_provider_smaato.a */,
+				C2BF15C5162465A6007C48CE /* libepom_provider_smartmad.a */,
 				C2D9D4A415F9DAAD00CCE5FB /* libepom_provider_yoc_mojiva.a */,
-				C2D9D39615F7A78E00CCE5FB /* libepom_provider_smaato.a */,
 				C2B6834E15D10D4F00E5CBA1 /* libepom_provider_wapstart.a */,
 				C253991A15FCA9E20075632E /* libepom_provider_admob.a */,
 				C253991B15FCA9E20075632E /* libepom_provider_iad.a */,
@@ -184,16 +248,17 @@
 				C253991D15FCA9E20075632E /* libepom_provider_inneractive.a */,
 				C253991E15FCA9E20075632E /* libepom_provider_jumptap.a */,
 				C253991F15FCA9E20075632E /* libepom_provider_millennial_media.a */,
+				C2BF15C9162465CC007C48CE /* iSoma.framework */,
+				C2BF15CA162465CC007C48CE /* libSmartMad.a */,
+				C21A177D1624306300F8D593 /* InneractiveAdSDK.a */,
+				C2BF15BD162462A5007C48CE /* libMMSDK_4.6.1.a */,
 				C253992015FCA9E20075632E /* libepom_provider_tapit.a */,
-				C2D9D4D415F9FE0600CCE5FB /* libSmartMad.a */,
-				C2D9D39915F7A79A00CCE5FB /* iSoma.framework */,
-				C21F117D15A18F2100A18B76 /* libTapItAdMobile.a */,
-				C21F117E15A18F2100A18B76 /* ORMMA.bundle */,
+				C21A177116242B8600F8D593 /* libInMobiAdNetwork-3.6.0.a */,
+				C21A177216242B8600F8D593 /* libInMobiCommons-3.6.0.a */,
+				C21A17811624345A00F8D593 /* TapIt.bundle */,
+				C21A176D1624274500F8D593 /* libTapIt.a */,
 				C2F54C101593108E004FE54A /* libGoogleAdMobAds.a */,
-				C254925315E6223800877A0E /* InneractiveAdSDK.a */,
-				C2F54C111593108E004FE54A /* libInMobi_iOS.a */,
 				C2F54C131593108E004FE54A /* jtUniversalLib.a */,
-				C253991115FCA9110075632E /* libMMSDK_4.6.0.a */,
 				C2BDC889157FBAE5001A3F23 /* libepom.a */,
 			);
 			name = Providers;
@@ -213,6 +278,7 @@
 		C2923CAE1573AE180040583F = {
 			isa = PBXGroup;
 			children = (
+				C2BF15D0162470F8007C48CE /* WapStart */,
 				C253992A15FCA9E20075632E /* Providers */,
 				C2864F1C1573CF8D00886CCC /* resources */,
 				C2923CC31573AE180040583F /* test_iphone */,
@@ -232,9 +298,11 @@
 		C2923CBC1573AE180040583F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C21A177916242EFC00F8D593 /* PassKit.framework */,
 				C2AD598815D11A8A0068CE92 /* libxml2.dylib */,
 				C28B8D5915A1A4F8003D071C /* libsqlite3.dylib */,
 				C28B8D5715A1A4E0003D071C /* libz.dylib */,
+				C21A176916241B6D00F8D593 /* AdSupport.framework */,
 				C28B8D5B15A1A534003D071C /* CoreMotion.framework */,
 				C28B8D5515A1A4D2003D071C /* CFNetwork.framework */,
 				C28B8D5215A1A4AB003D071C /* CoreFoundation.framework */,
@@ -279,6 +347,80 @@
 				C2923CCB1573AE180040583F /* test_iphone-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2BF15D0162470F8007C48CE /* WapStart */ = {
+			isa = PBXGroup;
+			children = (
+				C2BF15D116247103007C48CE /* resources */,
+				C2BF15D516247103007C48CE /* src */,
+			);
+			name = WapStart;
+			sourceTree = "<group>";
+		};
+		C2BF15D116247103007C48CE /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				C2BF15D216247103007C48CE /* wp_banner_background.png */,
+				C2BF15D316247103007C48CE /* wp_banner_close.png */,
+				C2BF15D416247103007C48CE /* wp_banner_shild.png */,
+			);
+			name = resources;
+			path = ../externals/WapStart/resources;
+			sourceTree = "<group>";
+		};
+		C2BF15D516247103007C48CE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C2BF15D616247103007C48CE /* MPAdBrowserController.h */,
+				C2BF15D716247103007C48CE /* MPAdBrowserController.m */,
+				C2BF15D816247103007C48CE /* MPAdBrowserController.xib */,
+				C2BF15D916247103007C48CE /* MPTimer.h */,
+				C2BF15DA16247103007C48CE /* MPTimer.m */,
+				C2BF15DB16247103007C48CE /* MRAID */,
+				C2BF15EA16247103007C48CE /* MRAID.bundle */,
+				C2BF15EB16247103007C48CE /* NSString+MD5Addition.h */,
+				C2BF15EC16247103007C48CE /* NSString+MD5Addition.m */,
+				C2BF15ED16247103007C48CE /* UIDevice+IdentifierAddition.h */,
+				C2BF15EE16247103007C48CE /* UIDevice+IdentifierAddition.m */,
+				C2BF15EF16247103007C48CE /* WPAdView.h */,
+				C2BF15F016247103007C48CE /* WPAdView.m */,
+				C2BF15F116247103007C48CE /* WPBannerInfoLoader.h */,
+				C2BF15F216247103007C48CE /* WPBannerInfoLoader.m */,
+				C2BF15F316247103007C48CE /* WPBannerRequestInfo.h */,
+				C2BF15F416247103007C48CE /* WPBannerRequestInfo.m */,
+				C2BF15F516247103007C48CE /* WPBannerView.h */,
+				C2BF15F616247103007C48CE /* WPBannerView.m */,
+				C2BF15F716247103007C48CE /* WPLocationManager.h */,
+				C2BF15F816247103007C48CE /* WPLocationManager.m */,
+				C2BF15F916247103007C48CE /* WPLogging.h */,
+				C2BF15FA16247103007C48CE /* WPTypes.h */,
+				C2BF15FB16247103007C48CE /* WPUtils.h */,
+				C2BF15FC16247103007C48CE /* WPUtils.m */,
+			);
+			name = src;
+			path = ../externals/WapStart/src;
+			sourceTree = "<group>";
+		};
+		C2BF15DB16247103007C48CE /* MRAID */ = {
+			isa = PBXGroup;
+			children = (
+				C2BF15DC16247103007C48CE /* LICENSE */,
+				C2BF15DD16247103007C48CE /* MRAdView+Controllers.h */,
+				C2BF15DE16247103007C48CE /* MRAdView.h */,
+				C2BF15DF16247103007C48CE /* MRAdView.m */,
+				C2BF15E016247103007C48CE /* MRAdViewBrowsingController.h */,
+				C2BF15E116247103007C48CE /* MRAdViewBrowsingController.m */,
+				C2BF15E216247103007C48CE /* MRAdViewDisplayController.h */,
+				C2BF15E316247103007C48CE /* MRAdViewDisplayController.m */,
+				C2BF15E416247103007C48CE /* MRCommand.h */,
+				C2BF15E516247103007C48CE /* MRCommand.m */,
+				C2BF15E616247103007C48CE /* MRDimmingView.h */,
+				C2BF15E716247103007C48CE /* MRDimmingView.m */,
+				C2BF15E816247103007C48CE /* MRProperty.h */,
+				C2BF15E916247103007C48CE /* MRProperty.m */,
+			);
+			path = MRAID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,7 +479,13 @@
 				C2F3E3101582339B0022A77C /* back@2x.png in Resources */,
 				C2F3E31D158238B10022A77C /* icon.png in Resources */,
 				C2F3E31E158238B10022A77C /* icon@2x.png in Resources */,
-				C26C9C0B15D91DA30073D69E /* ORMMA.bundle in Resources */,
+				C21A17821624345A00F8D593 /* TapIt.bundle in Resources */,
+				C2BF15FD16247103007C48CE /* wp_banner_background.png in Resources */,
+				C2BF15FE16247103007C48CE /* wp_banner_close.png in Resources */,
+				C2BF15FF16247103007C48CE /* wp_banner_shild.png in Resources */,
+				C2BF160116247103007C48CE /* MPAdBrowserController.xib in Resources */,
+				C2BF160316247103007C48CE /* LICENSE in Resources */,
+				C2BF160A16247103007C48CE /* MRAID.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +499,22 @@
 				C2923CCA1573AE180040583F /* main.m in Sources */,
 				C2923CCE1573AE180040583F /* AppDelegate.m in Sources */,
 				C2923CD11573AE180040583F /* ViewController.m in Sources */,
+				C2BF160016247103007C48CE /* MPAdBrowserController.m in Sources */,
+				C2BF160216247103007C48CE /* MPTimer.m in Sources */,
+				C2BF160416247103007C48CE /* MRAdView.m in Sources */,
+				C2BF160516247103007C48CE /* MRAdViewBrowsingController.m in Sources */,
+				C2BF160616247103007C48CE /* MRAdViewDisplayController.m in Sources */,
+				C2BF160716247103007C48CE /* MRCommand.m in Sources */,
+				C2BF160816247103007C48CE /* MRDimmingView.m in Sources */,
+				C2BF160916247103007C48CE /* MRProperty.m in Sources */,
+				C2BF160B16247103007C48CE /* NSString+MD5Addition.m in Sources */,
+				C2BF160C16247103007C48CE /* UIDevice+IdentifierAddition.m in Sources */,
+				C2BF160D16247103007C48CE /* WPAdView.m in Sources */,
+				C2BF160E16247103007C48CE /* WPBannerInfoLoader.m in Sources */,
+				C2BF160F16247103007C48CE /* WPBannerRequestInfo.m in Sources */,
+				C2BF161016247103007C48CE /* WPBannerView.m in Sources */,
+				C2BF161116247103007C48CE /* WPLocationManager.m in Sources */,
+				C2BF161216247103007C48CE /* WPUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,10 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -396,15 +557,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../include/;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = "armv7 armv7s i386";
 			};
 			name = Debug;
 		};
@@ -412,26 +573,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../include/;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = "armv7 armv7s i386";
 			};
 			name = Release;
 		};
@@ -451,18 +609,14 @@
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos\"",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Release-iphoneos\"",
 					"\"$(SRCROOT)/../externals/GoogleAdMobAds\"",
-					"\"$(SRCROOT)/../externals/InneractiveAd/lib\"",
 					"\"$(SRCROOT)/../externals/JTIPHONE\"",
 					"\"$(SRCROOT)/../externals/MMSDK\"",
 					"\"$(SRCROOT)/../externals/InMobi\"",
-					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK/SDK\"",
 					"\"$(SRCROOT)/../externals/SmartMad\"",
+					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK\"",
+					"\"$(SRCROOT)/../externals/InneractiveAd\"",
 				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-					"-fobjc-arc",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -484,18 +638,14 @@
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos\"",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Release-iphoneos\"",
 					"\"$(SRCROOT)/../externals/GoogleAdMobAds\"",
-					"\"$(SRCROOT)/../externals/InneractiveAd/lib\"",
 					"\"$(SRCROOT)/../externals/JTIPHONE\"",
 					"\"$(SRCROOT)/../externals/MMSDK\"",
 					"\"$(SRCROOT)/../externals/InMobi\"",
-					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK/SDK\"",
 					"\"$(SRCROOT)/../externals/SmartMad\"",
+					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK\"",
+					"\"$(SRCROOT)/../externals/InneractiveAd\"",
 				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-					"-fobjc-arc",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

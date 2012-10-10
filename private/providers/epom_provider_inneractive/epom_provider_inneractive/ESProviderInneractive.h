@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "ESProvider.h"
-#import "InneractiveAd/include/InneractiveAd.h"
+#import "InneractiveAd/InneractiveAd.h"
 
 @class UIView;
 

@@ -9,7 +9,6 @@
 #import "ESPRoviderWapStart.h"
 
 #import "WapStart/src/WPBannerRequestInfo.h"
-#import "WapStart/src/WPBannerInfo.h"
 
 #import "EpomSettings.h"
 #import "ESLogger.h"
@@ -71,26 +70,7 @@
 - (void) bannerViewPressed:(WPBannerView *)bannerView
 {
 	[self.delegate providerViewHasBeenClicked:self];
-	
-	if (bannerView.bannerInfo.responseType == WPBannerResponseWebSite)
-	{
-		if (([bannerView.bannerInfo.link rangeOfString:@"itunes://"].location != NSNotFound) ||
-			([bannerView.bannerInfo.link rangeOfString:@"http://itunes.apple.com"].location != NSNotFound))
-		{
-			// app links to itunes
-			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:bannerView.bannerInfo.link]];
-		}
-		else
-		{
-			ESContentWebViewController *webViewController = [[[ESContentWebViewController alloc] initWithControls] autorelease];
-			webViewController.delegate = self;
-			
-			[self.delegate providerViewWillEnterModalMode:self];
-			[[self.delegate screenPresentController] presentModalViewController:webViewController animated:YES];
-			
-			[webViewController loadBrowser: [NSURL URLWithString:bannerView.bannerInfo.link]];
-		}		
-	}
+	[self.delegate providerViewWillLeaveApplication:self];
 }
 
 - (void) bannerViewInfoLoaded:(WPBannerView *) bannerView
@@ -103,18 +83,6 @@
 	ES_LOG_ERROR(@"WapStart ad request failed. Error code 0x%x", errorCode);
 	
 	[self.delegate providerFailedToRecieveAd:self];
-}
-
-#pragma mark -- ESContentWebViewController delegate
-
-- (void) onDismissWebView:(BOOL)leaveApp
-{
-	[self.delegate providerViewDidLeaveModalMode:self];
-	
-	if (leaveApp)
-	{
-		[self.delegate providerViewWillLeaveApplication:self];
-	}
 }
 
 @end

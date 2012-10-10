@@ -7,11 +7,10 @@
 //
 
 #import <ESProvider.h>
-#import <ESContentWebViewController.h>
 
-#import "WapStart/src/WPBannerView.h"
+#import "WPBannerView.h"
 
-@interface ESProviderWapStart : ESProvider<WPBannerViewDelegate, ESContentWebViewControllerDelegate>
+@interface ESProviderWapStart : ESProvider<WPBannerViewDelegate>
 {
 	WPBannerView *wpView;
 }

@@ -3,6 +3,10 @@
 (!) - bugfix
 
 ////////////////////////////////////////////////////////////////////////////////////
+- Epom SDK for iOS version 1.1.1
+ (+) Added support for armv7s architecture
+ (-) Dropped support for armv6 architecture
+ (!) Compatibility with the latest external dependencies checked
 
 - Epom SDK for iOS version 1.1.0
  (+) Epom iOS SDK is MRAID v1.0 compliant now

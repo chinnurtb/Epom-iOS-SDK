@@ -182,7 +182,7 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-	NSString *url = [request.URL absoluteString];
+	NSString *url = [[request.URL absoluteString] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	
 	NSRange mraidSchemePos = [url rangeOfString:@"mraid://"];
 	if ((mraidSchemePos.location != NSNotFound) && (mraidSchemePos.location == 0))

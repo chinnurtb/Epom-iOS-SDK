@@ -9,13 +9,13 @@
 
 #import <ESProvider.h>
 
-#import "TapIt_iPhone_SDK/SDK/TapItHeaders/TapItAdMobile.h"
+#import "TapIt_iPhone_SDK/headers/TapIt.h"
 
-@interface ESProviderTapIt : ESProvider<TapItAdMobileViewDelegate>
+@interface ESProviderTapIt : ESProvider<TapItBannerAdViewDelegate>
 {
-	TapItAdMobileView *tapItView;
+	TapItBannerAdView *tapItView;
 }
 
-@property (readwrite, retain) TapItAdMobileView *tapItView;
+@property (readwrite, retain) TapItBannerAdView *tapItView;
 
 @end

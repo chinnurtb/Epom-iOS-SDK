@@ -11,7 +11,9 @@
 #import "EpomSettings.h"
 
 #import "InMobi/IMAdView.h"
-#import "InMobi/IMSDKUtil.h"
+#import "InMobi/IMCommonUtil.h"
+
+#import "CoreLocation/CLLocation.h"
 
 #define APPLICATION_ID_KEY	@"APPLICATION_ID"
 
@@ -21,7 +23,7 @@
 
 +(BOOL)initializeSystem
 {
-	[[IMSDKUtil util] setLogLevel:IMLogLevelMinimal];
+	[IMCommonUtil setLogLevel:IMLogLevelTypeNone];
 	return YES;
 }
 
@@ -53,16 +55,25 @@
 	self.imView = [[[IMAdView alloc]
 							initWithFrame:sizes[size]
 							imAppId:[params valueForKey:APPLICATION_ID_KEY]
-							imAdUnit:units[size]
+							imAdSize:units[size]
 							rootViewController:nil] autorelease];
+		
 	self.imView.rootViewController = [self.delegate screenPresentController];
 	self.imView.refreshInterval = REFRESH_INTERVAL_OFF;
 	self.imView.delegate = self;
 
-
+	CLLocation *location = [self.delegate currentLocation];
+	
 	IMAdRequest *request = [IMAdRequest request];
 	request.testMode = [self.delegate inTestMode];
-	request.location = [self.delegate currentLocation];
+	
+	if (location != nil)
+	{		
+		[request setLocationWithLatitude:location.coordinate.latitude
+							   longitude:location.coordinate.longitude
+								accuracy:location.horizontalAccuracy];
+	}
+	
 	
 	[self.imView loadIMAdRequest:request];
 	
