@@ -123,7 +123,7 @@ static inline NSTimeInterval randomTimeInterval(NSTimeInterval min, NSTimeInterv
 	self.backgroundColor = [UIColor clearColor];
 	
 	// try create
-	if ([self locationManagerIsAvailable] && ([CLLocationManager locationServicesEnabled] || self.useLocation))	
+	if ([self locationManagerIsAvailable] && [self locationServicesAreAllowed])
 	{
 		self.locator = [[[CLLocationManager alloc] init] autorelease];
 		self.locator.delegate = self;
@@ -214,7 +214,13 @@ static inline NSTimeInterval randomTimeInterval(NSTimeInterval min, NSTimeInterv
 	BOOL enabledAvailable = [CLLocationManager instancesRespondToSelector:@selector(locationServicesEnabled)];
 	BOOL monitoringAvailable = [CLLocationManager instancesRespondToSelector:@selector(startMonitoringSignificantLocationChanges)];
 	
-	return  enabledAvailable && monitoringAvailable;
+	return  enabledAvailable && monitoringAvailable && [CLLocationManager locationServicesEnabled];
+}
+
+- (BOOL)locationServicesAreAllowed
+{
+	CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+	return (status == kCLAuthorizationStatusAuthorized) || (self.useLocation && (status == kCLAuthorizationStatusNotDetermined));
 }
 
 #pragma mark -- Request urls
@@ -638,7 +644,7 @@ static inline NSTimeInterval randomTimeInterval(NSTimeInterval min, NSTimeInterv
 
 -(CLLocation *)currentLocation
 {
-	if ((self.locator == nil) && [self locationManagerIsAvailable] && [CLLocationManager locationServicesEnabled])
+	if ((self.locator == nil) && [self locationManagerIsAvailable] && [self locationServicesAreAllowed])
 	{
 		self.locator = [[[CLLocationManager alloc] init] autorelease];
 		self.locator.delegate = self;

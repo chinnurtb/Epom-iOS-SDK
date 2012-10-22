@@ -12,7 +12,7 @@
 static NSString *FULL_PROVIDERS_LIST[][2] =
 {
 	// already implemented	
-	{@"CONTENT",		@"ESProviderContent"},	
+	{@"CONTENT",		@"ESProviderContent"},
 	{@"AD_MOB",			@"ESProviderAdMob"},
 	{@"JUMPTAP",		@"ESProviderJumpTap"},
 	{@"IN_MOBI",		@"ESProviderInMobi"},

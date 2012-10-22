@@ -108,7 +108,7 @@
 	self.esView = [ESView viewWithID:@"53927211d9604e5d671963fd013dd94b"
 							sizeType:ESViewSize320x50
 				 modalViewController:self
-						 useLocation:YES
+						 useLocation:NO
 							testMode:YES
 						verboseLevel:ESVerboseAll];
 	

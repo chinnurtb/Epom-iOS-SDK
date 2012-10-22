@@ -12,9 +12,9 @@
 
 #import "ESLogger.h"
 
-#define AD_REQUEST_URL 		@"http://ads.epom.com/ads-api"
-#define AD_IMPRESSION_URL 	@"http://ads.epom.com/impression.gif"
-#define AD_CLICK_URL		@"http://ads.epom.com/click.gif"
+#define AD_REQUEST_URL 		@"http://api.epom.com/ads-api"
+#define AD_IMPRESSION_URL 	@"http://api.epom.com/impression.gif"
+#define AD_CLICK_URL		@"http://api.epom.com/click.gif"
 
 #define AD_MINIMAL_REQUEST_INTERVAL 		(5.0)
 #define AD_DEFAULT_REQUEST_INTERVAL 		(15.0)
