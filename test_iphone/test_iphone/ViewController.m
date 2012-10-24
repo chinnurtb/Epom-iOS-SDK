@@ -8,20 +8,14 @@
 
 #import "ViewController.h"
 
-#import "epom/ESView.h"
+#import "epom/ESBannerView.h"
+#import "epom/ESInterstitialView.h"
+#import "epom/ESUtils.h"
 
 #define TOGGLE_PLACEMENT_TIMER 20.0
+static const int kActivityIndicatorTag = 'tact';
 
 @implementation ViewController
-
-@synthesize esView;
-
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
 
 #pragma mark - View lifecycle
 
@@ -29,17 +23,27 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	[ESUtils setLogLevel:ESVerboseAll];
 	
-	[self rearrange:nil];
+	//[ESUtils setAdsServerUrl:@"http://testepom.com/"];
+	
+	ESBannerView *esBannerView = [[[ESBannerView alloc] initWithID:/*@"30aafe4a870012026696ab9cd66e2604"*/@"53927211d9604e5d671963fd013dd94b"
+												 sizeType:ESBannerViewSize320x50
+									  modalViewController:self
+											  useLocation:NO
+												 testMode:YES] autorelease];
+	
+	esBannerView.delegate = self;
+	esBannerView.refreshTimeInterval = 10.0;
+	
+	[self.view addSubview:esBannerView];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-	
-	self.esView = nil;
+    // e.g. self.myOutlet = nil;	
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -64,64 +68,126 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+	return interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown;
 }
 
-#pragma mark -- ESViewDelegate protocol implementation
-
--(void)esViewWillShowAd:(ESView *)esView
+- (BOOL)shouldAutorotate
 {
-	NSLog(@"ESView will show ad");
+	return YES;
 }
 
--(void)esViewDidShowAd:(ESView *)esView
+- (NSUInteger)supportedInterfaceOrientations
 {
-	NSLog(@"ESView did show ad");
+	return UIInterfaceOrientationMaskAllButUpsideDown;
 }
 
--(void)esViewAdHasBeenTapped:(ESView *)esView
+
+#pragma mark -- ESBannerViewDelegate protocol implementation
+
+-(void)esBannerViewWillShowAd:(ESBannerView *)esBannerView
 {
-	NSLog(@"ESView ad has been tapped");
+	NSLog(@"ESBannerView will show ad");
 }
 
--(void)esViewWillEnterModalMode:(ESView *)esView
+-(void)esBannerViewDidShowAd:(ESBannerView *)esBannerView
 {
-	NSLog(@"ESView will enter modal mode");
+	NSLog(@"ESBannerView did show ad");
 }
 
--(void)esViewDidLeaveModalMode:(ESView *)esView
+-(void)esBannerViewAdHasBeenTapped:(ESBannerView *)esBannerView
 {
-	NSLog(@"ESView did leave modal mode");
+	NSLog(@"ESBannerView ad has been tapped");
 }
 
--(void)esViewWillLeaveApplication:(ESView *)esView
+-(void)esBannerViewWillEnterModalMode:(ESBannerView *)esBannerView
 {
-	NSLog(@"ESView will leave application");
+	NSLog(@"ESBannerView will enter modal mode");
 }
 
--(void)rearrange:(id)sender
+-(void)esBannerViewDidLeaveModalMode:(ESBannerView *)esBannerView
 {
-	[self.esView removeFromSuperview];
-	self.esView = nil;
+	NSLog(@"ESBannerView did leave modal mode");
+}
+
+-(void)esBannerViewWillLeaveApplication:(ESBannerView *)esBannerView
+{
+	NSLog(@"ESBannerView will leave application");
+}
+
+#pragma mark -- ESInterstitialView support
+
+-(IBAction)showInterstitialAd:(id)sender
+{
+	ESInterstitialView *esInterstitialView = [[ESInterstitialView alloc] initWithID:@"53927211d9604e5d671963fd013dd94b"
+														  useLocation:YES
+															 testMode:YES];
+	esInterstitialView.delegate = self;
+}
+
+-(void)showInterstitialActivityIndicator
+{
+	UIActivityIndicatorView *view = [[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray] autorelease];
+	view.center = CGPointMake(CGRectGetMidX(btnShowInterstitial.bounds), CGRectGetMidY(btnShowInterstitial.bounds));
+	view.tag = kActivityIndicatorTag;
+	[view startAnimating];
+	[btnShowInterstitial addSubview:view];
+	btnShowInterstitial.enabled = NO;
+}
+
+-(void)hideInterstitialActivityIndicator
+{
+	UIView *view = [btnShowInterstitial viewWithTag:kActivityIndicatorTag];
+	[view removeFromSuperview];
+	btnShowInterstitial.enabled = YES;
+}
+
+#pragma mark -- ESInterstitialView delegate implementation
+
+-(void)esInterstitialViewDidStartLoadAd:(ESInterstitialView *)esInterstitial
+{
+	[self showInterstitialActivityIndicator];
+	NSLog(@"ESInterstitialView did start loading ad");
+}
+
+-(void)esInterstitialViewDidFailLoadAd:(ESInterstitialView *)esInterstitial
+{
+	[self hideInterstitialActivityIndicator];
 	
-	self.esView = [ESView viewWithID:@"53927211d9604e5d671963fd013dd94b"
-							sizeType:ESViewSize320x50
-				 modalViewController:self
-						 useLocation:NO
-							testMode:YES
-						verboseLevel:ESVerboseAll];
+	[esInterstitial release];
 	
-	self.esView.delegate = self;
-	self.esView.refreshTimeInterval = 10.0;
-	static int cnt = 0;
-	CGRect frame = self.esView.frame;
-	frame.origin.y = ((cnt++) % 2) ? 410 : 0;
-	self.esView.frame = frame;
+	NSLog(@"ESInterstitialView did fail to load ad");
 	
-	[self.view addSubview:self.esView];
+	UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Error"
+												 	message:@"Failed to load interstitial ad. See console log output."
+												   delegate:nil
+										  cancelButtonTitle:@"OK"
+										  otherButtonTitles:nil, nil] autorelease];
+	[alert show];
+}
+
+-(void)esInterstitialViewDidLoadAd:(ESInterstitialView *)esInterstitial
+{
+	NSLog(@"ESInterstitialView loaded ad successfully");
 	
-	//[self performSelector:@selector(rearrange:) withObject:self afterDelay:TOGGLE_PLACEMENT_TIMER];
+	[esInterstitial presentWithViewController:self];
+}
+
+-(void)esInterstitialViewWillEnterModalMode:(ESInterstitialView *)esInterstitial
+{
+	NSLog(@"ESInterstitialView will enter modal mode");
+}
+
+-(void)esInterstitialViewDidLeaveModalMode:(ESInterstitialView *)esInterstitial
+{
+	NSLog(@"ESInterstitialView did leave modal mode");
+	[esInterstitial release];
+	
+	[self hideInterstitialActivityIndicator];
+}
+
+-(void)esInterstitialViewUserInteraction:(ESInterstitialView *)esInterstitialView willLeaveApplication:(BOOL)yesOrNo;
+{
+	NSLog(@"ESInterstitialView user interaction");
 }
 
 @end

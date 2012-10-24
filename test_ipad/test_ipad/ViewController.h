@@ -6,17 +6,21 @@
 //  Copyright (c) 2012 Epom LTD. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "epom/ESBannerViewDelegate.h"
+#import "epom/ESInterstitialViewDelegate.h"
 
-#import "epom/ESViewDelegateProtocol.h"
-
-@class ESView;
-
-@interface ViewController : UIViewController<ESViewDelegate>
+@interface ViewController : UIViewController<ESBannerViewDelegate, ESInterstitialViewDelegate>
 {
-	ESView *esView;
+	ESBannerView *esBannerView;
+	ESInterstitialView *esInterstitialView;
+	
+	IBOutlet UIButton *btnShowInterstitial;
+
 }
 
-@property (readwrite, retain) ESView *esView;
+@property (readwrite, retain) ESBannerView *esBannerView;
+@property (readwrite, retain) ESInterstitialView *esInterstitialView;
+
+-(IBAction)showInterstitialAd:(id)sender;
 
 @end

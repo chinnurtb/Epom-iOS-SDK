@@ -8,9 +8,6 @@
 
 @protocol ESContentBannerViewDelegate
 
-@required
-- (CLLocation *)geoLocation;
-
 @optional
 
 - (void)didRecieveAd;

@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2D9D4C415F9F81600CCE5FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D4C315F9F81600CCE5FB /* Foundation.framework */; };
-		C2D9D4C915F9F81600CCE5FB /* ESProviderSmartMad.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C2D9D4C815F9F81600CCE5FB /* ESProviderSmartMad.h */; };
-		C2D9D4CB15F9F81600CCE5FB /* ESProviderSmartMad.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D9D4CA15F9F81600CCE5FB /* ESProviderSmartMad.m */; };
+		C2D9D4CB15F9F81600CCE5FB /* ESProviderBannerSmartMad.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D9D4CA15F9F81600CCE5FB /* ESProviderBannerSmartMad.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +17,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				C2D9D4C915F9F81600CCE5FB /* ESProviderSmartMad.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -27,10 +24,9 @@
 
 /* Begin PBXFileReference section */
 		C2D9D4C015F9F81600CCE5FB /* libepom_provider_smartmad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_smartmad.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2D9D4C315F9F81600CCE5FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C2D9D4C715F9F81600CCE5FB /* epom_provider_smartmad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epom_provider_smartmad-Prefix.pch"; sourceTree = "<group>"; };
-		C2D9D4C815F9F81600CCE5FB /* ESProviderSmartMad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderSmartMad.h; sourceTree = "<group>"; };
-		C2D9D4CA15F9F81600CCE5FB /* ESProviderSmartMad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderSmartMad.m; sourceTree = "<group>"; };
+		C2D9D4CA15F9F81600CCE5FB /* ESProviderBannerSmartMad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderBannerSmartMad.m; sourceTree = "<group>"; };
+		C2E0176E1637EE8400FA3B9A /* ESProviderBannerSmartMad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderBannerSmartMad.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D9D4C415F9F81600CCE5FB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +60,6 @@
 		C2D9D4C215F9F81600CCE5FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C2D9D4C315F9F81600CCE5FB /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -73,8 +67,8 @@
 		C2D9D4C515F9F81600CCE5FB /* epom_provider_smartmad */ = {
 			isa = PBXGroup;
 			children = (
-				C2D9D4C815F9F81600CCE5FB /* ESProviderSmartMad.h */,
-				C2D9D4CA15F9F81600CCE5FB /* ESProviderSmartMad.m */,
+				C2E0176E1637EE8400FA3B9A /* ESProviderBannerSmartMad.h */,
+				C2D9D4CA15F9F81600CCE5FB /* ESProviderBannerSmartMad.m */,
 				C2D9D4C615F9F81600CCE5FB /* Supporting Files */,
 			);
 			path = epom_provider_smartmad;
@@ -156,7 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D9D4CB15F9F81600CCE5FB /* ESProviderSmartMad.m in Sources */,
+				C2D9D4CB15F9F81600CCE5FB /* ESProviderBannerSmartMad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

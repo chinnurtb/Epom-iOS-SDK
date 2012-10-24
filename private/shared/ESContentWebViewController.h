@@ -17,7 +17,7 @@
 	UIToolbar *toolBar;
 	id delegate;
 }
-@property (nonatomic,retain) id delegate;
+@property (nonatomic, retain) id delegate;
 
 - (void) showNoNetworkAlert;
 - (IBAction) browseBack: (id) sender;

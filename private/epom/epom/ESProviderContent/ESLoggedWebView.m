@@ -11,7 +11,7 @@
 #import "EpomSettings.h"
 
 #ifdef DEBUG
-#	define ENABLE_WEBVIEW_LOGGING
+//#	define ENABLE_WEBVIEW_LOGGING
 #endif
 
 @class WebView;

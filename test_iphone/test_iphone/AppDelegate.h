@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "epom/ESInterstitialView.h"
+
 @class ViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, ESInterstitialViewDelegate>
 
 @property (nonatomic, retain) UIWindow *window;
-
-@property (nonatomic, retain) ViewController *viewController;
 
 @end

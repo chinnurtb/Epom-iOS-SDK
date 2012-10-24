@@ -75,6 +75,11 @@
 		C2BF161116247103007C48CE /* WPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15F816247103007C48CE /* WPLocationManager.m */; };
 		C2BF161216247103007C48CE /* WPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF15FC16247103007C48CE /* WPUtils.m */; };
 		C2D9D4A515F9DAAD00CCE5FB /* libepom_provider_yoc_mojiva.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D4A415F9DAAD00CCE5FB /* libepom_provider_yoc_mojiva.a */; };
+		C2E01657163690EF00FA3B9A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2E01653163690EF00FA3B9A /* Default-568h@2x.png */; };
+		C2E01658163690EF00FA3B9A /* InterstitialStartup-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2E01654163690EF00FA3B9A /* InterstitialStartup-568h@2x.png */; };
+		C2E01659163690EF00FA3B9A /* InterstitialStartup.png in Resources */ = {isa = PBXBuildFile; fileRef = C2E01655163690EF00FA3B9A /* InterstitialStartup.png */; };
+		C2E0165A163690EF00FA3B9A /* InterstitialStartup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2E01656163690EF00FA3B9A /* InterstitialStartup@2x.png */; };
+		C2E017341637E46100FA3B9A /* libepom_app_tracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E017331637E46100FA3B9A /* libepom_app_tracker.a */; };
 		C2F3E30F1582339B0022A77C /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F3E30B1582339B0022A77C /* back.png */; };
 		C2F3E3101582339B0022A77C /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F3E30C1582339B0022A77C /* back@2x.png */; };
 		C2F3E31D158238B10022A77C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F3E31B158238B10022A77C /* icon.png */; };
@@ -176,6 +181,11 @@
 		C2BF15FB16247103007C48CE /* WPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPUtils.h; sourceTree = "<group>"; };
 		C2BF15FC16247103007C48CE /* WPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPUtils.m; sourceTree = "<group>"; };
 		C2D9D4A415F9DAAD00CCE5FB /* libepom_provider_yoc_mojiva.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_yoc_mojiva.a; path = "../private/providers/epom_provider_yoc_mojiva/build/Release-iphoneos/libepom_provider_yoc_mojiva.a"; sourceTree = "<group>"; };
+		C2E01653163690EF00FA3B9A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C2E01654163690EF00FA3B9A /* InterstitialStartup-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InterstitialStartup-568h@2x.png"; sourceTree = "<group>"; };
+		C2E01655163690EF00FA3B9A /* InterstitialStartup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InterstitialStartup.png; sourceTree = "<group>"; };
+		C2E01656163690EF00FA3B9A /* InterstitialStartup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InterstitialStartup@2x.png"; sourceTree = "<group>"; };
+		C2E017331637E46100FA3B9A /* libepom_app_tracker.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_app_tracker.a; path = "../externals/epom-apptracker/libepom_app_tracker.a"; sourceTree = "<group>"; };
 		C2F3E30B1582339B0022A77C /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		C2F3E30C1582339B0022A77C /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		C2F3E31B158238B10022A77C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -229,6 +239,7 @@
 				C26C9C1D15D921B80073D69E /* libxml2.dylib in Frameworks */,
 				C2BF15BA162461CE007C48CE /* libepom_provider_millennial_media.a in Frameworks */,
 				C2BF15BE162462A5007C48CE /* libMMSDK_4.6.1.a in Frameworks */,
+				C2E017341637E46100FA3B9A /* libepom_app_tracker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +278,10 @@
 		C2864F1C1573CF8D00886CCC /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				C2E01653163690EF00FA3B9A /* Default-568h@2x.png */,
+				C2E01654163690EF00FA3B9A /* InterstitialStartup-568h@2x.png */,
+				C2E01655163690EF00FA3B9A /* InterstitialStartup.png */,
+				C2E01656163690EF00FA3B9A /* InterstitialStartup@2x.png */,
 				C2F3E31B158238B10022A77C /* icon.png */,
 				C2F3E31C158238B10022A77C /* icon@2x.png */,
 				C2F3E30B1582339B0022A77C /* back.png */,
@@ -298,6 +313,7 @@
 		C2923CBC1573AE180040583F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C2E017331637E46100FA3B9A /* libepom_app_tracker.a */,
 				C21A177916242EFC00F8D593 /* PassKit.framework */,
 				C2AD598815D11A8A0068CE92 /* libxml2.dylib */,
 				C28B8D5915A1A4F8003D071C /* libsqlite3.dylib */,
@@ -486,6 +502,10 @@
 				C2BF160116247103007C48CE /* MPAdBrowserController.xib in Resources */,
 				C2BF160316247103007C48CE /* LICENSE in Resources */,
 				C2BF160A16247103007C48CE /* MRAID.bundle in Resources */,
+				C2E01657163690EF00FA3B9A /* Default-568h@2x.png in Resources */,
+				C2E01658163690EF00FA3B9A /* InterstitialStartup-568h@2x.png in Resources */,
+				C2E01659163690EF00FA3B9A /* InterstitialStartup.png in Resources */,
+				C2E0165A163690EF00FA3B9A /* InterstitialStartup@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +581,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../include/;
+				HEADER_SEARCH_PATHS = (
+					../include/,
+					../externals/,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
@@ -583,7 +606,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../include/;
+				HEADER_SEARCH_PATHS = (
+					../include/,
+					../externals/,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -606,8 +632,6 @@
 				INFOPLIST_FILE = "test_iphone/test_iphone-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos\"",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Release-iphoneos\"",
 					"\"$(SRCROOT)/../externals/GoogleAdMobAds\"",
 					"\"$(SRCROOT)/../externals/JTIPHONE\"",
 					"\"$(SRCROOT)/../externals/MMSDK\"",
@@ -615,6 +639,7 @@
 					"\"$(SRCROOT)/../externals/SmartMad\"",
 					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK\"",
 					"\"$(SRCROOT)/../externals/InneractiveAd\"",
+					"\"$(SRCROOT)/../externals/epom-apptracker\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -635,8 +660,6 @@
 				INFOPLIST_FILE = "test_iphone/test_iphone-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos\"",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Release-iphoneos\"",
 					"\"$(SRCROOT)/../externals/GoogleAdMobAds\"",
 					"\"$(SRCROOT)/../externals/JTIPHONE\"",
 					"\"$(SRCROOT)/../externals/MMSDK\"",
@@ -644,6 +667,7 @@
 					"\"$(SRCROOT)/../externals/SmartMad\"",
 					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK\"",
 					"\"$(SRCROOT)/../externals/InneractiveAd\"",
+					"\"$(SRCROOT)/../externals/epom-apptracker\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

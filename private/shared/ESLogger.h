@@ -32,3 +32,8 @@ typedef enum
 
 
 @end
+
+#define ES_LOG_INFO(fmt, ...)	\
+			[[ESLogger shared] logType:ESLoggerMessageInfo format:fmt, ## __VA_ARGS__]
+#define ES_LOG_ERROR(fmt, ...)	\
+			[[ESLogger shared] logType:ESLoggerMessageError format:fmt, ## __VA_ARGS__]

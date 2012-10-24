@@ -12,6 +12,7 @@
 @interface ESContentBannerExternalExpandedView ()
 
 // view controller for expanded ad
+@property (readwrite, assign) UIViewController *rootViewController;
 @property (readwrite, retain) ESExpandedContentBannerViewController *expandedViewController;
 
 @end
@@ -20,21 +21,27 @@
 
 @synthesize bannerViewDelegate = delegate_;
 @synthesize expandedBannerViewDelegate = expandedDelegate_;
+@synthesize rootViewController = rootViewController_;
 @synthesize expandedViewController = expandedViewController_;
 
-- (id)initWithExpandProperties:(struct ESContentBannerViewExpandProperties)expandProperties
+- (id)initWithExpandProperties:(ESContentViewExpandProperties)expandProperties
 					   content:(NSString *)content
 		   modalViewController:(UIViewController *)controller
 				  viewDelegate:(id<ESContentBannerViewDelegate>)delegate
 		  expandedViewDelegate:(id<ESContentBannerExternalExpandedViewDelegate>) expandedViewDelegate
 {
-	self = [super initWithFrame:CGRectMake(0, 0, expandProperties.width, expandProperties.width) modalViewController:controller expandProperties:&expandProperties];
+	self = [super initWithFrame:CGRectMake(0, 0, expandProperties.width, expandProperties.width)
+			   expandProperties:&expandProperties
+				 isInterstitial:YES
+					   autoShow:YES];
+	
 	[super setDerived:self];
 	
 	if (self == nil)
 	{
 		return nil;
 	}
+	self.rootViewController = controller;
 	self.bannerViewDelegate = delegate;
 	self.expandedBannerViewDelegate = expandedViewDelegate;
 	
@@ -68,10 +75,6 @@
 	[self showWithController];
 }
 
-- (void)onAdHasBeenTapped
-{
-}
-
 - (void)onAdWillEnterModalMode
 {
 }
@@ -80,14 +83,12 @@
 {
 }
 
-- (void)onAdWillLeaveApp
+- (void)onUserInteractionWithWillLeaveApp:(BOOL)willLeaveApp
 {
-	[self.bannerViewDelegate willLeaveApplication];
-}
-
-- (CLLocation *)onGeoLocationRequest
-{
-	return [self.bannerViewDelegate geoLocation];
+	if (willLeaveApp)
+	{
+		[self.bannerViewDelegate willLeaveApplication];
+	}
 }
 
 - (BOOL)onExpand:(NSString *)url
@@ -95,13 +96,13 @@
 	return YES;
 }
 
-- (void)onBeforeStateChangeFrom:(enum ESContentBannerViewState)stateBefore to:(enum ESContentBannerViewState)stateAfter
+- (void)onBeforeStateChangeFrom:(ESContentViewState)stateBefore to:(ESContentViewState)stateAfter
 {	
 }
 
-- (void)onAfterStateChangeFrom:(enum ESContentBannerViewState)stateBefore to:(enum ESContentBannerViewState)stateAfter
+- (void)onAfterStateChangeFrom:(ESContentViewState)stateBefore to:(ESContentViewState)stateAfter
 {
-	if ((stateBefore == ESContentBannerViewStateExpanded) && (stateAfter == ESContentBannerViewStateDefault))
+	if ((stateBefore == ESContentViewStateExpanded) && (stateAfter == ESContentViewStateHidden))
 	{
 		// close
 		[self.expandedViewController hide];
@@ -113,6 +114,11 @@
 - (UIViewController *)onControllerForEmbeddedBrowserRequest
 {
 	return self.expandedViewController;
+}
+
+- (BOOL)treatExpandAsUserInteraction
+{
+	return NO;
 }
 
 #pragma mark -- Private methods

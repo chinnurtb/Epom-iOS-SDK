@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C256B72B15767DD500132C8C /* ESProviderAdMob.m in Sources */ = {isa = PBXBuildFile; fileRef = C256B72A15767DD500132C8C /* ESProviderAdMob.m */; };
+		C256B72B15767DD500132C8C /* ESProviderBannerAdMob.m in Sources */ = {isa = PBXBuildFile; fileRef = C256B72A15767DD500132C8C /* ESProviderBannerAdMob.m */; };
+		C29AACE0162FE3F500F32642 /* ESProviderInterstitialAdMob.h in Headers */ = {isa = PBXBuildFile; fileRef = C29AACDE162FE3F500F32642 /* ESProviderInterstitialAdMob.h */; };
+		C29AACE1162FE3F500F32642 /* ESProviderInterstitialAdMob.m in Sources */ = {isa = PBXBuildFile; fileRef = C29AACDF162FE3F500F32642 /* ESProviderInterstitialAdMob.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C256B72115767DD500132C8C /* libepom_provider_admob.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_admob.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C256B72815767DD500132C8C /* epom_provider_admob-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epom_provider_admob-Prefix.pch"; sourceTree = "<group>"; };
-		C256B72915767DD500132C8C /* ESProviderAdMob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderAdMob.h; sourceTree = "<group>"; };
-		C256B72A15767DD500132C8C /* ESProviderAdMob.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderAdMob.m; sourceTree = "<group>"; };
+		C256B72915767DD500132C8C /* ESProviderBannerAdMob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderBannerAdMob.h; sourceTree = "<group>"; };
+		C256B72A15767DD500132C8C /* ESProviderBannerAdMob.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderBannerAdMob.m; sourceTree = "<group>"; };
+		C29AACDE162FE3F500F32642 /* ESProviderInterstitialAdMob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderInterstitialAdMob.h; sourceTree = "<group>"; };
+		C29AACDF162FE3F500F32642 /* ESProviderInterstitialAdMob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderInterstitialAdMob.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 		C256B72615767DD500132C8C /* epom_provider_admob */ = {
 			isa = PBXGroup;
 			children = (
-				C256B72915767DD500132C8C /* ESProviderAdMob.h */,
-				C256B72A15767DD500132C8C /* ESProviderAdMob.m */,
+				C256B72915767DD500132C8C /* ESProviderBannerAdMob.h */,
+				C256B72A15767DD500132C8C /* ESProviderBannerAdMob.m */,
+				C29AACDE162FE3F500F32642 /* ESProviderInterstitialAdMob.h */,
+				C29AACDF162FE3F500F32642 /* ESProviderInterstitialAdMob.m */,
 				C256B72715767DD500132C8C /* Supporting Files */,
 			);
 			path = epom_provider_admob;
@@ -77,6 +83,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C29AACE0162FE3F500F32642 /* ESProviderInterstitialAdMob.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C256B72B15767DD500132C8C /* ESProviderAdMob.m in Sources */,
+				C256B72B15767DD500132C8C /* ESProviderBannerAdMob.m in Sources */,
+				C29AACE1162FE3F500F32642 /* ESProviderInterstitialAdMob.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

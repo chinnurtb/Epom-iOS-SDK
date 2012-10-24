@@ -6,18 +6,18 @@
 //
 //
 
-#import <UIKit/UIKit.h>
+#import "ESPortraitViewController.h"
 
-@class ESContentBannerViewBase;
+@class ESContentViewBase;
 
-@interface ESExpandedContentBannerViewController : UIViewController
+@interface ESExpandedContentBannerViewController : ESPortraitViewController
 {
 	UIView *originalParent_;
-	ESContentBannerViewBase *bannerView_;
+	ESContentViewBase *bannerView_;
 	CGRect originalRect_;
 }
 
-- (id)initAndShowWithBannerView:(ESContentBannerViewBase *)view
+- (id)initAndShowWithBannerView:(ESContentViewBase *)view
 			   parentController:(UIViewController *)controller
 						   size:(CGSize)size
 			  customCloseButton:(BOOL)yesOrNo;

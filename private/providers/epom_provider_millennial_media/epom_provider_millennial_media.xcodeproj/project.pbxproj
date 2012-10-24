@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C28F7A49157F84C6003C7B21 /* ESProviderMillennialMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = C28F7A48157F84C6003C7B21 /* ESProviderMillennialMedia.m */; };
+		C28F7A49157F84C6003C7B21 /* ESProviderBannerMillennialMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = C28F7A48157F84C6003C7B21 /* ESProviderBannerMillennialMedia.m */; };
+		C29AACF21630112800F32642 /* ESProviderInterstitialMillennialMedia.h in Headers */ = {isa = PBXBuildFile; fileRef = C29AACF01630112800F32642 /* ESProviderInterstitialMillennialMedia.h */; };
+		C29AACF31630112800F32642 /* ESProviderInterstitialMillennialMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = C29AACF11630112800F32642 /* ESProviderInterstitialMillennialMedia.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C28F7A3F157F84C6003C7B21 /* libepom_provider_millennial_media.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_millennial_media.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28F7A46157F84C6003C7B21 /* epom_provider_millennial_media-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epom_provider_millennial_media-Prefix.pch"; sourceTree = "<group>"; };
-		C28F7A47157F84C6003C7B21 /* ESProviderMillennialMedia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderMillennialMedia.h; sourceTree = "<group>"; };
-		C28F7A48157F84C6003C7B21 /* ESProviderMillennialMedia.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderMillennialMedia.m; sourceTree = "<group>"; };
+		C28F7A47157F84C6003C7B21 /* ESProviderBannerMillennialMedia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderBannerMillennialMedia.h; sourceTree = "<group>"; };
+		C28F7A48157F84C6003C7B21 /* ESProviderBannerMillennialMedia.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderBannerMillennialMedia.m; sourceTree = "<group>"; };
+		C29AACF01630112800F32642 /* ESProviderInterstitialMillennialMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderInterstitialMillennialMedia.h; sourceTree = "<group>"; };
+		C29AACF11630112800F32642 /* ESProviderInterstitialMillennialMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderInterstitialMillennialMedia.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 		C28F7A44157F84C6003C7B21 /* epom_provider_millennial_media */ = {
 			isa = PBXGroup;
 			children = (
-				C28F7A47157F84C6003C7B21 /* ESProviderMillennialMedia.h */,
-				C28F7A48157F84C6003C7B21 /* ESProviderMillennialMedia.m */,
+				C28F7A47157F84C6003C7B21 /* ESProviderBannerMillennialMedia.h */,
+				C28F7A48157F84C6003C7B21 /* ESProviderBannerMillennialMedia.m */,
+				C29AACF01630112800F32642 /* ESProviderInterstitialMillennialMedia.h */,
+				C29AACF11630112800F32642 /* ESProviderInterstitialMillennialMedia.m */,
 				C28F7A45157F84C6003C7B21 /* Supporting Files */,
 			);
 			name = epom_provider_millennial_media;
@@ -78,6 +84,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C29AACF21630112800F32642 /* ESProviderInterstitialMillennialMedia.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C28F7A49157F84C6003C7B21 /* ESProviderMillennialMedia.m in Sources */,
+				C28F7A49157F84C6003C7B21 /* ESProviderBannerMillennialMedia.m in Sources */,
+				C29AACF31630112800F32642 /* ESProviderInterstitialMillennialMedia.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

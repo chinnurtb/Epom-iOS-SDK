@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C21B748B15D10B610027C1F2 /* ESProviderWapStart.m in Sources */ = {isa = PBXBuildFile; fileRef = C21B748A15D10B610027C1F2 /* ESProviderWapStart.m */; };
+		C21B748B15D10B610027C1F2 /* ESProviderBannerWapStart.m in Sources */ = {isa = PBXBuildFile; fileRef = C21B748A15D10B610027C1F2 /* ESProviderBannerWapStart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C21B748115D10B610027C1F2 /* libepom_provider_wapstart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_wapstart.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C21B748815D10B610027C1F2 /* epom_provider_wapstart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epom_provider_wapstart-Prefix.pch"; sourceTree = "<group>"; };
-		C21B748915D10B610027C1F2 /* ESPRoviderWapStart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPRoviderWapStart.h; sourceTree = "<group>"; };
-		C21B748A15D10B610027C1F2 /* ESProviderWapStart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderWapStart.m; sourceTree = "<group>"; };
+		C21B748915D10B610027C1F2 /* ESProviderBannerWapStart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderBannerWapStart.h; sourceTree = "<group>"; };
+		C21B748A15D10B610027C1F2 /* ESProviderBannerWapStart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderBannerWapStart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 		C21B748615D10B610027C1F2 /* epom_provider_wapstart */ = {
 			isa = PBXGroup;
 			children = (
-				C21B748915D10B610027C1F2 /* ESPRoviderWapStart.h */,
-				C21B748A15D10B610027C1F2 /* ESProviderWapStart.m */,
+				C21B748915D10B610027C1F2 /* ESProviderBannerWapStart.h */,
+				C21B748A15D10B610027C1F2 /* ESProviderBannerWapStart.m */,
 				C21B748715D10B610027C1F2 /* Supporting Files */,
 			);
 			path = epom_provider_wapstart;
@@ -148,7 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C21B748B15D10B610027C1F2 /* ESProviderWapStart.m in Sources */,
+				C21B748B15D10B610027C1F2 /* ESProviderBannerWapStart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

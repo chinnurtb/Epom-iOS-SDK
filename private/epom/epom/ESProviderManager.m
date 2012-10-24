@@ -12,8 +12,6 @@
 
 #import "EpomSettings.h"
 
-#import "ESProvider.h"
-
 #import <UIKit/UIWebView.h>
 
 @implementation ESProviderManager
@@ -56,7 +54,8 @@ static ESProviderManager* _shared = nil;
 		return nil;
 	}
 	
-	availableProviders = [[NSMutableDictionary alloc] init];
+	availableBannerProviders = [[NSMutableDictionary alloc] init];
+	availableInterstitialProviders = [[NSMutableDictionary alloc] init];
 	
 	UInt32 numProviders = ARRAY_SIZE(FULL_PROVIDERS_LIST);
 	
@@ -65,19 +64,34 @@ static ESProviderManager* _shared = nil;
 	for (UInt32 i = 0; i < numProviders; ++i)
 	{
 		NSString *networkID = FULL_PROVIDERS_LIST[i][0];
-		NSString *providerClassName = FULL_PROVIDERS_LIST[i][1];
+		NSString *providerClassNameTemplate = FULL_PROVIDERS_LIST[i][1];
 		
-		Class class = NSClassFromString(providerClassName);
-		
-		if (class != nil)
 		{
+			NSString *providerClassName = [NSString stringWithFormat:providerClassNameTemplate, @"Banner"];
+			
+			Class class = NSClassFromString(providerClassName);
+			
 			if ([class initializeSystem])
 			{
-				[availableProviders setValue:class forKey:networkID];
+				[availableBannerProviders setValue:class forKey:networkID];
+			
+				ES_LOG_INFO(@"  ProviderBanner [%@] for network id [%@] is available.", providerClassName, networkID);
+			}
+			
+		}
+		{
+			NSString *providerClassName = [NSString stringWithFormat:providerClassNameTemplate, @"Interstitial"];
+			
+			Class class = NSClassFromString(providerClassName);
+			
+			if ([class initializeSystem])
+			{
+				[availableInterstitialProviders setValue:class forKey:networkID];
 				
-				ES_LOG_INFO(@"  Provider [%@] for network id [%@] is available.", providerClassName, networkID);
-			}							
-		}		
+				ES_LOG_INFO(@"  ProviderInterstitial [%@] for network id [%@] is available.", providerClassName, networkID);
+			}
+			
+		}
 	}
 	
 	ES_LOG_INFO(@"End listing available adnetworks providers");
@@ -96,13 +110,20 @@ static ESProviderManager* _shared = nil;
 -(void)dealloc
 {
 	[safariUserAgent release], safariUserAgent = nil;
-	[availableProviders release], availableProviders = nil;
+	[availableBannerProviders release], availableBannerProviders = nil;
+	[availableInterstitialProviders release], availableInterstitialProviders = nil;
 	[super dealloc];
 }
 
--(Class)providerClassForID:(NSString *)providerID
+-(Class)providerBannerClassForID:(NSString *)providerID
 {
-	return [availableProviders valueForKey:providerID];
+	return [availableBannerProviders valueForKey:providerID];
 }
+
+-(Class)providerInterstitialClassForID:(NSString *)providerID
+{
+	return [availableInterstitialProviders valueForKey:providerID];
+}
+
 
 @end

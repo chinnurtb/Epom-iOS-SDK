@@ -33,6 +33,7 @@
 
 @interface CutDataScanner ()
 @property (readwrite, nonatomic, retain) NSCharacterSet *doubleCharacters;
+@property (readwrite, nonatomic, retain) NSCharacterSet *longCharacters;
 @end
 
 #pragma mark -
@@ -56,6 +57,7 @@ return(theCharacter);
 @dynamic scanLocation;
 @dynamic isAtEnd;
 @synthesize doubleCharacters;
+@synthesize longCharacters;
 
 + (id)scannerWithData:(NSData *)inData
 {
@@ -68,6 +70,7 @@ return(theScanner);
 {
 if ((self = [super init]) != nil)
 	{
+	self.longCharacters = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
 	self.doubleCharacters = [NSCharacterSet characterSetWithCharactersInString:@"0123456789eE-."];
 	}
 return(self);
@@ -77,6 +80,7 @@ return(self);
 {
 self.data = NULL;
 self.doubleCharacters = NULL;
+self.longCharacters = NULL;
 //
 [super dealloc];
 }
@@ -242,6 +246,12 @@ return(YES);
 {
 // Replace all of this with a strtod call
 NSString *theString = NULL;
+if ([self scanCharactersFromSet:longCharacters intoString:&theString])
+{
+	if (outValue)
+		*outValue = [NSNumber numberWithLongLong:[theString longLongValue]]; // TODO dont use doubleValue
+	return(YES);
+}
 if ([self scanCharactersFromSet:doubleCharacters intoString:&theString])
 	{
 	if (outValue)

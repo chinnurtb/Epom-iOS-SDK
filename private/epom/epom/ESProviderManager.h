@@ -10,7 +10,8 @@
 
 @interface ESProviderManager : NSObject
 {
-	NSMutableDictionary *availableProviders;
+	NSMutableDictionary *availableBannerProviders;
+	NSMutableDictionary *availableInterstitialProviders;
 	
 	NSString *safariUserAgent;
 }
@@ -19,6 +20,7 @@
 
 +(ESProviderManager*)shared;
 
--(Class)providerClassForID:(NSString *)providerID;
+-(Class)providerBannerClassForID:(NSString *)providerID;
+-(Class)providerInterstitialClassForID:(NSString *)providerID;
 
 @end

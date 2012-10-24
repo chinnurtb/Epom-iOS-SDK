@@ -8,7 +8,7 @@
 
 #import "ESExpandedContentBannerViewController.h"
 
-#import "ESContentBannerViewBase.h"
+#import "ESContentViewBase.h"
 
 #import "EpomSettings.h"
 
@@ -20,7 +20,7 @@
 @interface ESExpandedContentBannerViewController ()
 
 @property (readwrite, assign) UIView *originalParent;
-@property (readwrite, assign) ESContentBannerViewBase *bannerView;
+@property (readwrite, assign) ESContentViewBase *bannerView;
 
 @end
 
@@ -29,7 +29,7 @@
 @synthesize originalParent = originalParent_;
 @synthesize bannerView = bannerView_;
 
-- (id)initAndShowWithBannerView:(ESContentBannerViewBase *)view
+- (id)initAndShowWithBannerView:(ESContentViewBase *)view
 			   parentController:(UIViewController *)controller
 						   size:(CGSize)size
 			  customCloseButton:(BOOL)customCloseButton
@@ -47,6 +47,7 @@
 	[controller presentModalViewController:self animated:NO];	
 			
 	[self.view addSubview:self.bannerView];
+	[self.view bringSubviewToFront:self.bannerView];
 	
 	CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
 	self.bannerView.frame = CGRectMake((screenRect.size.width - size.width) / 2,
@@ -82,7 +83,7 @@
 		[closeButton setImage:closeNormal forState:UIControlStateNormal];
 		[closeButton setImage:closePressed forState:UIControlStateHighlighted];
 		
-		[closeButton addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
+		[closeButton addTarget:self action:@selector(onBtnClosePress) forControlEvents:UIControlEventTouchUpInside];
 		
 		[self.view addSubview:closeButton];
 	}
@@ -108,11 +109,6 @@
 	[super release];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
 - (void)hide
 {
 	[self dismissModalViewControllerAnimated:NO];
@@ -130,9 +126,9 @@
 	self.originalParent = nil;
 }
 
-- (void)close
+- (void)onBtnClosePress
 {
-	[self.bannerView closeExpandedView];
+	[self.bannerView close];
 }
 
 @end

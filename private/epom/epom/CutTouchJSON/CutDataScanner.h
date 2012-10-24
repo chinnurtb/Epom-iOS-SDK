@@ -40,6 +40,8 @@
 	NSUInteger length;
 	
 	NSCharacterSet *doubleCharacters;
+	NSCharacterSet *longCharacters;
+	
 }
 
 @property (readwrite, nonatomic, retain) NSData *data;

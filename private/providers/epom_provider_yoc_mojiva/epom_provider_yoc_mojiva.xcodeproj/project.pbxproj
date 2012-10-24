@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		C21F117615A18C9600A18B76 /* libAdMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BDC851157FA8C1001A3F23 /* libAdMobileSDK.a */; };
+		C29AAD04163039B600F32642 /* ESProviderInterstitialMOceanBased.h in Headers */ = {isa = PBXBuildFile; fileRef = C29AACFE163039B500F32642 /* ESProviderInterstitialMOceanBased.h */; };
+		C29AAD05163039B600F32642 /* ESProviderInterstitialMOceanBased.m in Sources */ = {isa = PBXBuildFile; fileRef = C29AACFF163039B500F32642 /* ESProviderInterstitialMOceanBased.m */; };
+		C29AAD06163039B600F32642 /* ESProviderInterstitialMojiva.h in Headers */ = {isa = PBXBuildFile; fileRef = C29AAD00163039B500F32642 /* ESProviderInterstitialMojiva.h */; };
+		C29AAD07163039B600F32642 /* ESProviderInterstitialMojiva.m in Sources */ = {isa = PBXBuildFile; fileRef = C29AAD01163039B500F32642 /* ESProviderInterstitialMojiva.m */; };
+		C29AAD08163039B600F32642 /* ESProviderInterstitialYocPerformance.h in Headers */ = {isa = PBXBuildFile; fileRef = C29AAD02163039B500F32642 /* ESProviderInterstitialYocPerformance.h */; };
+		C29AAD09163039B600F32642 /* ESProviderInterstitialYocPerformance.m in Sources */ = {isa = PBXBuildFile; fileRef = C29AAD03163039B600F32642 /* ESProviderInterstitialYocPerformance.m */; };
 		C2D9D47115F9D95600CCE5FB /* epom_provider_yoc_mojiva-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C2D9D46E15F9D95600CCE5FB /* epom_provider_yoc_mojiva-Prefix.pch */; };
-		C2D9D47215F9D95600CCE5FB /* ESProviderYocPerformance.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D9D46F15F9D95600CCE5FB /* ESProviderYocPerformance.h */; };
-		C2D9D47315F9D95600CCE5FB /* ESProviderYocPerformance.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D9D47015F9D95600CCE5FB /* ESProviderYocPerformance.m */; };
-		C2D9D4AB15F9DF8800CCE5FB /* ESProviderMojiva.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D9D4A915F9DF8700CCE5FB /* ESProviderMojiva.h */; };
-		C2D9D4AC15F9DF8800CCE5FB /* ESProviderMojiva.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D9D4AA15F9DF8700CCE5FB /* ESProviderMojiva.m */; };
-		C2D9D4AF15F9E01600CCE5FB /* ESProviderMOceanBased.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D9D4AD15F9E01500CCE5FB /* ESProviderMOceanBased.h */; };
-		C2D9D4B015F9E01600CCE5FB /* ESProviderMOceanBased.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D9D4AE15F9E01500CCE5FB /* ESProviderMOceanBased.m */; };
+		C2D9D47215F9D95600CCE5FB /* ESProviderBannerYocPerformance.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D9D46F15F9D95600CCE5FB /* ESProviderBannerYocPerformance.h */; };
+		C2D9D47315F9D95600CCE5FB /* ESProviderBannerYocPerformance.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D9D47015F9D95600CCE5FB /* ESProviderBannerYocPerformance.m */; };
+		C2D9D4AB15F9DF8800CCE5FB /* ESProviderBannerMojiva.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D9D4A915F9DF8700CCE5FB /* ESProviderBannerMojiva.h */; };
+		C2D9D4AC15F9DF8800CCE5FB /* ESProviderBannerMojiva.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D9D4AA15F9DF8700CCE5FB /* ESProviderBannerMojiva.m */; };
+		C2D9D4AF15F9E01600CCE5FB /* ESProviderBannerMOceanBased.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D9D4AD15F9E01500CCE5FB /* ESProviderBannerMOceanBased.h */; };
+		C2D9D4B015F9E01600CCE5FB /* ESProviderBannerMOceanBased.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D9D4AE15F9E01500CCE5FB /* ESProviderBannerMOceanBased.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,25 +31,24 @@
 			remoteGlobalIDString = CFE1ED4112FA979400600579;
 			remoteInfo = AdMobileSDK;
 		};
-		C2BF16571625714E007C48CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C2BDC848157FA8C0001A3F23 /* AdMobileSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CF6CAF8713D4632500158662;
-			remoteInfo = DocGeneration;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C29AACFE163039B500F32642 /* ESProviderInterstitialMOceanBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderInterstitialMOceanBased.h; sourceTree = "<group>"; };
+		C29AACFF163039B500F32642 /* ESProviderInterstitialMOceanBased.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderInterstitialMOceanBased.m; sourceTree = "<group>"; };
+		C29AAD00163039B500F32642 /* ESProviderInterstitialMojiva.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderInterstitialMojiva.h; sourceTree = "<group>"; };
+		C29AAD01163039B500F32642 /* ESProviderInterstitialMojiva.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderInterstitialMojiva.m; sourceTree = "<group>"; };
+		C29AAD02163039B500F32642 /* ESProviderInterstitialYocPerformance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderInterstitialYocPerformance.h; sourceTree = "<group>"; };
+		C29AAD03163039B600F32642 /* ESProviderInterstitialYocPerformance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderInterstitialYocPerformance.m; sourceTree = "<group>"; };
 		C2BDC6FE157FA524001A3F23 /* libepom_provider_yoc_mojiva.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_yoc_mojiva.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BDC848157FA8C0001A3F23 /* AdMobileSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AdMobileSDK.xcodeproj; path = ../../../externals/mOcean/AdMobileSDK.xcodeproj; sourceTree = "<group>"; };
 		C2D9D46E15F9D95600CCE5FB /* epom_provider_yoc_mojiva-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "epom_provider_yoc_mojiva-Prefix.pch"; sourceTree = "<group>"; };
-		C2D9D46F15F9D95600CCE5FB /* ESProviderYocPerformance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderYocPerformance.h; sourceTree = "<group>"; };
-		C2D9D47015F9D95600CCE5FB /* ESProviderYocPerformance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderYocPerformance.m; sourceTree = "<group>"; };
-		C2D9D4A915F9DF8700CCE5FB /* ESProviderMojiva.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderMojiva.h; sourceTree = "<group>"; };
-		C2D9D4AA15F9DF8700CCE5FB /* ESProviderMojiva.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderMojiva.m; sourceTree = "<group>"; };
-		C2D9D4AD15F9E01500CCE5FB /* ESProviderMOceanBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderMOceanBased.h; sourceTree = "<group>"; };
-		C2D9D4AE15F9E01500CCE5FB /* ESProviderMOceanBased.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderMOceanBased.m; sourceTree = "<group>"; };
+		C2D9D46F15F9D95600CCE5FB /* ESProviderBannerYocPerformance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderBannerYocPerformance.h; sourceTree = "<group>"; };
+		C2D9D47015F9D95600CCE5FB /* ESProviderBannerYocPerformance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderBannerYocPerformance.m; sourceTree = "<group>"; };
+		C2D9D4A915F9DF8700CCE5FB /* ESProviderBannerMojiva.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderBannerMojiva.h; sourceTree = "<group>"; };
+		C2D9D4AA15F9DF8700CCE5FB /* ESProviderBannerMojiva.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderBannerMojiva.m; sourceTree = "<group>"; };
+		C2D9D4AD15F9E01500CCE5FB /* ESProviderBannerMOceanBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderBannerMOceanBased.h; sourceTree = "<group>"; };
+		C2D9D4AE15F9E01500CCE5FB /* ESProviderBannerMOceanBased.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderBannerMOceanBased.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				C2BDC851157FA8C1001A3F23 /* libAdMobileSDK.a */,
-				C2BF16581625714E007C48CE /* libAdMobileSDK doc generation.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,12 +99,18 @@
 		C2D9D46D15F9D95600CCE5FB /* epom_provider_yoc_mojiva */ = {
 			isa = PBXGroup;
 			children = (
-				C2D9D4AD15F9E01500CCE5FB /* ESProviderMOceanBased.h */,
-				C2D9D4AE15F9E01500CCE5FB /* ESProviderMOceanBased.m */,
-				C2D9D46F15F9D95600CCE5FB /* ESProviderYocPerformance.h */,
-				C2D9D47015F9D95600CCE5FB /* ESProviderYocPerformance.m */,
-				C2D9D4A915F9DF8700CCE5FB /* ESProviderMojiva.h */,
-				C2D9D4AA15F9DF8700CCE5FB /* ESProviderMojiva.m */,
+				C2D9D4AD15F9E01500CCE5FB /* ESProviderBannerMOceanBased.h */,
+				C2D9D4AE15F9E01500CCE5FB /* ESProviderBannerMOceanBased.m */,
+				C2D9D46F15F9D95600CCE5FB /* ESProviderBannerYocPerformance.h */,
+				C2D9D47015F9D95600CCE5FB /* ESProviderBannerYocPerformance.m */,
+				C2D9D4A915F9DF8700CCE5FB /* ESProviderBannerMojiva.h */,
+				C2D9D4AA15F9DF8700CCE5FB /* ESProviderBannerMojiva.m */,
+				C29AACFE163039B500F32642 /* ESProviderInterstitialMOceanBased.h */,
+				C29AACFF163039B500F32642 /* ESProviderInterstitialMOceanBased.m */,
+				C29AAD00163039B500F32642 /* ESProviderInterstitialMojiva.h */,
+				C29AAD01163039B500F32642 /* ESProviderInterstitialMojiva.m */,
+				C29AAD02163039B500F32642 /* ESProviderInterstitialYocPerformance.h */,
+				C29AAD03163039B600F32642 /* ESProviderInterstitialYocPerformance.m */,
 				C2D9D47415F9D96100CCE5FB /* Supporting Files */,
 			);
 			path = epom_provider_yoc_mojiva;
@@ -122,9 +132,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2D9D47115F9D95600CCE5FB /* epom_provider_yoc_mojiva-Prefix.pch in Headers */,
-				C2D9D47215F9D95600CCE5FB /* ESProviderYocPerformance.h in Headers */,
-				C2D9D4AB15F9DF8800CCE5FB /* ESProviderMojiva.h in Headers */,
-				C2D9D4AF15F9E01600CCE5FB /* ESProviderMOceanBased.h in Headers */,
+				C2D9D47215F9D95600CCE5FB /* ESProviderBannerYocPerformance.h in Headers */,
+				C2D9D4AB15F9DF8800CCE5FB /* ESProviderBannerMojiva.h in Headers */,
+				C2D9D4AF15F9E01600CCE5FB /* ESProviderBannerMOceanBased.h in Headers */,
+				C29AAD04163039B600F32642 /* ESProviderInterstitialMOceanBased.h in Headers */,
+				C29AAD06163039B600F32642 /* ESProviderInterstitialMojiva.h in Headers */,
+				C29AAD08163039B600F32642 /* ESProviderInterstitialYocPerformance.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,13 +201,6 @@
 			remoteRef = C2BDC850157FA8C1001A3F23 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C2BF16581625714E007C48CE /* libAdMobileSDK doc generation.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libAdMobileSDK doc generation.a";
-			remoteRef = C2BF16571625714E007C48CE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -219,9 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D9D47315F9D95600CCE5FB /* ESProviderYocPerformance.m in Sources */,
-				C2D9D4AC15F9DF8800CCE5FB /* ESProviderMojiva.m in Sources */,
-				C2D9D4B015F9E01600CCE5FB /* ESProviderMOceanBased.m in Sources */,
+				C2D9D47315F9D95600CCE5FB /* ESProviderBannerYocPerformance.m in Sources */,
+				C2D9D4AC15F9DF8800CCE5FB /* ESProviderBannerMojiva.m in Sources */,
+				C2D9D4B015F9E01600CCE5FB /* ESProviderBannerMOceanBased.m in Sources */,
+				C29AAD05163039B600F32642 /* ESProviderInterstitialMOceanBased.m in Sources */,
+				C29AAD07163039B600F32642 /* ESProviderInterstitialMojiva.m in Sources */,
+				C29AAD09163039B600F32642 /* ESProviderInterstitialYocPerformance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

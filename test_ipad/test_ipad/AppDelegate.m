@@ -9,19 +9,31 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "epom/ESInterstitialView.h"
+
+@interface AppDelegate()
+@property (readwrite, retain) ESInterstitialView *esInterstitialView;
+@end
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize viewController = _viewController;
+@synthesize esInterstitialView;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-	self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-	self.window.rootViewController = self.viewController;
+	self.window.rootViewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     [self.window makeKeyAndVisible];
+	
+	// set up interstitial view
+	self.esInterstitialView = [[[ESInterstitialView alloc] initWithID:@"53927211d9604e5d671963fd013dd94b"
+														  useLocation:NO
+															 testMode:YES] autorelease];
+    self.esInterstitialView.loadTimeout = 4.0;
+	[self.esInterstitialView presentAsStartupScreenWithWindow:self.window defaultImage:[UIImage imageNamed:@"InterstitialStartup.png"]];
+
     return YES;
 }
 

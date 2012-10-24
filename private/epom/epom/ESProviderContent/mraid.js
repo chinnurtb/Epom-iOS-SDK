@@ -133,17 +133,6 @@
 			{
 				url += "?" + args;
 			}
-			/*
-			if (executeNativeCallIsActive || (mraid.getState() == states.Loading))
-			{
-				executeNativeCallQueue.push(url);
-			} 
-			else
-			{
-				executeNativeCallIsActive = true;
-				window.location = url;
-			}
-			*/
 			var iframe = document.createElement("IFRAME");
 			iframe.setAttribute("src", url);
 			document.documentElement.appendChild(iframe);
@@ -227,8 +216,7 @@
 			}
  
 			var url = (1 <= arguments.length) ? arguments[0] : null;
- 			
-			if (url === null)
+ 			if (url === null)
 			{
 				return executeNativeCall(nativeCommands.Expand);
 			}

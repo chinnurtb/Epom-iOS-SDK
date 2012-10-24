@@ -8,15 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-#import "epom/ESViewDelegateProtocol.h"
+#import "epom/ESBannerViewDelegate.h"
+#import "epom/ESInterstitialViewDelegate.h"
 
-@class ESView;
+@class ESBannerView, ESInterstitialView;
 
-@interface ViewController : UIViewController<ESViewDelegate>
+@interface ViewController : UIViewController<ESBannerViewDelegate, ESInterstitialViewDelegate>
 {
-	ESView *esView;	
+	IBOutlet UIButton *btnShowInterstitial;
 }
 
-@property (readwrite, retain) ESView *esView;
+-(IBAction)showInterstitialAd:(id)sender;
 
 @end

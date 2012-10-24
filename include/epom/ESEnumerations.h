@@ -4,19 +4,34 @@
 //
 //  Created by Epom LTD on 5/31/12.
 //  Copyright (c) 2012 Epom LTD. All rights reserved.
-//
-//	Enumerations used fo creation of ESView
+
+
 
 /*
-	Available EpomSDK view sizes
+	Available EpomSDK banner view sizes
 */
 typedef enum
 {
-	ESViewSize320x50 	= 0,
-	ESViewSize768x90,
+	ESBannerViewSize320x50 	= 0,
+	ESBannerViewSize768x90,
 	
-	ESViewSizeTypeCount // for inner usage	
-} ESViewSizeType;
+	ESBannerViewSizeTypeCount // for inner usage
+} ESBannerViewSizeType;
+
+/*
+ 	Interstitial states
+ */
+typedef enum
+{
+	ESInterstitialViewStateInitializing = 0,
+	ESInterstitialViewStateLoading,
+	ESInterstitialViewStateFailed,
+	ESInterstitialViewStateReady,
+	ESInterstitialViewStateActive,
+	ESInterstitialViewStateDone,
+	
+	ESInterstitialViewStateTypeCount // for inner usage
+} ESInterstitialViewStateType;
 
 
 /*

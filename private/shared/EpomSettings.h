@@ -8,13 +8,14 @@
 
 #import "epom/ESEnumerations.h"
 
+#define ESUtilsPrivate	ESUtilsForAds
+#define ESLogger		ESLoggerForAds
+#define BPXLUUIDHandler BPLXUDIDHandlerForAds
+
+#import "EpomCommon.h"
+
 #import <CoreGraphics/CGGeometry.h>
-
-#import "ESLogger.h"
-
-#define AD_REQUEST_URL 		@"http://api.epom.com/ads-api"
-#define AD_IMPRESSION_URL 	@"http://api.epom.com/impression.gif"
-#define AD_CLICK_URL		@"http://api.epom.com/click.gif"
+#import <UIKit/UIKit.h>
 
 #define AD_MINIMAL_REQUEST_INTERVAL 		(5.0)
 #define AD_DEFAULT_REQUEST_INTERVAL 		(15.0)
@@ -23,12 +24,13 @@
 #define AD_UPDATE_INTERVAL					(1.0)
 
 #define AD_REQUEST_START_INTERVAL			(0.0)
-#define AD_REQUEST_ERR_INTERVAL				(10.0)
 #define AD_NETWORK_ERR_INTERVAL				(1.0)
 
 #define HTTP_AD_REQUEST_TIMEOUT				(5.0)
 #define HTTP_AD_IMPRESSION_TIMEOUT 			(5.0)
 #define HTTP_AD_CLICK_TIMEOUT 				(5.0)
+
+#define INTERSTITIAL_AD_MINIMAL_TIMEOUT 	(2.0)
 
 #define ADNETWORK_TYPE_KEY 			@"AD_NETWORK"
 #define ADNETWORK_PARAMETERS_KEY 	@"AD_NETWORK_PARAMETERS"
@@ -45,21 +47,33 @@
 #define ARRAY_SIZE(x) (sizeof(x) / sizeof(*x))
 #define STATIC_ASSERT(test, msg) typedef char _static_assert_ ## msg [ ((test) ? 1 : -1) ]
 
-#define ES_LOG_INFO(fmt, ...)	\
-				[[ESLogger shared] logType:ESLoggerMessageInfo format:fmt, ## __VA_ARGS__]
-#define ES_LOG_ERROR(fmt, ...)	\
-				[[ESLogger shared] logType:ESLoggerMessageError format:fmt, ## __VA_ARGS__]
-
-
-static inline CGRect epom_view_size(ESViewSizeType size)
+static inline CGRect epom_view_size(ESBannerViewSizeType size)
 {
 	CGRect rects[] =
 	{
-		/* ESViewSize320x50		*/	CGRectMake(0, 0, 320, 50),
-		/* ESViewSize768x90		*/	CGRectMake(0, 0, 768, 90),
+		/* ESBannerViewSize320x50		*/	CGRectMake(0, 0, 320, 50),
+		/* ESBannerViewSize768x90		*/	CGRectMake(0, 0, 768, 90),
 	};
 	
-	STATIC_ASSERT(ARRAY_SIZE(rects) == ESViewSizeTypeCount, INVALID_RECTS_ARRAY_SIZE);
+	STATIC_ASSERT(ARRAY_SIZE(rects) == ESBannerViewSizeTypeCount, INVALID_RECTS_ARRAY_SIZE);
 	
 	return rects[size];
+}
+
+
+static inline CGRect epom_screen_size()
+{
+	CGRect rect = [[UIScreen mainScreen] bounds];
+	rect.origin.x = rect.origin.y = 0;
+	
+	if ([UIApplication sharedApplication].statusBarHidden == NO)
+	{
+		CGRect statusBarFrame = [[UIApplication sharedApplication] statusBarFrame];
+		
+		float statusBarHeight = (statusBarFrame.size.height < statusBarFrame.size.width) ? statusBarFrame.size.height : statusBarFrame.size.width;
+		
+		rect.size.height -= statusBarHeight;
+	}
+	
+	return rect;
 }

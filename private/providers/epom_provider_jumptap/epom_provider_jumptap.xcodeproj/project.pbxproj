@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2D8F520157E0A05003076D9 /* ESProviderJumpTap.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D8F51F157E0A05003076D9 /* ESProviderJumpTap.m */; };
+		C29AACE8162FF33600F32642 /* ESProviderInterstitialJumpTap.h in Headers */ = {isa = PBXBuildFile; fileRef = C29AACE6162FF33600F32642 /* ESProviderInterstitialJumpTap.h */; };
+		C29AACE9162FF33600F32642 /* ESProviderInterstitialJumpTap.m in Sources */ = {isa = PBXBuildFile; fileRef = C29AACE7162FF33600F32642 /* ESProviderInterstitialJumpTap.m */; };
+		C2D8F520157E0A05003076D9 /* ESProviderBannerJumpTap.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D8F51F157E0A05003076D9 /* ESProviderBannerJumpTap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C29AACE6162FF33600F32642 /* ESProviderInterstitialJumpTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderInterstitialJumpTap.h; sourceTree = "<group>"; };
+		C29AACE7162FF33600F32642 /* ESProviderInterstitialJumpTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderInterstitialJumpTap.m; sourceTree = "<group>"; };
 		C2D8F516157E0A05003076D9 /* libepom_provider_jumptap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_jumptap.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D8F51D157E0A05003076D9 /* epom_provider_jumptap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epom_provider_jumptap-Prefix.pch"; sourceTree = "<group>"; };
-		C2D8F51E157E0A05003076D9 /* ESProviderJumpTap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderJumpTap.h; sourceTree = "<group>"; };
-		C2D8F51F157E0A05003076D9 /* ESProviderJumpTap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderJumpTap.m; sourceTree = "<group>"; };
+		C2D8F51E157E0A05003076D9 /* ESProviderBannerJumpTap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderBannerJumpTap.h; sourceTree = "<group>"; };
+		C2D8F51F157E0A05003076D9 /* ESProviderBannerJumpTap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderBannerJumpTap.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 		C2D8F51B157E0A05003076D9 /* epom_provider_jumptap */ = {
 			isa = PBXGroup;
 			children = (
-				C2D8F51E157E0A05003076D9 /* ESProviderJumpTap.h */,
-				C2D8F51F157E0A05003076D9 /* ESProviderJumpTap.m */,
+				C2D8F51E157E0A05003076D9 /* ESProviderBannerJumpTap.h */,
+				C2D8F51F157E0A05003076D9 /* ESProviderBannerJumpTap.m */,
+				C29AACE6162FF33600F32642 /* ESProviderInterstitialJumpTap.h */,
+				C29AACE7162FF33600F32642 /* ESProviderInterstitialJumpTap.m */,
 				C2D8F51C157E0A05003076D9 /* Supporting Files */,
 			);
 			path = epom_provider_jumptap;
@@ -77,6 +83,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C29AACE8162FF33600F32642 /* ESProviderInterstitialJumpTap.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D8F520157E0A05003076D9 /* ESProviderJumpTap.m in Sources */,
+				C2D8F520157E0A05003076D9 /* ESProviderBannerJumpTap.m in Sources */,
+				C29AACE9162FF33600F32642 /* ESProviderInterstitialJumpTap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

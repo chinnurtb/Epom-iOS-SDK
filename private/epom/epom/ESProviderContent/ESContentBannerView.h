@@ -6,18 +6,18 @@
 //
 //
 
-#import "ESContentBannerViewBase.h"
+#import "ESContentViewBase.h"
 
 #import "ESExpandedContentBannerViewController.h"
 
 #import "ESContentBannerViewDelegate.h"
 #import "ESContentBannerExternalExpandedViewDelegate.h"
 
-#import "../ESDownloader.h"
+#import "../Utilities/ESDownloader.h"
 
 @class ESContentBannerExternalExpandedView;
 
-@interface ESContentBannerView : ESContentBannerViewBase<ESContentBannerViewBaseDerivedProtocol,
+@interface ESContentBannerView : ESContentViewBase<ESContentViewBaseDerivedProtocol,
 															ESDownloaderDelegate,
 															ESContentBannerExternalExpandedViewDelegate>
 {
@@ -27,6 +27,7 @@
 	
 	// view controller for expanded ad
 	ESExpandedContentBannerViewController *expandedViewController_;
+	UIViewController *modalViewController_;
 
 	// delegate
 	id<ESContentBannerViewDelegate> delegate_;

@@ -17,19 +17,38 @@
                location = "group:private/epom/epom/../../../include/epom/ESVersion.h">
             </FileRef>
             <FileRef
-               location = "group:private/epom/epom/../../../include/epom/ESViewDelegateProtocol.h">
-            </FileRef>
-            <FileRef
                location = "group:private/epom/epom/../../../include/epom/ESEnumerations.h">
             </FileRef>
             <FileRef
-               location = "group:private/epom/epom/../../../include/epom/ESView.h">
+               location = "group:private/epom/epom/../../../include/epom/ESBannerView.h">
+            </FileRef>
+            <FileRef
+               location = "group:private/epom/epom/../../../include/epom/ESBannerViewDelegate.h">
+            </FileRef>
+            <FileRef
+               location = "group:private/epom/epom/../../../include/epom/ESInterstitialView.h">
+            </FileRef>
+            <FileRef
+               location = "group:private/epom/epom/../../../include/epom/ESInterstitialViewDelegate.h">
+            </FileRef>
+            <FileRef
+               location = "group:private/epom/epom/../../../include/epom/ESUtils.h">
             </FileRef>
          </Group>
       </Group>
       <Group
          location = "group:private/epom"
          name = "shared">
+         <Group
+            location = "group:private/epom"
+            name = "scripts">
+            <FileRef
+               location = "group:private/epom/../universal_lib.sh">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:../shared/EpomCommon.h">
+         </FileRef>
          <FileRef
             location = "group:../shared/EpomSettings.h">
          </FileRef>
@@ -37,19 +56,28 @@
             location = "group:../shared/EpomProvidersList.h">
          </FileRef>
          <FileRef
-            location = "group:../shared/ESProvider.h">
+            location = "group:../shared/ESUtilsPrivate.h">
          </FileRef>
          <FileRef
-            location = "group:../shared/ESProviderDelegateProtocol.h">
+            location = "group:../shared/ESProviderBanner.h">
+         </FileRef>
+         <FileRef
+            location = "group:../shared/ESProviderBannerDelegate.h">
+         </FileRef>
+         <FileRef
+            location = "group:../shared/ESProviderInterstitial.h">
+         </FileRef>
+         <FileRef
+            location = "group:../shared/ESProviderInterstitialDelegate.h">
+         </FileRef>
+         <FileRef
+            location = "group:../shared/ESLocationTracker.h">
          </FileRef>
          <FileRef
             location = "group:../shared/ESLogger.h">
          </FileRef>
          <FileRef
             location = "group:../shared/ESContentWebViewController.h">
-         </FileRef>
-         <FileRef
-            location = "group:../shared/EpomUtils.h">
          </FileRef>
       </Group>
       <Group

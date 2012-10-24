@@ -9,15 +9,13 @@
 
 #import "ESContentWebViewController.h"
 
-#import "EpomUtils.h"
-
 @implementation ESContentWebViewController
 @synthesize delegate;
 
 - (void) loadBrowser: (NSURL *) url
 {
 	// Check for network connectivity
-	if (isNetworkReachable())
+	if ([ESUtilsPrivate isNetworkReachable])
 	{		
 		webView.delegate = self;
 		
@@ -115,7 +113,7 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
 	// Check for network connectivity
-	if (isNetworkReachable())
+	if ([ESUtilsPrivate isNetworkReachable])
 	{
 		return YES;
 	}

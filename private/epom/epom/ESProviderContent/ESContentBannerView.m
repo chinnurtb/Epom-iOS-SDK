@@ -24,6 +24,9 @@ static const int kActivityIndicatorTag = 'itag';
 // view controller for expanded ad
 @property (readwrite, retain) ESExpandedContentBannerViewController *expandedViewController;
 
+// root view controller
+@property (readwrite, assign) UIViewController *modalViewController;
+
 @end
 
 @implementation ESContentBannerView
@@ -31,20 +34,22 @@ static const int kActivityIndicatorTag = 'itag';
 @synthesize bannerViewDelegate = delegate_;
 
 @synthesize expandedViewController = expandedViewController_;
-
+@synthesize modalViewController = modalViewController_;
 @synthesize externalBannerDownloader = externalBannerDownloader_;
 @synthesize externalBannerView = externalBannerView_;
 
 - (id)initWithFrame:(CGRect)frame modalViewController:(UIViewController *)controller
 {
 	
-	self = [super initWithFrame:frame modalViewController:controller expandProperties:nil];
+	self = [super initWithFrame:frame expandProperties:nil isInterstitial:NO autoShow:YES];
 	[super setDerived:self];
 	
 	if (self == nil)
 	{
 		return nil;
 	}
+	
+	self.modalViewController = controller;
 	
 	return self;
 }
@@ -74,14 +79,14 @@ static const int kActivityIndicatorTag = 'itag';
 
 -(void) downloaderDidFinishedDownload:(ESDownloader *)downloader
 {
-	assert(downloader == self.externalBannerDownloader);
+	ASSERT(downloader == self.externalBannerDownloader);
 	
 	[self loadExternalExpandedBannerWithContent: self.externalBannerDownloader.data];
 }
 
 -(void) downloader:(ESDownloader *)downloader didFailWithError:(NSError *)error
 {
-	assert(downloader == self.externalBannerDownloader);
+	ASSERT(downloader == self.externalBannerDownloader);
 
 	[self hideActivityIndicator];
 	
@@ -100,11 +105,6 @@ static const int kActivityIndicatorTag = 'itag';
 	[self.bannerViewDelegate didRecieveAd];
 }
 
-- (void)onAdHasBeenTapped
-{
-	[self.bannerViewDelegate hasBeenTapped];
-}
-
 - (void)onAdWillEnterModalMode
 {
 	[self.bannerViewDelegate willEnterModalMode];
@@ -115,14 +115,13 @@ static const int kActivityIndicatorTag = 'itag';
 	[self.bannerViewDelegate didLeaveModalMode];
 }
 
-- (void)onAdWillLeaveApp
+- (void)onUserInteractionWithWillLeaveApp:(BOOL)willLeaveApp
 {
-	[self.bannerViewDelegate willLeaveApplication];
-}
-
-- (CLLocation *)onGeoLocationRequest
-{
-	return [self.bannerViewDelegate geoLocation];
+	[self.bannerViewDelegate hasBeenTapped];
+	if (willLeaveApp)
+	{
+		[self.bannerViewDelegate willLeaveApplication];
+	}
 }
 
 - (BOOL)onExpand:(NSString *)url
@@ -153,45 +152,38 @@ static const int kActivityIndicatorTag = 'itag';
 	return NO;
 }
 
-- (void)onBeforeStateChangeFrom:(enum ESContentBannerViewState)stateBefore to:(enum ESContentBannerViewState)stateAfter
+- (void)onBeforeStateChangeFrom:(ESContentViewState)stateBefore to:(ESContentViewState)stateAfter
 {
-	switch (stateAfter)
-	{
-		case ESContentBannerViewStateDefault:
-			switch (stateBefore)
-			{
-			case ESContentBannerViewStateExpanded:
-				[self.expandedViewController hide];
-				self.expandedViewController = nil;
-				
-				[self.bannerViewDelegate didLeaveModalMode];
-				break;
-			default:
-				break;
-			}
-			break;
-		case ESContentBannerViewStateExpanded:
-			// still is displayed
-			self.expandedViewController = [[[ESExpandedContentBannerViewController alloc] initAndShowWithBannerView:self
-																								   parentController:self.rootViewController
-																											   size:CGSizeMake(expandProperties_.width, expandProperties_.height)
-																								  customCloseButton:expandProperties_.useCustomClose] autorelease];
-			[self.bannerViewDelegate willEnterModalMode];
-			break;
-		default:
-			break;
-	}
-
 }
 
-- (void)onAfterStateChangeFrom:(enum ESContentBannerViewState)stateBefore to:(enum ESContentBannerViewState)stateAfter
+- (void)onAfterStateChangeFrom:(ESContentViewState)stateBefore to:(ESContentViewState)stateAfter
 {
+	if ((stateBefore == ESContentViewStateExpanded) && (stateAfter == ESContentViewStateDefault))
+	{
+		[self.expandedViewController hide];
+		self.expandedViewController = nil;
+		
+		[self.bannerViewDelegate didLeaveModalMode];
+	}
 	
+	if ((stateBefore == ESContentViewStateDefault) && (stateAfter == ESContentViewStateExpanded))
+	{
+		self.expandedViewController = [[[ESExpandedContentBannerViewController alloc] initAndShowWithBannerView:self
+																							   parentController:self.modalViewController
+																										   size:CGSizeMake(expandProperties_.width, expandProperties_.height)
+																							  customCloseButton:expandProperties_.useCustomClose] autorelease];
+		[self.bannerViewDelegate willEnterModalMode];
+	}	
 }
 
 - (UIViewController *)onControllerForEmbeddedBrowserRequest
 {
-	return self.state == ESContentBannerViewStateDefault ? self.rootViewController : self.expandedViewController;
+	return self.viewState == ESContentViewStateDefault ? self.modalViewController : self.expandedViewController;
+}
+
+- (BOOL)treatExpandAsUserInteraction
+{
+	return YES;
 }
 
 #pragma mark -- ESContentBannerExternalExpandedViewDelegate protocol
@@ -226,7 +218,7 @@ static const int kActivityIndicatorTag = 'itag';
 	
 	self.externalBannerView = [[[ESContentBannerExternalExpandedView alloc] initWithExpandProperties:self.expandProperties
 																							 content:content
-																				 modalViewController:self.rootViewController
+																				 modalViewController:self.modalViewController
 																						viewDelegate:self.bannerViewDelegate
 																				expandedViewDelegate:self] autorelease];
 }

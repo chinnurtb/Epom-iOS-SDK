@@ -3,8 +3,14 @@
 (!) - bugfix
 
 ////////////////////////////////////////////////////////////////////////////////////
+- Epom SDK for iOS version 1.2.0
+ (!) Changed way of device unique identifier generation
+ (!) Interface classes name changes ESView -> ESBannerView and vice versa
+ (+) Added class ESInterstitialView for displaying interstitial ads
+ (!) Console log level optioning moved to ESUtil class
+
 - Epom SDK for iOS version 1.1.2
- (!) SDK's access to location services fixup
+ (!) Fix for SDK's access to location api
 
 - Epom SDK for iOS version 1.1.1
  (+) Added support for armv7s architecture

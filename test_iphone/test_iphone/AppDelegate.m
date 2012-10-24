@@ -10,29 +10,32 @@
 
 #import "ViewController.h"
 
+#import "epom/ESInterstitialView.h"
+
+#import "epom-apptracker/EAPAppTracker.h"
+
+@interface AppDelegate()
+@property (readwrite, retain) ESInterstitialView *esInterstitialView;
+@end
+
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize viewController = _viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
-	self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-
-	if ([self.window respondsToSelector:@selector(setRootViewController:)])
-	{
-		[self.window setRootViewController:self.viewController];	
-	}
-	else
-	{
-		self.viewController.view.frame = [[UIScreen mainScreen] applicationFrame];
-		[self.window addSubview:self.viewController.view];		
-	}
-	
+	self.window.rootViewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
 	[self.window makeKeyAndVisible];
-    
+
+	// set up interstitial view
+	ESInterstitialView *esInterstitialView = [[ESInterstitialView alloc] initWithID:@"53927211d9604e5d671963fd013dd94b"
+														  useLocation:NO
+															 testMode:YES];
+    esInterstitialView.loadTimeout = 4.0;
+	esInterstitialView.delegate = self;
+	[esInterstitialView presentAsStartupScreenWithWindow:self.window defaultImage:[UIImage imageNamed:@"InterstitialStartup.png"]];
+
 	return YES;
 }
 
@@ -73,6 +76,18 @@
 	 Save data if appropriate.
 	 See also applicationDidEnterBackground:.
 	 */
+}
+
+#pragma mark -- ESInterstitialView delegate implementation
+
+-(void)esInterstitialViewDidFailLoadAd:(ESInterstitialView *)esInterstitial
+{
+	[esInterstitial release];
+}
+
+-(void)esInterstitialViewDidLeaveModalMode:(ESInterstitialView *)esInterstitial
+{
+	[esInterstitial release];
 }
 
 @end

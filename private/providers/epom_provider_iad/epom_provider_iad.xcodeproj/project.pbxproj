@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C27D51731580A7FA00F7C5A4 /* ESProviderIAd.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D51721580A7FA00F7C5A4 /* ESProviderIAd.m */; };
+		C27D51731580A7FA00F7C5A4 /* ESProviderBannerIAd.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D51721580A7FA00F7C5A4 /* ESProviderBannerIAd.m */; };
+		C29AACF61630228400F32642 /* ESProviderInterstitialIAd.h in Headers */ = {isa = PBXBuildFile; fileRef = C29AACF41630228400F32642 /* ESProviderInterstitialIAd.h */; };
+		C29AACF71630228400F32642 /* ESProviderInterstitialIAd.m in Sources */ = {isa = PBXBuildFile; fileRef = C29AACF51630228400F32642 /* ESProviderInterstitialIAd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C27D51691580A7FA00F7C5A4 /* libepom_provider_iad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_iad.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27D51701580A7FA00F7C5A4 /* epom_provider_iad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epom_provider_iad-Prefix.pch"; sourceTree = "<group>"; };
-		C27D51711580A7FA00F7C5A4 /* ESProviderIAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderIAd.h; sourceTree = "<group>"; };
-		C27D51721580A7FA00F7C5A4 /* ESProviderIAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderIAd.m; sourceTree = "<group>"; };
+		C27D51711580A7FA00F7C5A4 /* ESProviderBannerIAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderBannerIAd.h; sourceTree = "<group>"; };
+		C27D51721580A7FA00F7C5A4 /* ESProviderBannerIAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderBannerIAd.m; sourceTree = "<group>"; };
+		C29AACF41630228400F32642 /* ESProviderInterstitialIAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderInterstitialIAd.h; sourceTree = "<group>"; };
+		C29AACF51630228400F32642 /* ESProviderInterstitialIAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderInterstitialIAd.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 		C27D516E1580A7FA00F7C5A4 /* epom_provider_iad */ = {
 			isa = PBXGroup;
 			children = (
-				C27D51711580A7FA00F7C5A4 /* ESProviderIAd.h */,
-				C27D51721580A7FA00F7C5A4 /* ESProviderIAd.m */,
+				C27D51711580A7FA00F7C5A4 /* ESProviderBannerIAd.h */,
+				C27D51721580A7FA00F7C5A4 /* ESProviderBannerIAd.m */,
+				C29AACF41630228400F32642 /* ESProviderInterstitialIAd.h */,
+				C29AACF51630228400F32642 /* ESProviderInterstitialIAd.m */,
 				C27D516F1580A7FA00F7C5A4 /* Supporting Files */,
 			);
 			path = epom_provider_iad;
@@ -77,6 +83,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C29AACF61630228400F32642 /* ESProviderInterstitialIAd.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C27D51731580A7FA00F7C5A4 /* ESProviderIAd.m in Sources */,
+				C27D51731580A7FA00F7C5A4 /* ESProviderBannerIAd.m in Sources */,
+				C29AACF71630228400F32642 /* ESProviderInterstitialIAd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

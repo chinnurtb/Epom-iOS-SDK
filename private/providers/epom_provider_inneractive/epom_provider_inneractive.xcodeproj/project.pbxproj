@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2D8F542157E1346003076D9 /* ESProviderInneractive.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D8F541157E1346003076D9 /* ESProviderInneractive.m */; };
+		C29AACEE16300C0100F32642 /* ESProviderInterstitialInneractive.h in Headers */ = {isa = PBXBuildFile; fileRef = C29AACEC16300C0100F32642 /* ESProviderInterstitialInneractive.h */; };
+		C29AACEF16300C0100F32642 /* ESProviderInterstitialInneractive.m in Sources */ = {isa = PBXBuildFile; fileRef = C29AACED16300C0100F32642 /* ESProviderInterstitialInneractive.m */; };
+		C2D8F542157E1346003076D9 /* ESProviderBannerInneractive.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D8F541157E1346003076D9 /* ESProviderBannerInneractive.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C29AACEC16300C0100F32642 /* ESProviderInterstitialInneractive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESProviderInterstitialInneractive.h; sourceTree = "<group>"; };
+		C29AACED16300C0100F32642 /* ESProviderInterstitialInneractive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESProviderInterstitialInneractive.m; sourceTree = "<group>"; };
 		C2D8F538157E1346003076D9 /* libepom_provider_inneractive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libepom_provider_inneractive.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D8F53F157E1346003076D9 /* epom_provider_inneractive-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epom_provider_inneractive-Prefix.pch"; sourceTree = "<group>"; };
-		C2D8F540157E1346003076D9 /* ESProviderInneractive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderInneractive.h; sourceTree = "<group>"; };
-		C2D8F541157E1346003076D9 /* ESProviderInneractive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderInneractive.m; sourceTree = "<group>"; };
+		C2D8F540157E1346003076D9 /* ESProviderBannerInneractive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESProviderBannerInneractive.h; sourceTree = "<group>"; };
+		C2D8F541157E1346003076D9 /* ESProviderBannerInneractive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESProviderBannerInneractive.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 		C2D8F53D157E1346003076D9 /* epom_provider_inneractive */ = {
 			isa = PBXGroup;
 			children = (
-				C2D8F540157E1346003076D9 /* ESProviderInneractive.h */,
-				C2D8F541157E1346003076D9 /* ESProviderInneractive.m */,
+				C2D8F540157E1346003076D9 /* ESProviderBannerInneractive.h */,
+				C2D8F541157E1346003076D9 /* ESProviderBannerInneractive.m */,
+				C29AACEC16300C0100F32642 /* ESProviderInterstitialInneractive.h */,
+				C29AACED16300C0100F32642 /* ESProviderInterstitialInneractive.m */,
 				C2D8F53E157E1346003076D9 /* Supporting Files */,
 			);
 			path = epom_provider_inneractive;
@@ -77,6 +83,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C29AACEE16300C0100F32642 /* ESProviderInterstitialInneractive.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D8F542157E1346003076D9 /* ESProviderInneractive.m in Sources */,
+				C2D8F542157E1346003076D9 /* ESProviderBannerInneractive.m in Sources */,
+				C29AACEF16300C0100F32642 /* ESProviderInterstitialInneractive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
