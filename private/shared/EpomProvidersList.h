@@ -24,7 +24,7 @@ static NSString *FULL_PROVIDERS_LIST[][2] =
 	{@"WAP_START",		@"ESProvider%@WapStart"},
 	{@"SMAATO",			@"ESProvider%@Smaato"},
 	{@"MOJIVA",			@"ESProvider%@Mojiva"},
-	{@"SMARTMAD",		@"ESProvider%@SmartMad"},
+	{@"SMARTMAD",		@"ESProvider%@SmartMad"},	
 	
 	// not yet implemented
 	{@"MOB_GOLD",		@"ESProvider%@MobGold"},
@@ -39,7 +39,6 @@ static NSString *FULL_PROVIDERS_LIST[][2] =
 	{@"MOB_PARTNER",	@"ESProvider%@MobPartner"},
 	{@"WEBMOBLINK",		@"ESProvider%@Webmoblink"},
 	{@"MOBILE_FUSE",	@"ESProvider%@MobileFuse"},
-	{@"VSERV",			@"ESProvider%@Vserv"},
 	{@"KOMLI_MOBILE",	@"ESProvider%@KomliMobile"},
 	{@"TODACELL",		@"ESProvider%@Todacell"},
 	{@"ADITIC",			@"ESProvider%@Aditic"},
@@ -50,6 +49,7 @@ static NSString *FULL_PROVIDERS_LIST[][2] =
 
 	// deprecated
 	{@"TAP_JOY",		@"ESProvider%@TapJoy"},
+	{@"VSERV",			@"ESProvider%@Vserv"},
 
 };
 

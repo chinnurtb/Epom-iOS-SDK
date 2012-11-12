@@ -25,17 +25,14 @@ static const int kActivityIndicatorTag = 'tact';
 	// Do any additional setup after loading the view, typically from a nib.
 	[ESUtils setLogLevel:ESVerboseAll];
 	
-	//[ESUtils setAdsServerUrl:@"http://testepom.com/"];
-	
-	ESBannerView *esBannerView = [[[ESBannerView alloc] initWithID:/*@"30aafe4a870012026696ab9cd66e2604"*/@"53927211d9604e5d671963fd013dd94b"
+	ESBannerView *esBannerView = [[[ESBannerView alloc] initWithID:@"53927211d9604e5d671963fd013dd94b"
 												 sizeType:ESBannerViewSize320x50
 									  modalViewController:self
 											  useLocation:NO
 												 testMode:YES] autorelease];
-	
+
 	esBannerView.delegate = self;
 	esBannerView.refreshTimeInterval = 10.0;
-	
 	[self.view addSubview:esBannerView];
 }
 

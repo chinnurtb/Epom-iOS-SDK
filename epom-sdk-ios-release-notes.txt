@@ -3,6 +3,9 @@
 (!) - bugfix
 
 ////////////////////////////////////////////////////////////////////////////////////
+- Epom SDK for iOS version 1.2.1
+ (!) MRAID support minor improvements
+
 - Epom SDK for iOS version 1.2.0
  (!) Changed way of device unique identifier generation
  (!) Interface classes name changes ESView -> ESBannerView and vice versa

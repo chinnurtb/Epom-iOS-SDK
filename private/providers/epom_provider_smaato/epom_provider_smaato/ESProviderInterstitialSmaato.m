@@ -42,7 +42,8 @@
 
 + (BOOL)initializeSystem
 {
-	return ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone);
+	// temporarily disabled
+	return NO && ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone);
 }
 
 #pragma mark -- overriden methods
@@ -66,39 +67,20 @@
 	{
 		publisherId = 923830920;
 	}
-/*
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	[defaults setObject:[[NSNumber numberWithLongLong:publisherId] stringValue] forKey:@"publisherid"];
-	[defaults setObject:[[NSNumber numberWithLongLong:spaceId] stringValue] forKey:@"adspaceid"];
-*/
 	
+	SOMAAdSettings *adSettings = [[[SOMAAdSettings alloc] init] autorelease];
+	[adSettings setAdspaceId:spaceId];
+	[adSettings setPublisherId:publisherId];
+		
 	self.parentViewController = [[[UIViewController alloc] init] autorelease];
 	self.interstitialView = [[[SOMAFullScreenBannerLocal alloc] init] autorelease];
 	self.interstitialView.backgroundColor = [UIColor clearColor];
 	self.interstitialView.delegate = self;
 	self.interstitialView.parent = self;
 	self.parentViewController.view = self.interstitialView;
-
-	/*
-	[defaults removeObjectForKey:@"publisherid"];
-	[defaults removeObjectForKey:@"adspaceid"];
-    [defaults synchronize];
-	 */
-
-	
-	
-	/*
-    self.interstitialView.adSettings.adspaceId = spaceId;
-    self.interstitialView.adSettings.publisherId = publisherId;
-	
-    self.interstitialView.adSettings.adType = kSOMAAdTypeAll;
-	
-    [self.interstitialView setLocationUpdateEnabled:([[ESLocationTracker shared] currentLocation] != nil)];
-	
-	[self.interstitialView asyncLoadNewInterstitial];
-	*/
-
 	[self.interstitialView addAdListener:self];
+	
+	[self.interstitialView setAdSettings:adSettings];
 
 	return self;
 }
@@ -128,15 +110,33 @@
 	[self.delegate providerViewDidLeaveModalMode:self];	
 }
 
-#pragma mark -- SOMAInterstitialViewDelegate implementation
+#pragma mark -- SOMAFullScreenBannerDelegate implementation
 
-- (void)landingPageWillBeDisplayed
+- (void)fullScreenBannerWillDismiss:(SOMAFullScreenBanner *)aBanner
 {
+	
 }
 
-- (void)landingPageHasBeenClosed
+- (void)fullScreenBannerDidDismiss:(SOMAFullScreenBanner *)aBanner
 {
+	
 }
+
+- (void)fullScreenBannerWillPresent:(SOMAFullScreenBanner *)aBanner
+{
+	
+}
+
+- (void)fullScreenBannerDidPresent:(SOMAFullScreenBanner *)aBanner
+{
+	
+}
+
+- (void)fullScreenBannerDidOpenLandingPage:(SOMAFullScreenBanner *)aBanner
+{
+	
+}
+
 
 #pragma mark -- SOMAAdListenerProtocol implementation
 -(void)onReceiveAd:(id<SOMAAdDownloaderProtocol>)sender withReceivedBanner:(id<SOMAReceivedBannerProtocol>)receivedInterstitial

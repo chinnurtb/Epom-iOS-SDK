@@ -10,6 +10,7 @@
 
 #import "ViewController.h"
 #import "epom/ESInterstitialView.h"
+#import "epom/ESUtils.h"
 
 @interface AppDelegate()
 @property (readwrite, retain) ESInterstitialView *esInterstitialView;
@@ -27,13 +28,14 @@
 	self.window.rootViewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     [self.window makeKeyAndVisible];
 	
+	/*
 	// set up interstitial view
-	self.esInterstitialView = [[[ESInterstitialView alloc] initWithID:@"53927211d9604e5d671963fd013dd94b"
+	self.esInterstitialView = [[[ESInterstitialView alloc] initWithID:EPOM_INTERSTITIAL_KEY
 														  useLocation:NO
 															 testMode:YES] autorelease];
     self.esInterstitialView.loadTimeout = 4.0;
 	[self.esInterstitialView presentAsStartupScreenWithWindow:self.window defaultImage:[UIImage imageNamed:@"InterstitialStartup.png"]];
-
+	*/
     return YES;
 }
 

@@ -206,6 +206,20 @@
                ReferencedContainer = "container:../private/providers/epom_provider_yoc_mojiva/epom_provider_yoc_mojiva.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C2A860C7163BD70F0071E94A"
+               BuildableName = "libepom_provider_vserv.a"
+               BlueprintName = "epom_provider_vserv"
+               ReferencedContainer = "container:../private/providers/epom_provider_vserv/epom_provider_vserv.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

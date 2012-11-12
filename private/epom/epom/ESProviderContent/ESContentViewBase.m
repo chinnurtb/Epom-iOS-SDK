@@ -82,6 +82,12 @@
 	{
 		expandProperties_ = *expandProperties;
 	}
+	else
+	{
+		CGRect rect = epom_screen_size();
+		expandProperties_.width = rect.size.width;
+		expandProperties_.height = rect.size.height;
+	}
 	
 	return self;
 }
@@ -133,7 +139,7 @@
 	NSRange headPos = [mutableContent rangeOfString:@"<head>"];
 	[mutableContent replaceCharactersInRange:headPos
 								  withString:[NSString stringWithFormat:@"<head><script type='text/javascript'>%s</script>", mraid_js]];
-    
+
 	// save to temp file
 	NSString *tempFileName = [NSTemporaryDirectory() stringByAppendingPathComponent: [NSString stringWithFormat: @"%.0f.html", [NSDate timeIntervalSinceReferenceDate] * 1000.0]];
 	if (YES == [[NSFileManager defaultManager] createFileAtPath:tempFileName

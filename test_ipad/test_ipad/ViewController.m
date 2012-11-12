@@ -28,14 +28,14 @@ static const int kActivityIndicatorTag = 'tact';
 	
 	[ESUtils setLogLevel:ESVerboseAll];
 	
-	self.esBannerView = [[ESBannerView alloc] initWithID:@"53927211d9604e5d671963fd013dd94b"
+	self.esBannerView = [[ESBannerView alloc] initWithID:EPOM_BANNER_KEY
 											  sizeType:ESBannerViewSize768x90
 								   modalViewController:self
 										   useLocation:YES
 											  testMode:YES];
 
 	self.esBannerView.delegate = self;
-	self.esBannerView.refreshTimeInterval = 4.0;
+	self.esBannerView.refreshTimeInterval = 40.0;
 		
 	[self.view addSubview:self.esBannerView];
 }
@@ -92,7 +92,7 @@ static const int kActivityIndicatorTag = 'tact';
 
 -(IBAction)showInterstitialAd:(id)sender
 {
-	self.esInterstitialView = [[[ESInterstitialView alloc] initWithID:@"53927211d9604e5d671963fd013dd94b"
+	self.esInterstitialView = [[[ESInterstitialView alloc] initWithID:EPOM_INTERSTITIAL_KEY
 														  useLocation:YES
 															 testMode:YES] autorelease];
 	self.esInterstitialView.delegate = self;

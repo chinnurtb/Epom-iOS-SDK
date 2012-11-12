@@ -45,6 +45,18 @@
 		C2923CCE1573AE180040583F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2923CCD1573AE180040583F /* AppDelegate.m */; };
 		C2923CD11573AE180040583F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2923CD01573AE180040583F /* ViewController.m */; };
 		C2923CD41573AE180040583F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2923CD21573AE180040583F /* ViewController.xib */; };
+		C29F56A31651079000988E42 /* libepom_provider_smaato.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BF15C7162465B5007C48CE /* libepom_provider_smaato.a */; };
+		C29F56A41651079500988E42 /* iSoma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BF15C9162465CC007C48CE /* iSoma.framework */; };
+		C2A860FC163BDEA20071E94A /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A860E7163BDEA20071E94A /* CDataScanner.m */; };
+		C2A860FD163BDEA20071E94A /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A860EA163BDEA20071E94A /* CDataScanner_Extensions.m */; };
+		C2A860FE163BDEA20071E94A /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A860EC163BDEA20071E94A /* NSCharacterSet_Extensions.m */; };
+		C2A860FF163BDEA20071E94A /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A860EE163BDEA20071E94A /* NSDictionary_JSONExtensions.m */; };
+		C2A86100163BDEA20071E94A /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A860F0163BDEA20071E94A /* NSScanner_Extensions.m */; };
+		C2A86101163BDEA20071E94A /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A860F3163BDEA20071E94A /* CJSONDataSerializer.m */; };
+		C2A86102163BDEA20071E94A /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A860F5163BDEA20071E94A /* CJSONDeserializer.m */; };
+		C2A86103163BDEA20071E94A /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A860F7163BDEA20071E94A /* CJSONScanner.m */; };
+		C2A86104163BDEA20071E94A /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A860F9163BDEA20071E94A /* CJSONSerializer.m */; };
+		C2A86105163BDEA20071E94A /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A860FB163BDEA20071E94A /* CSerializedJSONData.m */; };
 		C2BDC857157FA90F001A3F23 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BDC856157FA90F001A3F23 /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C2BDC863157FA95F001A3F23 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BDC862157FA95F001A3F23 /* EventKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C2BDC891157FBAE5001A3F23 /* libepom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BDC889157FBAE5001A3F23 /* libepom.a */; };
@@ -129,6 +141,26 @@
 		C2923CCF1573AE180040583F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C2923CD01573AE180040583F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C2923CD31573AE180040583F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		C2A860E6163BDEA20071E94A /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		C2A860E7163BDEA20071E94A /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		C2A860E9163BDEA20071E94A /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		C2A860EA163BDEA20071E94A /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		C2A860EB163BDEA20071E94A /* NSCharacterSet_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCharacterSet_Extensions.h; sourceTree = "<group>"; };
+		C2A860EC163BDEA20071E94A /* NSCharacterSet_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCharacterSet_Extensions.m; sourceTree = "<group>"; };
+		C2A860ED163BDEA20071E94A /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		C2A860EE163BDEA20071E94A /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		C2A860EF163BDEA20071E94A /* NSScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSScanner_Extensions.h; sourceTree = "<group>"; };
+		C2A860F0163BDEA20071E94A /* NSScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSScanner_Extensions.m; sourceTree = "<group>"; };
+		C2A860F2163BDEA20071E94A /* CJSONDataSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDataSerializer.h; sourceTree = "<group>"; };
+		C2A860F3163BDEA20071E94A /* CJSONDataSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDataSerializer.m; sourceTree = "<group>"; };
+		C2A860F4163BDEA20071E94A /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		C2A860F5163BDEA20071E94A /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		C2A860F6163BDEA20071E94A /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
+		C2A860F7163BDEA20071E94A /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
+		C2A860F8163BDEA20071E94A /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		C2A860F9163BDEA20071E94A /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		C2A860FA163BDEA20071E94A /* CSerializedJSONData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSerializedJSONData.h; sourceTree = "<group>"; };
+		C2A860FB163BDEA20071E94A /* CSerializedJSONData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSerializedJSONData.m; sourceTree = "<group>"; };
 		C2AD598815D11A8A0068CE92 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		C2B6834E15D10D4F00E5CBA1 /* libepom_provider_wapstart.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_wapstart.a; path = "../private/providers/epom_provider_wapstart/build/Release-iphoneos/libepom_provider_wapstart.a"; sourceTree = "<group>"; };
 		C2BDC856157FA90F001A3F23 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -240,6 +272,8 @@
 				C2BF15BA162461CE007C48CE /* libepom_provider_millennial_media.a in Frameworks */,
 				C2BF15BE162462A5007C48CE /* libMMSDK_4.6.1.a in Frameworks */,
 				C2E017341637E46100FA3B9A /* libepom_app_tracker.a in Frameworks */,
+				C29F56A31651079000988E42 /* libepom_provider_smaato.a in Frameworks */,
+				C29F56A41651079500988E42 /* iSoma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				C2BF15D0162470F8007C48CE /* WapStart */,
+				C2A860E5163BDEA20071E94A /* TouchJSON */,
 				C253992A15FCA9E20075632E /* Providers */,
 				C2864F1C1573CF8D00886CCC /* resources */,
 				C2923CC31573AE180040583F /* test_iphone */,
@@ -363,6 +398,50 @@
 				C2923CCB1573AE180040583F /* test_iphone-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2A860E5163BDEA20071E94A /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				C2A860E6163BDEA20071E94A /* CDataScanner.h */,
+				C2A860E7163BDEA20071E94A /* CDataScanner.m */,
+				C2A860E8163BDEA20071E94A /* Extensions */,
+				C2A860F1163BDEA20071E94A /* JSON */,
+			);
+			name = TouchJSON;
+			path = ../externals/TouchJSON;
+			sourceTree = "<group>";
+		};
+		C2A860E8163BDEA20071E94A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C2A860E9163BDEA20071E94A /* CDataScanner_Extensions.h */,
+				C2A860EA163BDEA20071E94A /* CDataScanner_Extensions.m */,
+				C2A860EB163BDEA20071E94A /* NSCharacterSet_Extensions.h */,
+				C2A860EC163BDEA20071E94A /* NSCharacterSet_Extensions.m */,
+				C2A860ED163BDEA20071E94A /* NSDictionary_JSONExtensions.h */,
+				C2A860EE163BDEA20071E94A /* NSDictionary_JSONExtensions.m */,
+				C2A860EF163BDEA20071E94A /* NSScanner_Extensions.h */,
+				C2A860F0163BDEA20071E94A /* NSScanner_Extensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C2A860F1163BDEA20071E94A /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C2A860F2163BDEA20071E94A /* CJSONDataSerializer.h */,
+				C2A860F3163BDEA20071E94A /* CJSONDataSerializer.m */,
+				C2A860F4163BDEA20071E94A /* CJSONDeserializer.h */,
+				C2A860F5163BDEA20071E94A /* CJSONDeserializer.m */,
+				C2A860F6163BDEA20071E94A /* CJSONScanner.h */,
+				C2A860F7163BDEA20071E94A /* CJSONScanner.m */,
+				C2A860F8163BDEA20071E94A /* CJSONSerializer.h */,
+				C2A860F9163BDEA20071E94A /* CJSONSerializer.m */,
+				C2A860FA163BDEA20071E94A /* CSerializedJSONData.h */,
+				C2A860FB163BDEA20071E94A /* CSerializedJSONData.m */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		C2BF15D0162470F8007C48CE /* WapStart */ = {
@@ -535,6 +614,16 @@
 				C2BF161016247103007C48CE /* WPBannerView.m in Sources */,
 				C2BF161116247103007C48CE /* WPLocationManager.m in Sources */,
 				C2BF161216247103007C48CE /* WPUtils.m in Sources */,
+				C2A860FC163BDEA20071E94A /* CDataScanner.m in Sources */,
+				C2A860FD163BDEA20071E94A /* CDataScanner_Extensions.m in Sources */,
+				C2A860FE163BDEA20071E94A /* NSCharacterSet_Extensions.m in Sources */,
+				C2A860FF163BDEA20071E94A /* NSDictionary_JSONExtensions.m in Sources */,
+				C2A86100163BDEA20071E94A /* NSScanner_Extensions.m in Sources */,
+				C2A86101163BDEA20071E94A /* CJSONDataSerializer.m in Sources */,
+				C2A86102163BDEA20071E94A /* CJSONDeserializer.m in Sources */,
+				C2A86103163BDEA20071E94A /* CJSONScanner.m in Sources */,
+				C2A86104163BDEA20071E94A /* CJSONSerializer.m in Sources */,
+				C2A86105163BDEA20071E94A /* CSerializedJSONData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,6 +729,7 @@
 					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK\"",
 					"\"$(SRCROOT)/../externals/InneractiveAd\"",
 					"\"$(SRCROOT)/../externals/epom-apptracker\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -668,6 +758,7 @@
 					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK\"",
 					"\"$(SRCROOT)/../externals/InneractiveAd\"",
 					"\"$(SRCROOT)/../externals/epom-apptracker\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

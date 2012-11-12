@@ -18,7 +18,6 @@
 		C21A177816242B9C00F8D593 /* libInMobiCommons-3.6.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21A177616242B9C00F8D593 /* libInMobiCommons-3.6.0.a */; };
 		C21A177C16242F1C00F8D593 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21A177B16242F1C00F8D593 /* PassKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C21A17841624346600F8D593 /* TapIt.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C21A17831624346600F8D593 /* TapIt.bundle */; };
-		C2299334162C33A600E8BC0A /* libepom_app_tracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2299333162C33A600E8BC0A /* libepom_app_tracker.a */; };
 		C253993515FCA9E20075632E /* libepom_provider_admob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253992C15FCA9E20075632E /* libepom_provider_admob.a */; };
 		C253993615FCA9E20075632E /* libepom_provider_iad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253992D15FCA9E20075632E /* libepom_provider_iad.a */; };
 		C253993715FCA9E20075632E /* libepom_provider_inmobi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253992E15FCA9E20075632E /* libepom_provider_inmobi.a */; };
@@ -46,8 +45,8 @@
 		C28B8D6415A1DEF2003D071C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B8D5F15A1DEF2003D071C /* libz.dylib */; };
 		C28B8D6515A1DEF2003D071C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B8D6015A1DEF2003D071C /* CFNetwork.framework */; };
 		C28B8D6615A1DEF2003D071C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B8D6115A1DEF2003D071C /* CoreFoundation.framework */; };
-		C29AACF8163028C000F32642 /* libepom_provider_inneractive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C253992F15FCA9E20075632E /* libepom_provider_inneractive.a */; };
-		C29AACF9163028C700F32642 /* InneractiveAdSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21A177F1624307800F8D593 /* InneractiveAdSDK.a */; };
+		C29F56A01651078200988E42 /* libepom_provider_smaato.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D39D15F7C0AD00CCE5FB /* libepom_provider_smaato.a */; };
+		C29F56A11651078700988E42 /* iSoma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D9D39F15F7C0B700CCE5FB /* iSoma.framework */; };
 		C2AD598C15D11ABE0068CE92 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AD598B15D11ABE0068CE92 /* libxml2.dylib */; };
 		C2B6835215D10D6D00E5CBA1 /* libepom_provider_wapstart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B6835115D10D6D00E5CBA1 /* libepom_provider_wapstart.a */; };
 		C2BF15C0162462B4007C48CE /* libMMSDK_4.6.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BF15BF162462B4007C48CE /* libMMSDK_4.6.1.a */; };
@@ -102,7 +101,6 @@
 		C21A177B16242F1C00F8D593 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		C21A177F1624307800F8D593 /* InneractiveAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = InneractiveAdSDK.a; path = "/Users/orange/Documents/Projects/epom-ios-sdk/test_iphone/../externals/InneractiveAd/InneractiveAdSDK.a"; sourceTree = "<absolute>"; };
 		C21A17831624346600F8D593 /* TapIt.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TapIt.bundle; path = "/Users/orange/Documents/Projects/epom-ios-sdk/test_iphone/../externals/TapIt_iPhone_SDK/TapIt.bundle"; sourceTree = "<absolute>"; };
-		C2299333162C33A600E8BC0A /* libepom_app_tracker.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_app_tracker.a; path = "../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Release-iphoneos/libepom_app_tracker.a"; sourceTree = "<group>"; };
 		C253992C15FCA9E20075632E /* libepom_provider_admob.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_admob.a; path = "../private/providers/epom_provider_admob/build/Release-iphoneos/libepom_provider_admob.a"; sourceTree = "<group>"; };
 		C253992D15FCA9E20075632E /* libepom_provider_iad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_iad.a; path = "../private/providers/epom_provider_iad/build/Release-iphoneos/libepom_provider_iad.a"; sourceTree = "<group>"; };
 		C253992E15FCA9E20075632E /* libepom_provider_inmobi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libepom_provider_inmobi.a; path = "../private/providers/epom_provider_inmobi/build/Release-iphoneos/libepom_provider_inmobi.a"; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2299334162C33A600E8BC0A /* libepom_app_tracker.a in Frameworks */,
 				C21A177C16242F1C00F8D593 /* PassKit.framework in Frameworks */,
 				C21A177716242B9C00F8D593 /* libInMobiAdNetwork-3.6.0.a in Frameworks */,
 				C21A177816242B9C00F8D593 /* libInMobiCommons-3.6.0.a in Frameworks */,
@@ -235,8 +232,8 @@
 				C28B8D6515A1DEF2003D071C /* CFNetwork.framework in Frameworks */,
 				C28B8D6615A1DEF2003D071C /* CoreFoundation.framework in Frameworks */,
 				C2BF15C0162462B4007C48CE /* libMMSDK_4.6.1.a in Frameworks */,
-				C29AACF8163028C000F32642 /* libepom_provider_inneractive.a in Frameworks */,
-				C29AACF9163028C700F32642 /* InneractiveAdSDK.a in Frameworks */,
+				C29F56A01651078200988E42 /* libepom_provider_smaato.a in Frameworks */,
+				C29F56A11651078700988E42 /* iSoma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +263,6 @@
 		C205C8281573A29C00DCF5E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C2299333162C33A600E8BC0A /* libepom_app_tracker.a */,
 				C21A177B16242F1C00F8D593 /* PassKit.framework */,
 				C21A176B16241B8C00F8D593 /* AdSupport.framework */,
 				C2AD598B15D11ABE0068CE92 /* libxml2.dylib */,
@@ -626,6 +622,7 @@
 					"\"$(SRCROOT)/../externals/SmartMad\"",
 					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK\"",
 					"\"$(SRCROOT)/../externals/InneractiveAd\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -653,6 +650,7 @@
 					"\"$(SRCROOT)/../externals/SmartMad\"",
 					"\"$(SRCROOT)/../externals/TapIt_iPhone_SDK\"",
 					"\"$(SRCROOT)/../externals/InneractiveAd\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/epom-sdk-ios-ejorqtyrynntdgcuxylvuoivixbm/Build/Products/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

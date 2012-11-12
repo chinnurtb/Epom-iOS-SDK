@@ -12,3 +12,6 @@
 	#import <UIKit/UIKit.h>
 	#import <Foundation/Foundation.h>
 #endif
+
+#define EPOM_BANNER_KEY @"3d69b9f56148e388aca7e1901312cdcd"/*@"3d69b9f56148e388aca7e1901312cdcd"*/
+#define EPOM_INTERSTITIAL_KEY @"c7a1d3b636f7cd0c2cfcd166e30fa3b9"/*@"f46c451948ea96a116eb7ac5f44c968a"*/

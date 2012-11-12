@@ -9,11 +9,11 @@
 #import "ESProviderInterstitial.h"
 
 #import "iSoma/SOMAFullscreenBanner.h"
-#import "iSoma/SOMABannerViewDelegate.h"
+#import "iSoma/SOMAFullScreenBannerDelegate.h"
 
 @class UIViewController, SOMAFullScreenBannerLocal;
 
-@interface ESProviderInterstitialSmaato : ESProviderInterstitial<SOMABannerViewDelegate, SOMAAdListenerProtocol>
+@interface ESProviderInterstitialSmaato : ESProviderInterstitial<SOMAFullScreenBannerDelegate, SOMAAdListenerProtocol>
 {
 	SOMAFullScreenBannerLocal *interstitialView;
 }
